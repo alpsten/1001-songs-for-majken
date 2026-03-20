@@ -1,0 +1,44 @@
+.count {
+  color: var(--color-muted);
+  font-family: var(--font-ui);
+  font-size: 0.9rem;
+  margin: 0.5rem 0 2rem;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.item {
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 2rem;
+}
+
+.title {
+  font-size: 1.3rem;
+  color: var(--color-text);
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.title:hover { color: var(--color-accent); }
+
+.meta {
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  display: flex;
+  gap: 0.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.dot { opacity: 0.4; }
+
+.why {
+  font-size: 0.95rem;
+  color: var(--color-muted);
+}

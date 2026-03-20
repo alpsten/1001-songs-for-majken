@@ -1,0 +1,96 @@
+[
+  {
+    "id": "song-heroes",
+    "slug": "heroes",
+    "title": "Heroes",
+    "artistIds": [
+      "artist-david-bowie"
+    ],
+    "year": 1977,
+    "themeIds": [
+      "theme-courage",
+      "theme-love"
+    ],
+    "relatedSongIds": [
+      "song-new-york-state-of-mind"
+    ],
+    "whyItMatters": "A song that makes ordinary moments feel eternal.",
+    "addedAt": "2026-03-20T00:00:00.000Z",
+    "status": "published",
+    "story": "Bowie wrote Heroes in Berlin at a time when the city was divided in two. The wall was real. The guards were real. The separation was real. And yet somehow the song is not about despair. It is about two people standing at the wall and deciding that, just for today, they are kings and queens.\r\n\r\nThat is the whole argument of the song: that even within limits, even within circumstances you did not choose, you can have something that is entirely yours.\r\n\r\nI think about this song when the world feels too large and too complicated. It is a reminder that you do not need to win everything. Sometimes one moment is enough."
+  },
+  {
+    "id": "song-let-it-be",
+    "slug": "let-it-be",
+    "title": "Let It Be",
+    "artistIds": [
+      "artist-the-beatles"
+    ],
+    "year": 1970,
+    "themeIds": [
+      "theme-peace",
+      "theme-belonging"
+    ],
+    "whyItMatters": "A reminder that some things are better accepted than fought.",
+    "addedAt": "2026-03-20T00:00:00.000Z",
+    "status": "published",
+    "story": "Paul McCartney said he dreamed of his mother, who had died when he was fourteen. In the dream she came to him and told him it would be alright. Let it be.\r\n\r\nThat is the entire song. A dream. A mother's voice. The permission to stop struggling.\r\n\r\nI find it almost impossible to explain why this song hits so hard without explaining that sometimes the most radical thing you can do is accept something. Not give up — accept. Let the thing be what it is."
+  },
+  {
+    "id": "song-new-york-state-of-mind",
+    "slug": "new-york-state-of-mind",
+    "title": "New York State of Mind",
+    "artistIds": [
+      "artist-billy-joel"
+    ],
+    "year": 1976,
+    "themeIds": [
+      "theme-home",
+      "theme-belonging"
+    ],
+    "whyItMatters": "A song about choosing home — not out of obligation, but out of deep, quiet love.",
+    "addedAt": "2026-03-20T00:00:00.000Z",
+    "status": "published",
+    "story": "There are songs that describe places, and there are songs that describe how a place feels when it is yours. This is the second kind.\r\n\r\nBilly Joel wrote this on a bus back to New York after a stretch of time away. No grand occasion. Just the familiar pull of somewhere that fits you. The piano comes in slow, almost reluctant, and then it settles — exactly like arriving home.\r\n\r\nI put this on the list because I want you to know that feeling. The feeling of somewhere being yours not because you were born there, but because something in you chose it. That is a rare thing, and worth holding onto."
+  },
+  {
+    "id": "song-piano-man",
+    "slug": "piano-man",
+    "title": "Piano Man",
+    "artistIds": [
+      "artist-billy-joel"
+    ],
+    "year": 1973,
+    "themeIds": [
+      "theme-belonging",
+      "theme-nostalgia"
+    ],
+    "relatedSongIds": [
+      "song-new-york-state-of-mind"
+    ],
+    "whyItMatters": "A portrait of people who ended up somewhere different than they planned — and found each other anyway.",
+    "addedAt": "2026-03-20T00:00:00.000Z",
+    "status": "published",
+    "story": "Billy Joel wrote this based on his own experience playing bars in Los Angeles before he became famous. The people in the song — the bartender, the waitress, the old man — are all real. All of them are waiting for something.\r\n\r\nWhat I love about this song is that it does not pity them. It witnesses them. The piano man plays, they sing along, and for a few minutes they are all in the same place at the same time. That is no small thing.\r\n\r\nThere will be moments in your life when the place you are is not the place you imagined. This song is for those moments. Find the piano. Sing along."
+  },
+  {
+    "id": "song-space-oddity",
+    "slug": "space-oddity",
+    "title": "Space Oddity",
+    "artistIds": [
+      "artist-david-bowie"
+    ],
+    "year": 1969,
+    "themeIds": [
+      "theme-courage",
+      "theme-wonder"
+    ],
+    "relatedSongIds": [
+      "song-heroes"
+    ],
+    "whyItMatters": "A song about going further than you planned and being okay with it.",
+    "addedAt": "2026-03-20T00:00:00.000Z",
+    "status": "published",
+    "story": "Ground Control to Major Tom. Count down. Ignition. And then the quiet of space.\r\n\r\nBowie recorded this in 1969, weeks before the moon landing. Whether that timing was planned or accidental hardly matters — the song arrived exactly when the world was ready to imagine leaving Earth behind.\r\n\r\nMajor Tom does not panic. He floats. He looks at Earth from far away and tells someone he loves them. That is the whole of it.\r\n\r\nI included this song because I want you to be willing to float sometimes. To go somewhere strange and unfamiliar and stay calm enough to notice how beautiful it looks from out there."
+  }
+]

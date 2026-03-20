@@ -1,0 +1,113 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.intro h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.intro p {
+  color: var(--color-muted);
+  font-size: 1.1rem;
+  max-width: 60ch;
+}
+
+.section h2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-muted);
+  margin-bottom: 1rem;
+}
+
+.dailyCard {
+  display: block;
+  padding: 1.5rem;
+  background: var(--color-accent-light);
+  border-left: 3px solid var(--color-accent);
+  text-decoration: none;
+  color: var(--color-text);
+  border-radius: 2px;
+  transition: opacity 0.15s;
+}
+
+.dailyCard:hover { opacity: 0.85; }
+
+.dailyTitle {
+  font-size: 1.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.dailyWhy {
+  color: var(--color-muted);
+  font-size: 0.95rem;
+}
+
+.tagList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  padding: 0.35rem 0.9rem;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  text-decoration: none;
+  color: var(--color-text);
+  font-family: var(--font-ui);
+  font-size: 0.9rem;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.tag:hover {
+  background: var(--color-accent-light);
+  border-color: var(--color-accent);
+}
+
+.artistList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.artistLink {
+  font-size: 1.05rem;
+  color: var(--color-text);
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 1px;
+  transition: border-color 0.15s;
+}
+
+.artistLink:hover { border-color: var(--color-accent); color: var(--color-accent); }
+
+.songList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.songList li {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+}
+
+.songList a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 1.05rem;
+}
+
+.songList a:hover { color: var(--color-accent); }
+
+.year {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  font-family: var(--font-ui);
+}

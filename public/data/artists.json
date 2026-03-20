@@ -1,0 +1,44 @@
+[
+  {
+    "id": "artist-billy-joel",
+    "slug": "billy-joel",
+    "name": "Billy Joel",
+    "birthYear": 1949,
+    "country": "United States",
+    "genreTags": [
+      "rock",
+      "pop",
+      "piano-rock"
+    ],
+    "summary": "One of the best-selling music artists of all time, known for combining rock, pop, and classical sensibilities with deeply personal storytelling."
+  },
+  {
+    "id": "artist-david-bowie",
+    "slug": "david-bowie",
+    "name": "David Bowie",
+    "birthYear": 1947,
+    "country": "United Kingdom",
+    "genreTags": [
+      "rock",
+      "glam-rock",
+      "art-rock"
+    ],
+    "summary": "A master of reinvention who shaped decades of music, fashion, and culture. Few artists have ever moved so fearlessly between worlds."
+  },
+  {
+    "id": "artist-the-beatles",
+    "slug": "the-beatles",
+    "name": "The Beatles",
+    "formedYear": 1960,
+    "country": "United Kingdom",
+    "genreTags": [
+      "rock",
+      "pop",
+      "psychedelic"
+    ],
+    "relatedArtistIds": [
+      "artist-david-bowie"
+    ],
+    "summary": "The most influential band in the history of popular music. Everything that came after them exists in their shadow, knowingly or not."
+  }
+]

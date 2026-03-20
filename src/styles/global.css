@@ -1,0 +1,41 @@
+:root {
+  --color-bg: #faf9f7;
+  --color-text: #1a1a18;
+  --color-muted: #6b6b65;
+  --color-border: #e4e2dc;
+  --color-accent: #8b6f47;
+  --color-accent-light: #f5ede0;
+  --font-body: "Georgia", serif;
+  --font-ui: system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  line-height: 1.7;
+}
+
+a {
+  color: var(--color-accent);
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+h1 { font-size: 2rem; font-weight: normal; margin-bottom: 0.5rem; }
+h2 { font-size: 1.4rem; font-weight: normal; margin-bottom: 0.5rem; }
+h3 { font-size: 1.1rem; font-weight: normal; }

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "theme-belonging",
+    "slug": "belonging",
+    "name": "Belonging",
+    "description": "Songs about finding your people, your place, or your moment — and recognizing it when you do.",
+    "relatedThemeIds": [
+      "theme-home"
+    ]
+  },
+  {
+    "id": "theme-courage",
+    "slug": "courage",
+    "name": "Courage",
+    "description": "Songs about doing the difficult thing anyway. About choosing, even when the outcome is uncertain."
+  },
+  {
+    "id": "theme-home",
+    "slug": "home",
+    "name": "Home",
+    "description": "Songs about belonging to a place, a person, or a feeling — and the quiet pull of returning to it."
+  },
+  {
+    "id": "theme-love",
+    "slug": "love",
+    "name": "Love",
+    "description": "Songs about love in all its forms — romantic, familial, the kind that holds across time and distance."
+  },
+  {
+    "id": "theme-nostalgia",
+    "slug": "nostalgia",
+    "name": "Nostalgia",
+    "description": "Songs that carry the past gently. Not with grief, but with the warmth of remembering."
+  },
+  {
+    "id": "theme-peace",
+    "slug": "peace",
+    "name": "Peace",
+    "description": "Songs that slow things down. That give you permission to stop."
+  },
+  {
+    "id": "theme-wonder",
+    "slug": "wonder",
+    "name": "Wonder",
+    "description": "Songs that open something up. That make the world feel bigger and stranger and worth exploring.",
+    "relatedThemeIds": [
+      "theme-courage"
+    ]
+  }
+]
