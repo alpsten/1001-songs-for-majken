@@ -1,12 +1,769 @@
 [
   {
+    "id": "song-17-ar",
+    "slug": "17-ar",
+    "title": "17 år",
+    "artistIds": [
+      "artist-veronica-maggio"
+    ],
+    "album": "Och vinnaren är...",
+    "year": 2008,
+    "genreTags": [
+      "Soul Pop"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-25T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-93-til-infinity",
+    "slug": "93-til-infinity",
+    "title": "93 'til Infinity",
+    "artistIds": [
+      "artist-souls-of-mischief"
+    ],
+    "album": "93 'til Infinity",
+    "year": 1993,
+    "genreTags": [
+      "Hip Hop",
+      "Alternative Hip Hop"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-25T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-99-problems",
+    "slug": "99-problems",
+    "title": "99 Problems",
+    "artistIds": [
+      "artist-jay-z"
+    ],
+    "album": "The Black Album",
+    "year": 2003,
+    "genreTags": [
+      "Hip Hop",
+      "Rap Rock"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-25T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-all-along-the-watchtower",
+    "slug": "all-along-the-watchtower",
+    "title": "All Along the Watchtower",
+    "artistIds": [
+      "artist-jimi-hendrix"
+    ],
+    "album": "Electric Ladyland",
+    "year": 1968,
+    "genreTags": [
+      "Rock",
+      "Psychedelic Rock"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-26T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-all-too-well-10-minute-version-taylors-version",
+    "slug": "all-too-well-10-minute-version-taylors-version",
+    "title": "All Too Well (10 Minute Version) (Taylor's Version)",
+    "artistIds": [
+      "artist-taylor-swift"
+    ],
+    "album": "Red (Taylor's Version)",
+    "year": 2021,
+    "genreTags": [
+      "Pop Rock"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-25T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-alla-vill-till-himmelen-men-ingen-vill-do",
+    "slug": "alla-vill-till-himmelen-men-ingen-vill-do",
+    "title": "Alla vill till himmelen men ingen vill dö",
+    "artistIds": [
+      "artist-timbuktu"
+    ],
+    "album": "Alla vill till himmelen men ingen vill dö",
+    "year": 2005,
+    "genreTags": [
+      "Hip Hop"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-25T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-american-pie",
+    "slug": "american-pie",
+    "title": "American Pie",
+    "artistIds": [
+      "artist-don-mclean"
+    ],
+    "album": "American Pie",
+    "year": 1971,
+    "genreTags": [
+      "Folk Rock"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-23T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-as",
+    "slug": "as",
+    "title": "As",
+    "artistIds": [
+      "artist-stevie-wonder"
+    ],
+    "album": "Songs in the Key of Life",
+    "year": 1976,
+    "genreTags": [
+      "Soul",
+      "Funk"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-23T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-at-last",
+    "slug": "at-last",
+    "title": "At Last",
+    "artistIds": [
+      "artist-etta-james"
+    ],
+    "album": "At Last!",
+    "year": 1960,
+    "genreTags": [
+      "R&B",
+      "Blues"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-26T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-baby-one-more-time",
+    "slug": "baby-one-more-time",
+    "title": "...Baby One More Time",
+    "artistIds": [
+      "artist-britney-spears"
+    ],
+    "album": "...Baby One More Time",
+    "year": 1999,
+    "genreTags": [
+      "Teen Pop",
+      "Dance Pop"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-25T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-barbie-girl",
+    "slug": "barbie-girl",
+    "title": "Barbie Girl",
+    "artistIds": [
+      "artist-aqua"
+    ],
+    "album": "Aquarium",
+    "year": 1997,
+    "genreTags": [
+      "Bubblegum Pop",
+      "Eurodance"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-26T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-be-my-baby",
+    "slug": "be-my-baby",
+    "title": "Be My Baby",
+    "artistIds": [
+      "artist-the-ronettes"
+    ],
+    "album": "Presenting the Fabulous Ronettes",
+    "year": 1964,
+    "genreTags": [
+      "Pop",
+      "R&B"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-26T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-believe",
+    "slug": "believe",
+    "title": "Believe",
+    "artistIds": [
+      "artist-cher"
+    ],
+    "album": "Believe",
+    "year": 1998,
+    "genreTags": [
+      "Dance Pop",
+      "Electropop"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-26T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-blowin-in-the-wind",
+    "slug": "blowin-in-the-wind",
+    "title": "Blowin' in the Wind",
+    "artistIds": [
+      "artist-bob-dylan"
+    ],
+    "album": "The Freewheelin' Bob Dylan",
+    "year": 1963,
+    "genreTags": [
+      "Folk"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-20T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-bohemian-rhapsody",
+    "slug": "bohemian-rhapsody",
+    "title": "Bohemian Rhapsody",
+    "artistIds": [
+      "artist-queen"
+    ],
+    "album": "A Night at the Opera",
+    "year": 1975,
+    "genreTags": [
+      "Progressive Rock"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-25T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-born-to-run",
+    "slug": "born-to-run",
+    "title": "Born to Run",
+    "artistIds": [
+      "artist-bruce-springsteen"
+    ],
+    "album": "Born to Run",
+    "year": 1975,
+    "genreTags": [
+      "Rock"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-23T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-circle-of-life",
+    "slug": "circle-of-life",
+    "title": "Circle of Life",
+    "artistIds": [
+      "artist-carmen-twillie",
+      "artist-lebo-m"
+    ],
+    "album": "The Lion King: Original Motion Picture Soundtrack",
+    "year": 1994,
+    "genreTags": [
+      "Soundtrack",
+      "Musical"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-25T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-come-and-get-your-love",
+    "slug": "come-and-get-your-love",
+    "title": "Come and Get Your Love",
+    "artistIds": [
+      "artist-redbone"
+    ],
+    "album": "Wovoka",
+    "year": 1974,
+    "genreTags": [
+      "Pop Rock",
+      "Disco"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-26T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-cry-me-a-river",
+    "slug": "cry-me-a-river",
+    "title": "Cry Me a River",
+    "artistIds": [
+      "artist-justin-timberlake"
+    ],
+    "album": "Justified",
+    "year": 2002,
+    "genreTags": [
+      "Pop",
+      "R&B"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-26T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-dancing-on-my-own",
+    "slug": "dancing-on-my-own",
+    "title": "Dancing on My Own",
+    "artistIds": [
+      "artist-robyn"
+    ],
+    "album": "Body Talk Pt. 1",
+    "year": 2010,
+    "genreTags": [
+      "Electropop",
+      "Synth Pop"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-25T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-dancing-queen",
+    "slug": "dancing-queen",
+    "title": "Dancing Queen",
+    "artistIds": [
+      "artist-abba"
+    ],
+    "album": "Arrival",
+    "year": 1976,
+    "genreTags": [
+      "Pop",
+      "Disco"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-26T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-days-like-this",
+    "slug": "days-like-this",
+    "title": "Days Like This",
+    "artistIds": [
+      "artist-van-morrison"
+    ],
+    "album": "Days Like This",
+    "year": 1995,
+    "genreTags": [
+      "Folk Rock",
+      "R&B"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-25T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-dog-days-are-over",
+    "slug": "dog-days-are-over",
+    "title": "Dog Days Are Over",
+    "artistIds": [
+      "artist-florence-and-the-machine"
+    ],
+    "album": "Lungs",
+    "year": 2008,
+    "genreTags": [
+      "Indie Pop",
+      "Alternative Rock"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-25T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-dont-look-back-in-anger",
+    "slug": "dont-look-back-in-anger",
+    "title": "Don't Look Back in Anger",
+    "artistIds": [
+      "artist-oasis"
+    ],
+    "album": "(What's the Story) Morning Glory?",
+    "year": 1995,
+    "genreTags": [
+      "Britpop",
+      "Rock"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-26T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-dont-you-worry-child",
+    "slug": "dont-you-worry-child",
+    "title": "Don't You Worry Child",
+    "artistIds": [
+      "artist-swedish-house-mafia"
+    ],
+    "album": "Until Now",
+    "year": 2012,
+    "genreTags": [
+      "Progressive House"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-25T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-doomsday",
+    "slug": "doomsday",
+    "title": "Doomsday",
+    "artistIds": [
+      "artist-mf-doom"
+    ],
+    "featuredArtistIds": [
+      "artist-pebbles-the-invisible-girl"
+    ],
+    "album": "Operation: Doomsday",
+    "year": 1999,
+    "genreTags": [
+      "Hip Hop"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-26T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-dreams",
+    "slug": "dreams",
+    "title": "Dreams",
+    "artistIds": [
+      "artist-fleetwood-mac"
+    ],
+    "album": "Rumours",
+    "year": 1977,
+    "genreTags": [
+      "Soft Rock"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-25T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-electric-relaxation",
+    "slug": "electric-relaxation",
+    "title": "Electric Relaxation",
+    "artistIds": [
+      "artist-a-tribe-called-quest"
+    ],
+    "album": "Midnight Marauders",
+    "year": 1993,
+    "genreTags": [
+      "Jazz Rap",
+      "Hip Hop"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-23T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-emmylou",
+    "slug": "emmylou",
+    "title": "Emmylou",
+    "artistIds": [
+      "artist-first-aid-kit"
+    ],
+    "album": "The Lion's Roar",
+    "year": 2012,
+    "genreTags": [
+      "Country"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-25T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-everybodys-talkin",
+    "slug": "everybodys-talkin",
+    "title": "Everybody's Talkin'",
+    "artistIds": [
+      "artist-harry-nilsson"
+    ],
+    "album": "Aerial Ballet",
+    "year": 1968,
+    "genreTags": [
+      "Folk Rock",
+      "Soft Rock"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-25T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-everyday-is-like-sunday",
+    "slug": "everyday-is-like-sunday",
+    "title": "Everyday Is Like Sunday",
+    "artistIds": [
+      "artist-morrissey"
+    ],
+    "album": "Viva Hate",
+    "year": 1988,
+    "genreTags": [
+      "Alternative Rock"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-26T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-faithful",
+    "slug": "faithful",
+    "title": "Faithful",
+    "artistIds": [
+      "artist-common"
+    ],
+    "album": "Be",
+    "year": 2005,
+    "genreTags": [
+      "Hip Hop",
+      "Conscious Hip Hop"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-23T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-fantasy",
+    "slug": "fantasy",
+    "title": "Fantasy",
+    "artistIds": [
+      "artist-mariah-carey"
+    ],
+    "album": "Daydream",
+    "year": 1995,
+    "genreTags": [
+      "Pop",
+      "R&B"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-26T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-fast-car",
+    "slug": "fast-car",
+    "title": "Fast Car",
+    "artistIds": [
+      "artist-tracy-chapman"
+    ],
+    "album": "Tracy Chapman",
+    "year": 1988,
+    "genreTags": [
+      "Folk Rock",
+      "Folk Pop"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-23T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-folsom-prison-blues-live-at-folsom-prison",
+    "slug": "folsom-prison-blues-live-at-folsom-prison",
+    "title": "Folsom Prison Blues - Live at Folsom Prison",
+    "artistIds": [
+      "artist-johnny-cash"
+    ],
+    "album": "At Folsom Prison",
+    "year": 1968,
+    "genreTags": [
+      "Country",
+      "Rockabilly"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-26T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-fran-och-med-du",
+    "slug": "fran-och-med-du",
+    "title": "Från och med Du",
+    "artistIds": [
+      "artist-oskar-linnros"
+    ],
+    "album": "Vilja bli",
+    "year": 2010,
+    "genreTags": [
+      "Pop",
+      "Soul"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-26T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-get-down-saturday-night-special-extended-version",
+    "slug": "get-down-saturday-night-special-extended-version",
+    "title": "Get Down Saturday Night - Special Extended Version",
+    "artistIds": [
+      "artist-oliver-cheatham"
+    ],
+    "album": "Saturday Night",
+    "year": 1983,
+    "genreTags": [
+      "Disco",
+      "Funk",
+      "R&B"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-25T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-have-you-ever-seen-the-rain",
+    "slug": "have-you-ever-seen-the-rain",
+    "title": "Have You Ever Seen the Rain",
+    "artistIds": [
+      "artist-creedence-clearwater-revival"
+    ],
+    "album": "Pendulum",
+    "year": 1970,
+    "genreTags": [
+      "Roots Rock",
+      "Country Rock"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-23T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-heard-em-say",
+    "slug": "heard-em-say",
+    "title": "Heard Em Say",
+    "artistIds": [
+      "artist-logic"
+    ],
+    "album": "No Pressure",
+    "year": 2020,
+    "genreTags": [
+      "Hip Hop"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-25T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-here-comes-the-sun",
+    "slug": "here-comes-the-sun",
+    "title": "Here Comes the Sun",
+    "artistIds": [
+      "artist-the-beatles"
+    ],
+    "album": "Abbey Road",
+    "year": 1969,
+    "genreTags": [
+      "Folk Pop",
+      "Pop Rock"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-25T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
     "id": "song-heroes",
     "slug": "heroes",
-    "title": "Heroes",
+    "title": "\"Heroes\"",
     "artistIds": [
       "artist-david-bowie"
     ],
+    "album": "\"Heroes\"",
     "year": 1977,
+    "genreTags": [
+      "Art Rock",
+      "Rock"
+    ],
     "themeIds": [
       "theme-courage",
       "theme-love"
@@ -14,10 +771,308 @@
     "relatedSongIds": [
       "song-new-york-state-of-mind"
     ],
-    "whyItMatters": "A song that makes ordinary moments feel eternal.",
+    "whyItMatters": "[No memory added]",
     "addedAt": "2026-03-20T00:00:00.000Z",
     "status": "published",
-    "story": "Bowie wrote Heroes in Berlin at a time when the city was divided in two. The wall was real. The guards were real. The separation was real. And yet somehow the song is not about despair. It is about two people standing at the wall and deciding that, just for today, they are kings and queens.\r\n\r\nThat is the whole argument of the song: that even within limits, even within circumstances you did not choose, you can have something that is entirely yours.\r\n\r\nI think about this song when the world feels too large and too complicated. It is a reminder that you do not need to win everything. Sometimes one moment is enough."
+    "story": ""
+  },
+  {
+    "id": "song-hes-misstra-know-it-all",
+    "slug": "hes-misstra-know-it-all",
+    "title": "He's Misstra Know-It-All",
+    "artistIds": [
+      "artist-stevie-wonder"
+    ],
+    "album": "Innervisions",
+    "year": 1973,
+    "genreTags": [
+      "Soul",
+      "Pop"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-23T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-hypnotize",
+    "slug": "hypnotize",
+    "title": "Hypnotize",
+    "artistIds": [
+      "artist-the-notorious-big"
+    ],
+    "album": "Life After Death",
+    "year": 1997,
+    "genreTags": [
+      "Hip Hop",
+      "East Coast Hip Hop"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-23T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-i-just-called-to-say-i-love-you",
+    "slug": "i-just-called-to-say-i-love-you",
+    "title": "I Just Called to Say I Love You",
+    "artistIds": [
+      "artist-stevie-wonder"
+    ],
+    "album": "The Woman in Red",
+    "year": 1984,
+    "genreTags": [
+      "R&B"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-23T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-i-want-it-that-way",
+    "slug": "i-want-it-that-way",
+    "title": "I Want It That Way",
+    "artistIds": [
+      "artist-backstreet-boys"
+    ],
+    "album": "Millennium",
+    "year": 1999,
+    "genreTags": [
+      "Pop"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-26T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-if-i-had-a-hammer-the-hammer-song-live",
+    "slug": "if-i-had-a-hammer-the-hammer-song-live",
+    "title": "If I Had a Hammer (The Hammer Song) - Live",
+    "artistIds": [
+      "artist-sam-cooke"
+    ],
+    "album": "Sam Cooke at the Copa",
+    "year": 1964,
+    "genreTags": [
+      "Soul",
+      "Rhythm and Blues"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-23T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-imagine",
+    "slug": "imagine",
+    "title": "Imagine",
+    "artistIds": [
+      "artist-john-lennon"
+    ],
+    "album": "Imagine",
+    "year": 1971,
+    "genreTags": [
+      "Soft Rock",
+      "Pop"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-26T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-in-the-end",
+    "slug": "in-the-end",
+    "title": "In the End",
+    "artistIds": [
+      "artist-linkin-park"
+    ],
+    "album": "Hybrid Theory",
+    "year": 2000,
+    "genreTags": [
+      "Nu Metal",
+      "Rap Rock"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-26T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-jag-ger-dig-min-morgon",
+    "slug": "jag-ger-dig-min-morgon",
+    "title": "Jag ger dig min morgon",
+    "artistIds": [
+      "artist-fred-akerstrom"
+    ],
+    "album": "Två Tungor",
+    "year": 1972,
+    "genreTags": [
+      "Folk"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-25T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-jolene",
+    "slug": "jolene",
+    "title": "Jolene",
+    "artistIds": [
+      "artist-dolly-parton"
+    ],
+    "album": "Jolene",
+    "year": 1974,
+    "genreTags": [
+      "Country"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-26T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-just-idag-ar-jag-stark",
+    "slug": "just-idag-ar-jag-stark",
+    "title": "Just idag är jag stark",
+    "artistIds": [
+      "artist-kenta"
+    ],
+    "album": "Kenta",
+    "year": 1979,
+    "genreTags": [
+      "Pop"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-26T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-just-like-a-pill",
+    "slug": "just-like-a-pill",
+    "title": "Just Like a Pill",
+    "artistIds": [
+      "artist-pink"
+    ],
+    "album": "Missundaztood",
+    "year": 2002,
+    "genreTags": [
+      "Pop Rock"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-25T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-keep-ya-head-up",
+    "slug": "keep-ya-head-up",
+    "title": "Keep Ya Head Up",
+    "artistIds": [
+      "artist-2pac"
+    ],
+    "album": "Strictly 4 My N.I.G.G.A.Z...",
+    "year": 1993,
+    "genreTags": [
+      "Hip Hop",
+      "R&B"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-23T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-kentucky-rain",
+    "slug": "kentucky-rain",
+    "title": "Kentucky Rain",
+    "artistIds": [
+      "artist-elvis-presley"
+    ],
+    "album": "Elvis Live in Memphis",
+    "year": 1969,
+    "genreTags": [
+      "Country Rock",
+      "Soft Rock"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-26T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-kiss-me",
+    "slug": "kiss-me",
+    "title": "Kiss Me",
+    "artistIds": [
+      "artist-sixpence-none-the-richer"
+    ],
+    "album": "Sixpence None the Richer",
+    "year": 1998,
+    "genreTags": [
+      "Pop",
+      "Alternative Rock"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-25T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-lady",
+    "slug": "lady",
+    "title": "Lady",
+    "artistIds": [
+      "artist-dangelo"
+    ],
+    "album": "Brown Sugar",
+    "year": 1995,
+    "genreTags": [
+      "Neo Soul",
+      "R&B"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-26T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-layla",
+    "slug": "layla",
+    "title": "Layla",
+    "artistIds": [
+      "artist-derek-and-the-dominos"
+    ],
+    "album": "Layla and Other Assorted Love Songs",
+    "year": 1970,
+    "genreTags": [
+      "Blues Rock",
+      "Rock"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-26T00:00:00.000Z",
+    "status": "published",
+    "story": ""
   },
   {
     "id": "song-let-it-be",
@@ -26,15 +1081,191 @@
     "artistIds": [
       "artist-the-beatles"
     ],
+    "album": "Let It Be",
     "year": 1970,
+    "genreTags": [
+      "Rock",
+      "Pop Rock"
+    ],
     "themeIds": [
       "theme-peace",
       "theme-belonging"
     ],
-    "whyItMatters": "A reminder that some things are better accepted than fought.",
+    "whyItMatters": "[No memory added]",
     "addedAt": "2026-03-20T00:00:00.000Z",
     "status": "published",
-    "story": "Paul McCartney said he dreamed of his mother, who had died when he was fourteen. In the dream she came to him and told him it would be alright. Let it be.\r\n\r\nThat is the entire song. A dream. A mother's voice. The permission to stop struggling.\r\n\r\nI find it almost impossible to explain why this song hits so hard without explaining that sometimes the most radical thing you can do is accept something. Not give up — accept. Let the thing be what it is."
+    "story": ""
+  },
+  {
+    "id": "song-light-on",
+    "slug": "light-on",
+    "title": "Light On",
+    "artistIds": [
+      "artist-maggie-rogers"
+    ],
+    "album": "Heard It in a Past Life",
+    "year": 2018,
+    "genreTags": [
+      "Alternative Rock",
+      "Synth Pop"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-25T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-losing-you",
+    "slug": "losing-you",
+    "title": "Losing You",
+    "artistIds": [
+      "artist-solange"
+    ],
+    "album": true,
+    "year": 2012,
+    "genreTags": [
+      "R&B",
+      "Dance Pop"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-25T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-lovely-day",
+    "slug": "lovely-day",
+    "title": "Lovely Day",
+    "artistIds": [
+      "artist-bill-withers"
+    ],
+    "album": "Menagerie",
+    "year": 1977,
+    "genreTags": [
+      "R&B",
+      "Soul"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-25T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-marea-weve-lost-dancing",
+    "slug": "marea-weve-lost-dancing",
+    "title": "Marea (We've Lost Dancing)",
+    "artistIds": [
+      "artist-fred-again"
+    ],
+    "featuredArtistIds": [
+      "artist-the-blessed-madonna"
+    ],
+    "album": "Actual Life (April 14 - December 17 2020)",
+    "year": 2021,
+    "genreTags": [
+      "Deep House",
+      "House"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-25T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-me-against-the-world",
+    "slug": "me-against-the-world",
+    "title": "Me Against the World",
+    "artistIds": [
+      "artist-2pac"
+    ],
+    "album": "Me Against the World",
+    "year": 1995,
+    "genreTags": [
+      "Hip Hop",
+      "Conscious Hip Hop"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-23T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-mister-cool",
+    "slug": "mister-cool",
+    "title": "Mister Cool",
+    "artistIds": [
+      "artist-snook"
+    ],
+    "album": "Vi vet inte vart vi ska men vi ska komma dit",
+    "year": 2004,
+    "genreTags": [
+      "Hip Hop"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-25T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-mr-brightside",
+    "slug": "mr-brightside",
+    "title": "Mr. Brightside",
+    "artistIds": [
+      "artist-the-killers"
+    ],
+    "album": "Hot Fuss",
+    "year": 2004,
+    "genreTags": [
+      "Alternative Rock",
+      "Synth-pop"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-26T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-music-sounds-better-with-you",
+    "slug": "music-sounds-better-with-you",
+    "title": "Music Sounds Better with You",
+    "artistIds": [
+      "artist-stardust"
+    ],
+    "album": "Music Sounds Better with You",
+    "year": 1998,
+    "genreTags": [
+      "French House"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-23T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-my-heart-will-go-on",
+    "slug": "my-heart-will-go-on",
+    "title": "My Heart Will Go On",
+    "artistIds": [
+      "artist-celine-dion"
+    ],
+    "album": "Let's Talk About Love",
+    "year": 1997,
+    "genreTags": [
+      "Pop"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-23T00:00:00.000Z",
+    "status": "published",
+    "story": ""
   },
   {
     "id": "song-new-york-state-of-mind",
@@ -43,54 +1274,626 @@
     "artistIds": [
       "artist-billy-joel"
     ],
+    "album": "Turnstiles",
     "year": 1976,
+    "genreTags": [
+      "Soft Rock",
+      "Singer-Songwriter"
+    ],
     "themeIds": [
       "theme-home",
       "theme-belonging"
     ],
-    "whyItMatters": "A song about choosing home — not out of obligation, but out of deep, quiet love.",
+    "whyItMatters": "[No memory added]",
     "addedAt": "2026-03-20T00:00:00.000Z",
     "status": "published",
-    "story": "There are songs that describe places, and there are songs that describe how a place feels when it is yours. This is the second kind.\r\n\r\nBilly Joel wrote this on a bus back to New York after a stretch of time away. No grand occasion. Just the familiar pull of somewhere that fits you. The piano comes in slow, almost reluctant, and then it settles — exactly like arriving home.\r\n\r\nI put this on the list because I want you to know that feeling. The feeling of somewhere being yours not because you were born there, but because something in you chose it. That is a rare thing, and worth holding onto."
+    "story": ""
   },
   {
-    "id": "song-piano-man",
-    "slug": "piano-man",
-    "title": "Piano Man",
+    "id": "song-o-o-h-child",
+    "slug": "o-o-h-child",
+    "title": "O-o-h Child",
     "artistIds": [
-      "artist-billy-joel"
+      "artist-the-five-stairsteps"
     ],
-    "year": 1973,
-    "themeIds": [
-      "theme-belonging",
-      "theme-nostalgia"
+    "album": "Stairsteps",
+    "year": 1970,
+    "genreTags": [
+      "Soul",
+      "R&B"
     ],
-    "relatedSongIds": [
-      "song-new-york-state-of-mind"
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-23T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-on-melancholy-hill",
+    "slug": "on-melancholy-hill",
+    "title": "On Melancholy Hill",
+    "artistIds": [
+      "artist-gorillaz"
     ],
-    "whyItMatters": "A portrait of people who ended up somewhere different than they planned — and found each other anyway.",
+    "album": "Plastic Beach",
+    "year": 2010,
+    "genreTags": [
+      "Synth Pop",
+      "Psychedelic Pop"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-26T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-only-time",
+    "slug": "only-time",
+    "title": "Only Time",
+    "artistIds": [
+      "artist-enya"
+    ],
+    "album": "A Day Without Rain",
+    "year": 2000,
+    "genreTags": [
+      "New Age"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-26T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-purple-rain",
+    "slug": "purple-rain",
+    "title": "Purple Rain",
+    "artistIds": [
+      "artist-prince"
+    ],
+    "album": "Purple Rain",
+    "year": 1984,
+    "genreTags": [
+      "Soul",
+      "Rock"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-25T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-ramlar",
+    "slug": "ramlar",
+    "title": "Ramlar",
+    "artistIds": [
+      "artist-hakan-hellstrom"
+    ],
+    "album": "Känn ingen sorg för mig Göteborg",
+    "year": 2000,
+    "genreTags": [
+      "Indie Pop",
+      "Pop Rock"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-26T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-redemption-song",
+    "slug": "redemption-song",
+    "title": "Redemption Song",
+    "artistIds": [
+      "artist-bob-marley-and-the-wailers"
+    ],
+    "album": "Uprising",
+    "year": 1980,
+    "genreTags": [
+      "Folk"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-25T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-respect",
+    "slug": "respect",
+    "title": "Respect",
+    "artistIds": [
+      "artist-aretha-franklin"
+    ],
+    "album": "I Never Loved a Man the Way I Love You",
+    "year": 1967,
+    "genreTags": [
+      "Soul",
+      "R&B"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-25T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-return-of-the-mack-cj-x-tended",
+    "slug": "return-of-the-mack-cj-x-tended",
+    "title": "Return of the Mack (C&J X-Tended)",
+    "artistIds": [
+      "artist-mark-morrison"
+    ],
+    "album": "Return of the Mack",
+    "year": 1996,
+    "genreTags": [
+      "R&B",
+      "New Jack Swing"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-23T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-right-here-right-now",
+    "slug": "right-here-right-now",
+    "title": "Right Here, Right Now",
+    "artistIds": [
+      "artist-fatboy-slim"
+    ],
+    "album": "You've Come a Long Way, Baby",
+    "year": 1998,
+    "genreTags": [
+      "Big Beat",
+      "Electronic"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-26T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-rocket-man",
+    "slug": "rocket-man",
+    "title": "Rocket Man (I Think It's Going to Be a Long, Long Time)",
+    "artistIds": [
+      "artist-elton-john"
+    ],
+    "album": "Honky Chateau",
+    "year": 1972,
+    "genreTags": [
+      "Pop Rock",
+      "Glam Rock"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-23T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-rubber-band",
+    "slug": "rubber-band",
+    "title": "Rubber Band",
+    "artistIds": [
+      "artist-the-trammps"
+    ],
+    "album": "The Legendary Zing Album",
+    "year": 1975,
+    "genreTags": [
+      "Disco",
+      "Soul"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-26T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-running-up-that-hill-a-deal-with-god",
+    "slug": "running-up-that-hill-a-deal-with-god",
+    "title": "Running Up That Hill (A Deal with God)",
+    "artistIds": [
+      "artist-kate-bush"
+    ],
+    "album": "Hounds of Love",
+    "year": 1985,
+    "genreTags": [
+      "Synth Pop",
+      "Art Pop"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-26T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-sakta-vi-ga-genom-stan",
+    "slug": "sakta-vi-ga-genom-stan",
+    "title": "Sakta vi gå genom stan",
+    "artistIds": [
+      "artist-monica-zetterlund"
+    ],
+    "album": "Ahh! Monica!",
+    "year": 1962,
+    "genreTags": [
+      "Jazz",
+      "Vocal Jazz"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-26T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-september",
+    "slug": "september",
+    "title": "September",
+    "artistIds": [
+      "artist-earth-wind-and-fire"
+    ],
+    "album": "The Best of Earth, Wind & Fire, Vol. 1",
+    "year": 1978,
+    "genreTags": [
+      "Disco",
+      "Funk",
+      "R&B"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-26T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-son-of-a-preacher-man",
+    "slug": "son-of-a-preacher-man",
+    "title": "Son of a Preacher Man",
+    "artistIds": [
+      "artist-dusty-springfield"
+    ],
+    "album": "Dusty in Memphis",
+    "year": 1969,
+    "genreTags": [
+      "Soul",
+      "R&B"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-26T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-stan",
+    "slug": "stan",
+    "title": "Stan",
+    "artistIds": [
+      "artist-eminem"
+    ],
+    "featuredArtistIds": [
+      "artist-dido"
+    ],
+    "album": "The Marshall Mathers LP",
+    "year": 2000,
+    "genreTags": [
+      "Hip Hop"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-25T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-stand-by-me",
+    "slug": "stand-by-me",
+    "title": "Stand by Me",
+    "artistIds": [
+      "artist-ben-e-king"
+    ],
+    "album": "Don't Play That Song!",
+    "year": 1961,
+    "genreTags": [
+      "R&B",
+      "Soul"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-25T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-supercut",
+    "slug": "supercut",
+    "title": "Supercut",
+    "artistIds": [
+      "artist-lorde"
+    ],
+    "album": "Melodrama",
+    "year": 2017,
+    "genreTags": [
+      "Synth Pop",
+      "Electropop"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-26T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-take-me-home-country-roads",
+    "slug": "take-me-home-country-roads",
+    "title": "Take Me Home, Country Roads",
+    "artistIds": [
+      "artist-john-denver"
+    ],
+    "album": "Poems, Prayers & Promises",
+    "year": 1971,
+    "genreTags": [
+      "Country",
+      "Folk"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
     "addedAt": "2026-03-20T00:00:00.000Z",
     "status": "published",
-    "story": "Billy Joel wrote this based on his own experience playing bars in Los Angeles before he became famous. The people in the song — the bartender, the waitress, the old man — are all real. All of them are waiting for something.\r\n\r\nWhat I love about this song is that it does not pity them. It witnesses them. The piano man plays, they sing along, and for a few minutes they are all in the same place at the same time. That is no small thing.\r\n\r\nThere will be moments in your life when the place you are is not the place you imagined. This song is for those moments. Find the piano. Sing along."
+    "story": ""
   },
   {
-    "id": "song-space-oddity",
-    "slug": "space-oddity",
-    "title": "Space Oddity",
+    "id": "song-thats-life",
+    "slug": "thats-life",
+    "title": "That's Life",
     "artistIds": [
+      "artist-frank-sinatra"
+    ],
+    "album": "That's Life",
+    "year": 1966,
+    "genreTags": [
+      "Traditional Pop",
+      "Jazz"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-26T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-the-light",
+    "slug": "the-light",
+    "title": "The Light",
+    "artistIds": [
+      "artist-common"
+    ],
+    "album": "Like Water for Chocolate",
+    "year": 2000,
+    "genreTags": [
+      "Hip Hop"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-23T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-the-message-extended",
+    "slug": "the-message-extended",
+    "title": "The Message (Extended)",
+    "artistIds": [
+      "artist-grandmaster-flash-and-the-furious-five"
+    ],
+    "album": "The Message",
+    "year": 1982,
+    "genreTags": [
+      "Old-School Hip Hop",
+      "Conscious Hip Hop"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-23T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-torparrock",
+    "slug": "torparrock",
+    "title": "Torparrock",
+    "artistIds": [
+      "artist-sven-ingvars"
+    ],
+    "album": "Mer glöd än någonsin",
+    "year": 1994,
+    "genreTags": [
+      "Dansband",
+      "Rock"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-25T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-u-cant-touch-this",
+    "slug": "u-cant-touch-this",
+    "title": "U Can't Touch This",
+    "artistIds": [
+      "artist-mc-hammer"
+    ],
+    "album": "Please Hammer Don't Hurt 'Em",
+    "year": 1990,
+    "genreTags": [
+      "Hip-hop",
+      "Pop Rap"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-26T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-u-remind-me",
+    "slug": "u-remind-me",
+    "title": "U Remind Me",
+    "artistIds": [
+      "artist-usher"
+    ],
+    "album": 8701,
+    "year": 2001,
+    "genreTags": [
+      "R&B"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-26T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-under-pressure",
+    "slug": "under-pressure",
+    "title": "Under Pressure",
+    "artistIds": [
+      "artist-queen",
       "artist-david-bowie"
     ],
-    "year": 1969,
-    "themeIds": [
-      "theme-courage",
-      "theme-wonder"
+    "album": "Hot Space",
+    "year": 1981,
+    "genreTags": [
+      "Rock",
+      "Dance Rock"
     ],
-    "relatedSongIds": [
-      "song-heroes"
-    ],
-    "whyItMatters": "A song about going further than you planned and being okay with it.",
-    "addedAt": "2026-03-20T00:00:00.000Z",
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-25T00:00:00.000Z",
     "status": "published",
-    "story": "Ground Control to Major Tom. Count down. Ignition. And then the quiet of space.\r\n\r\nBowie recorded this in 1969, weeks before the moon landing. Whether that timing was planned or accidental hardly matters — the song arrived exactly when the world was ready to imagine leaving Earth behind.\r\n\r\nMajor Tom does not panic. He floats. He looks at Earth from far away and tells someone he loves them. That is the whole of it.\r\n\r\nI included this song because I want you to be willing to float sometimes. To go somewhere strange and unfamiliar and stay calm enough to notice how beautiful it looks from out there."
+    "story": ""
+  },
+  {
+    "id": "song-viva-la-vida",
+    "slug": "viva-la-vida",
+    "title": "Viva la Vida",
+    "artistIds": [
+      "artist-coldplay"
+    ],
+    "album": "Viva la Vida or Death and All His Friends",
+    "year": 2008,
+    "genreTags": [
+      "Baroque Pop",
+      "Art Rock"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-23T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-walk-of-life",
+    "slug": "walk-of-life",
+    "title": "Walk of Life",
+    "artistIds": [
+      "artist-dire-straits"
+    ],
+    "album": "Brothers in Arms",
+    "year": 1985,
+    "genreTags": [
+      "Pop Rock",
+      "Rock and Roll"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-25T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-walking-in-memphis",
+    "slug": "walking-in-memphis",
+    "title": "Walking in Memphis",
+    "artistIds": [
+      "artist-marc-cohn"
+    ],
+    "album": "Marc Cohn",
+    "year": 1991,
+    "genreTags": [
+      "Soft Rock",
+      "Pop"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-25T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-wannabe",
+    "slug": "wannabe",
+    "title": "Wannabe",
+    "artistIds": [
+      "artist-spice-girls"
+    ],
+    "album": "Spice",
+    "year": 1996,
+    "genreTags": [
+      "Dance Pop",
+      "Pop Rap"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-25T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-whats-going-on",
+    "slug": "whats-going-on",
+    "title": "What's Going On",
+    "artistIds": [
+      "artist-marvin-gaye"
+    ],
+    "album": "What's Going On",
+    "year": 1971,
+    "genreTags": [
+      "Soul",
+      "R&B"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-26T00:00:00.000Z",
+    "status": "published",
+    "story": ""
+  },
+  {
+    "id": "song-when-tomorrow-comes",
+    "slug": "when-tomorrow-comes",
+    "title": "When Tomorrow Comes",
+    "artistIds": [
+      "artist-eurythmics"
+    ],
+    "album": "Revenge",
+    "year": 1986,
+    "genreTags": [
+      "Pop Rock"
+    ],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-03-25T00:00:00.000Z",
+    "status": "published",
+    "story": ""
   }
 ]

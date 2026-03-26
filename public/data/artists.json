@@ -1,5 +1,87 @@
 [
   {
+    "id": "artist-2pac",
+    "slug": "2pac",
+    "name": "2Pac",
+    "genreTags": [
+      "hip-hop",
+      "gangsta-rap",
+      "conscious-hip-hop"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-a-tribe-called-quest",
+    "slug": "a-tribe-called-quest",
+    "name": "A Tribe Called Quest",
+    "genreTags": [
+      "hip-hop",
+      "jazz-rap",
+      "alternative-hip-hop"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-abba",
+    "slug": "abba",
+    "name": "ABBA",
+    "genreTags": [
+      "pop",
+      "disco"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-aqua",
+    "slug": "aqua",
+    "name": "Aqua",
+    "genreTags": [
+      "pop",
+      "dance-pop"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-aretha-franklin",
+    "slug": "aretha-franklin",
+    "name": "Aretha Franklin",
+    "genreTags": [
+      "soul",
+      "r&b"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-backstreet-boys",
+    "slug": "backstreet-boys",
+    "name": "Backstreet Boys",
+    "genreTags": [
+      "pop",
+      "teen-pop"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-ben-e-king",
+    "slug": "ben-e-king",
+    "name": "Ben E. King",
+    "genreTags": [
+      "soul",
+      "r&b"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-bill-withers",
+    "slug": "bill-withers",
+    "name": "Bill Withers",
+    "genreTags": [
+      "r&b",
+      "soul"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
     "id": "artist-billy-joel",
     "slug": "billy-joel",
     "name": "Billy Joel",
@@ -10,7 +92,127 @@
       "pop",
       "piano-rock"
     ],
-    "summary": "One of the best-selling music artists of all time, known for combining rock, pop, and classical sensibilities with deeply personal storytelling."
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-bob-dylan",
+    "slug": "bob-dylan",
+    "name": "Bob Dylan",
+    "birthYear": 1941,
+    "country": "United States",
+    "genreTags": [
+      "folk",
+      "rock",
+      "country"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-bob-marley-and-the-wailers",
+    "slug": "bob-marley-and-the-wailers",
+    "name": "Bob Marley & The Wailers",
+    "genreTags": [
+      "reggae",
+      "folk"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-britney-spears",
+    "slug": "britney-spears",
+    "name": "Britney Spears",
+    "genreTags": [
+      "pop",
+      "dance-pop",
+      "teen-pop"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-bruce-springsteen",
+    "slug": "bruce-springsteen",
+    "name": "Bruce Springsteen",
+    "genreTags": [
+      "rock",
+      "heartland-rock",
+      "singer-songwriter"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-carmen-twillie",
+    "slug": "carmen-twillie",
+    "name": "Carmen Twillie",
+    "genreTags": [
+      "soundtrack",
+      "pop",
+      "musical"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-celine-dion",
+    "slug": "celine-dion",
+    "name": "Celine Dion",
+    "genreTags": [
+      "pop",
+      "adult-contemporary",
+      "soft-rock"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-cher",
+    "slug": "cher",
+    "name": "Cher",
+    "genreTags": [
+      "pop",
+      "dance-pop"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-coldplay",
+    "slug": "coldplay",
+    "name": "Coldplay",
+    "genreTags": [
+      "alternative-rock",
+      "pop-rock",
+      "art-rock"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-common",
+    "slug": "common",
+    "name": "Common",
+    "genreTags": [
+      "hip-hop",
+      "conscious-hip-hop",
+      "neo-soul"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-creedence-clearwater-revival",
+    "slug": "creedence-clearwater-revival",
+    "name": "Creedence Clearwater Revival",
+    "genreTags": [
+      "roots-rock",
+      "country-rock",
+      "swamp-rock"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-dangelo",
+    "slug": "dangelo",
+    "name": "D'Angelo",
+    "genreTags": [
+      "neo-soul",
+      "r&b"
+    ],
+    "summary": "[No memory added]"
   },
   {
     "id": "artist-david-bowie",
@@ -23,7 +225,678 @@
       "glam-rock",
       "art-rock"
     ],
-    "summary": "A master of reinvention who shaped decades of music, fashion, and culture. Few artists have ever moved so fearlessly between worlds."
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-derek-and-the-dominos",
+    "slug": "derek-and-the-dominos",
+    "name": "Derek & The Dominos",
+    "genreTags": [
+      "blues-rock",
+      "rock"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-dido",
+    "slug": "dido",
+    "name": "Dido",
+    "genreTags": [
+      "pop",
+      "adult-contemporary",
+      "trip-hop"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-dire-straits",
+    "slug": "dire-straits",
+    "name": "Dire Straits",
+    "genreTags": [
+      "rock",
+      "roots-rock",
+      "pub-rock"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-dolly-parton",
+    "slug": "dolly-parton",
+    "name": "Dolly Parton",
+    "genreTags": [
+      "country",
+      "country-pop"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-don-mclean",
+    "slug": "don-mclean",
+    "name": "Don McLean",
+    "genreTags": [
+      "folk",
+      "folk-rock",
+      "singer-songwriter"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-dusty-springfield",
+    "slug": "dusty-springfield",
+    "name": "Dusty Springfield",
+    "genreTags": [
+      "pop",
+      "blue-eyed-soul"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-earth-wind-and-fire",
+    "slug": "earth-wind-and-fire",
+    "name": "Earth, Wind & Fire",
+    "genreTags": [
+      "disco",
+      "funk"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-elton-john",
+    "slug": "elton-john",
+    "name": "Elton John",
+    "genreTags": [
+      "pop-rock",
+      "glam-rock",
+      "soft-rock"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-elvis-presley",
+    "slug": "elvis-presley",
+    "name": "Elvis Presley",
+    "genreTags": [
+      "rock-and-roll",
+      "rockabilly"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-eminem",
+    "slug": "eminem",
+    "name": "Eminem",
+    "genreTags": [
+      "hip-hop",
+      "rap",
+      "midwest-hip-hop"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-enya",
+    "slug": "enya",
+    "name": "Enya",
+    "genreTags": [
+      "new-age",
+      "ambient"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-etta-james",
+    "slug": "etta-james",
+    "name": "Etta James",
+    "genreTags": [
+      "soul",
+      "blues"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-eurythmics",
+    "slug": "eurythmics",
+    "name": "Eurythmics",
+    "genreTags": [
+      "pop-rock",
+      "synth-pop"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-fatboy-slim",
+    "slug": "fatboy-slim",
+    "name": "Fatboy Slim",
+    "genreTags": [
+      "big-beat",
+      "electronic"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-first-aid-kit",
+    "slug": "first-aid-kit",
+    "name": "First Aid Kit",
+    "genreTags": [
+      "folk",
+      "country"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-fleetwood-mac",
+    "slug": "fleetwood-mac",
+    "name": "Fleetwood Mac",
+    "genreTags": [
+      "rock",
+      "pop-rock",
+      "soft-rock"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-florence-and-the-machine",
+    "slug": "florence-and-the-machine",
+    "name": "Florence + The Machine",
+    "genreTags": [
+      "indie-pop",
+      "alternative-rock"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-frank-sinatra",
+    "slug": "frank-sinatra",
+    "name": "Frank Sinatra",
+    "genreTags": [
+      "traditional-pop",
+      "jazz"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-fred-again",
+    "slug": "fred-again",
+    "name": "Fred again..",
+    "genreTags": [
+      "dance",
+      "house"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-fred-akerstrom",
+    "slug": "fred-akerstrom",
+    "name": "Fred Åkerström",
+    "genreTags": [
+      "folk",
+      "vispop"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-gorillaz",
+    "slug": "gorillaz",
+    "name": "Gorillaz",
+    "genreTags": [
+      "alternative-rock",
+      "synth-pop"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-grandmaster-flash-and-the-furious-five",
+    "slug": "grandmaster-flash-and-the-furious-five",
+    "name": "Grandmaster Flash & The Furious Five",
+    "genreTags": [
+      "hip-hop",
+      "old-school-hip-hop",
+      "electro"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-hakan-hellstrom",
+    "slug": "hakan-hellstrom",
+    "name": "Håkan Hellström",
+    "genreTags": [
+      "indie-pop",
+      "pop-rock"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-harry-nilsson",
+    "slug": "harry-nilsson",
+    "name": "Harry Nilsson",
+    "genreTags": [
+      "folk-rock",
+      "soft-rock"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-jay-z",
+    "slug": "jay-z",
+    "name": "Jay-Z",
+    "genreTags": [
+      "hip-hop",
+      "east-coast-hip-hop",
+      "rap"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-jimi-hendrix",
+    "slug": "jimi-hendrix",
+    "name": "Jimi Hendrix",
+    "genreTags": [
+      "rock",
+      "psychedelic-rock"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-john-denver",
+    "slug": "john-denver",
+    "name": "John Denver",
+    "birthYear": 1943,
+    "country": "United States",
+    "genreTags": [
+      "country",
+      "folk",
+      "pop"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-john-lennon",
+    "slug": "john-lennon",
+    "name": "John Lennon",
+    "genreTags": [
+      "rock",
+      "pop"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-johnny-cash",
+    "slug": "johnny-cash",
+    "name": "Johnny Cash",
+    "genreTags": [
+      "country",
+      "rockabilly"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-justin-timberlake",
+    "slug": "justin-timberlake",
+    "name": "Justin Timberlake",
+    "genreTags": [
+      "pop",
+      "r&b"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-kate-bush",
+    "slug": "kate-bush",
+    "name": "Kate Bush",
+    "genreTags": [
+      "art-pop",
+      "synth-pop"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-kenta",
+    "slug": "kenta",
+    "name": "Kenta",
+    "genreTags": [
+      "pop",
+      "singer-songwriter"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-lebo-m",
+    "slug": "lebo-m",
+    "name": "Lebo M",
+    "genreTags": [
+      "soundtrack",
+      "world",
+      "musical"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-linkin-park",
+    "slug": "linkin-park",
+    "name": "Linkin Park",
+    "genreTags": [
+      "nu-metal",
+      "rap-rock"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-logic",
+    "slug": "logic",
+    "name": "Logic",
+    "genreTags": [
+      "hip-hop",
+      "rap"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-lorde",
+    "slug": "lorde",
+    "name": "Lorde",
+    "genreTags": [
+      "synth-pop",
+      "electropop"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-maggie-rogers",
+    "slug": "maggie-rogers",
+    "name": "Maggie Rogers",
+    "genreTags": [
+      "alternative-rock",
+      "synth-pop"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-marc-cohn",
+    "slug": "marc-cohn",
+    "name": "Marc Cohn",
+    "genreTags": [
+      "soft-rock",
+      "pop"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-mariah-carey",
+    "slug": "mariah-carey",
+    "name": "Mariah Carey",
+    "genreTags": [
+      "pop",
+      "r&b"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-mark-morrison",
+    "slug": "mark-morrison",
+    "name": "Mark Morrison",
+    "genreTags": [
+      "r&b",
+      "new-jack-swing",
+      "dance-pop"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-marvin-gaye",
+    "slug": "marvin-gaye",
+    "name": "Marvin Gaye",
+    "genreTags": [
+      "soul",
+      "r&b"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-mc-hammer",
+    "slug": "mc-hammer",
+    "name": "MC Hammer",
+    "genreTags": [
+      "hip-hop",
+      "pop-rap"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-mf-doom",
+    "slug": "mf-doom",
+    "name": "MF DOOM",
+    "genreTags": [
+      "hip-hop",
+      "underground-hip-hop"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-monica-zetterlund",
+    "slug": "monica-zetterlund",
+    "name": "Monica Zetterlund",
+    "genreTags": [
+      "jazz",
+      "vocal-jazz"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-morrissey",
+    "slug": "morrissey",
+    "name": "Morrissey",
+    "genreTags": [
+      "alternative-rock",
+      "indie-pop"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-oasis",
+    "slug": "oasis",
+    "name": "Oasis",
+    "genreTags": [
+      "britpop",
+      "rock"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-oliver-cheatham",
+    "slug": "oliver-cheatham",
+    "name": "Oliver Cheatham",
+    "genreTags": [
+      "disco",
+      "funk",
+      "r&b"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-oskar-linnros",
+    "slug": "oskar-linnros",
+    "name": "Oskar Linnros",
+    "genreTags": [
+      "pop",
+      "soul"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-pebbles-the-invisible-girl",
+    "slug": "pebbles-the-invisible-girl",
+    "name": "Pebbles the Invisible Girl",
+    "genreTags": [
+      "soul"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-pink",
+    "slug": "pink",
+    "name": "P!nk",
+    "genreTags": [
+      "pop-rock",
+      "pop",
+      "r&b"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-prince",
+    "slug": "prince",
+    "name": "Prince",
+    "genreTags": [
+      "soul",
+      "funk",
+      "rock"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-queen",
+    "slug": "queen",
+    "name": "Queen",
+    "genreTags": [
+      "rock",
+      "glam-rock",
+      "progressive-rock"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-redbone",
+    "slug": "redbone",
+    "name": "Redbone",
+    "genreTags": [
+      "rock",
+      "soul"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-robyn",
+    "slug": "robyn",
+    "name": "Robyn",
+    "genreTags": [
+      "electropop",
+      "synth-pop"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-sam-cooke",
+    "slug": "sam-cooke",
+    "name": "Sam Cooke",
+    "genreTags": [
+      "soul",
+      "rhythm-and-blues",
+      "gospel"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-sixpence-none-the-richer",
+    "slug": "sixpence-none-the-richer",
+    "name": "Sixpence None the Richer",
+    "genreTags": [
+      "pop",
+      "alternative-rock"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-snook",
+    "slug": "snook",
+    "name": "Snook",
+    "genreTags": [
+      "hip-hop",
+      "rap"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-solange",
+    "slug": "solange",
+    "name": "Solange",
+    "genreTags": [
+      "r&b",
+      "dance-pop"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-souls-of-mischief",
+    "slug": "souls-of-mischief",
+    "name": "Souls of Mischief",
+    "genreTags": [
+      "hip-hop",
+      "alternative-hip-hop",
+      "west-coast-hip-hop"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-spice-girls",
+    "slug": "spice-girls",
+    "name": "Spice Girls",
+    "genreTags": [
+      "dance-pop",
+      "teen-pop",
+      "pop"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-stardust",
+    "slug": "stardust",
+    "name": "Stardust",
+    "genreTags": [
+      "french-house",
+      "house",
+      "dance"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-stevie-wonder",
+    "slug": "stevie-wonder",
+    "name": "Stevie Wonder",
+    "genreTags": [
+      "soul",
+      "funk",
+      "r&b"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-sven-ingvars",
+    "slug": "sven-ingvars",
+    "name": "Sven-Ingvars",
+    "genreTags": [
+      "dansband",
+      "rock"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-swedish-house-mafia",
+    "slug": "swedish-house-mafia",
+    "name": "Swedish House Mafia",
+    "genreTags": [
+      "progressive-house",
+      "dance"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-taylor-swift",
+    "slug": "taylor-swift",
+    "name": "Taylor Swift",
+    "genreTags": [
+      "pop",
+      "country"
+    ],
+    "summary": "[No memory added]"
   },
   {
     "id": "artist-the-beatles",
@@ -39,6 +912,119 @@
     "relatedArtistIds": [
       "artist-david-bowie"
     ],
-    "summary": "The most influential band in the history of popular music. Everything that came after them exists in their shadow, knowingly or not."
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-the-blessed-madonna",
+    "slug": "the-blessed-madonna",
+    "name": "The Blessed Madonna",
+    "genreTags": [
+      "dance",
+      "house"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-the-five-stairsteps",
+    "slug": "the-five-stairsteps",
+    "name": "The Five Stairsteps",
+    "genreTags": [
+      "soul",
+      "r&b",
+      "psychedelic-soul"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-the-killers",
+    "slug": "the-killers",
+    "name": "The Killers",
+    "genreTags": [
+      "alternative-rock",
+      "synth-pop"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-the-notorious-big",
+    "slug": "the-notorious-big",
+    "name": "The Notorious B.I.G.",
+    "genreTags": [
+      "hip-hop",
+      "east-coast-hip-hop",
+      "gangsta-rap"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-the-ronettes",
+    "slug": "the-ronettes",
+    "name": "The Ronettes",
+    "genreTags": [
+      "pop",
+      "r&b"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-the-trammps",
+    "slug": "the-trammps",
+    "name": "The Trammps",
+    "genreTags": [
+      "disco",
+      "soul"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-timbuktu",
+    "slug": "timbuktu",
+    "name": "Timbuktu",
+    "genreTags": [
+      "hip-hop",
+      "rap"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-tracy-chapman",
+    "slug": "tracy-chapman",
+    "name": "Tracy Chapman",
+    "genreTags": [
+      "folk",
+      "folk-rock",
+      "singer-songwriter"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-usher",
+    "slug": "usher",
+    "name": "Usher",
+    "genreTags": [
+      "r&b",
+      "pop"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-van-morrison",
+    "slug": "van-morrison",
+    "name": "Van Morrison",
+    "genreTags": [
+      "folk-rock",
+      "r&b"
+    ],
+    "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-veronica-maggio",
+    "slug": "veronica-maggio",
+    "name": "Veronica Maggio",
+    "genreTags": [
+      "soul-pop",
+      "pop"
+    ],
+    "summary": "[No memory added]"
   }
 ]
