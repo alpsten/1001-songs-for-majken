@@ -10,5 +10,5 @@ genreTags:
   - psychedelic
 relatedArtistIds:
   - artist-david-bowie
-summary: The most influential band in the history of popular music. Everything that came after them exists in their shadow, knowingly or not.
+summary: '[No memory added]'
 ---
