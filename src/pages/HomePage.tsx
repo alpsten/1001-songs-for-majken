@@ -1,74 +1,66 @@
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
-import { loadSongs, loadArtists, loadThemes } from "../lib/parseContent"
+import { loadSongs, loadArtists } from "../lib/parseContent"
 import { getDailySong } from "../lib/getDailySong"
-import type { Song, Artist, Theme } from "../types"
-import styles from "./HomePage.module.css"
+import { getSongArtistCredit } from "../lib/songArtists"
+import type { Song, Artist } from "../types"
 
 export default function HomePage() {
   const [dailySong, setDailySong] = useState<Song | null>(null)
-  const [artists, setArtists] = useState<Artist[]>([])
-  const [themes, setThemes] = useState<Theme[]>([])
-  const [recentSongs, setRecentSongs] = useState<Song[]>([])
+  const [artistsById, setArtistsById] = useState<Record<string, Artist>>({})
 
   useEffect(() => {
-    Promise.all([loadSongs(), loadArtists(), loadThemes()]).then(([songs, arts, thms]) => {
+    Promise.all([loadSongs(), loadArtists()]).then(([songs, arts]) => {
       setDailySong(getDailySong(songs))
-      setArtists(arts.slice(0, 6))
-      setThemes(thms)
-      const sorted = [...songs]
-        .filter((s) => s.status === "published")
-        .sort((a, b) => b.addedAt.localeCompare(a.addedAt))
-        .slice(0, 5)
-      setRecentSongs(sorted)
+      setArtistsById(
+        arts.reduce<Record<string, Artist>>((acc, artist) => {
+          acc[artist.id] = artist
+          return acc
+        }, {})
+      )
     })
   }, [])
 
+  const dailySongArtists = dailySong ? getSongArtistCredit(dailySong, artistsById) : ""
+
   return (
-    <div className={styles.page}>
-      <section className={styles.intro}>
-        <h1>1001 Songs for Majken</h1>
-        <p>A music archive built with love. Songs, stories, and the memories attached to them — a world to explore at any pace.</p>
-      </section>
+    <div>
+      {/* Hero */}
+      <section
+        className="flex items-center justify-center"
+        style={{ minHeight: "min(100vh, 52rem)", padding: "7rem 2rem 4rem" }}
+      >
+        <div className="flex flex-col items-center gap-8 w-full" style={{ maxWidth: 860 }}>
+          <h1
+            className="text-white font-normal text-center tracking-wide leading-none"
+            style={{ textShadow: "0 2px 40px rgba(0,0,0,0.25)" }}
+          >
+            <span className="block text-7xl sm:text-8xl lg:text-7xl">1001</span>
+            <span className="mt-3 hidden text-5xl tracking-[0.18em] uppercase lg:block">Songs for Majken</span>
+            <span className="mt-3 block text-5xl tracking-[0.18em] uppercase sm:text-5xl lg:hidden">Songs</span>
+            <span className="mt-3 block text-5xl tracking-[0.18em] uppercase sm:text-5xl lg:hidden">For</span>
+            <span className="mt-3 block text-5xl tracking-[0.18em] uppercase sm:text-5xl lg:hidden">Majken</span>
+          </h1>
 
-      {dailySong && (
-        <section className={styles.section}>
-          <h2>Song of the day</h2>
-          <Link to={`/songs/${dailySong.slug}`} className={styles.dailyCard}>
-            <div className={styles.dailyTitle}>{dailySong.title}</div>
-            <div className={styles.dailyWhy}>{dailySong.whyItMatters}</div>
-          </Link>
-        </section>
-      )}
-
-      <section className={styles.section}>
-        <h2>Explore by theme</h2>
-        <div className={styles.tagList}>
-          {themes.map((t) => (
-            <Link key={t.id} to={`/themes/${t.slug}`} className={styles.tag}>{t.name}</Link>
-          ))}
+          {dailySong && (
+            <div className="mx-auto w-fit max-w-full">
+              <Link
+                to={`/songs/${dailySong.slug}`}
+                className="ui-surface ui-card-link sotd-card block max-w-full"
+              >
+                <div className="sotd-card-body text-center">
+                  <div className="sotd-kicker">Song of the day</div>
+                  <p className="font-sans text-[17px] font-semibold text-white">
+                    &apos;{dailySong.title}&apos;{dailySongArtists ? ` by ${dailySongArtists}` : ""}
+                  </p>
+                  <p className="archive-meta archive-meta-center mt-0">
+                    {dailySong.album ? `${dailySong.album} (${dailySong.year})` : `(${dailySong.year})`}
+                  </p>
+                </div>
+              </Link>
+            </div>
+          )}
         </div>
-      </section>
-
-      <section className={styles.section}>
-        <h2>Explore by artist</h2>
-        <div className={styles.artistList}>
-          {artists.map((a) => (
-            <Link key={a.id} to={`/artists/${a.slug}`} className={styles.artistLink}>{a.name}</Link>
-          ))}
-        </div>
-      </section>
-
-      <section className={styles.section}>
-        <h2>Recently added</h2>
-        <ul className={styles.songList}>
-          {recentSongs.map((s) => (
-            <li key={s.id}>
-              <Link to={`/songs/${s.slug}`}>{s.title}</Link>
-              <span className={styles.year}>{s.year}</span>
-            </li>
-          ))}
-        </ul>
       </section>
     </div>
   )
