@@ -65,10 +65,11 @@ function main() {
 
   // Validate songs
   for (const song of songs) {
-    errors.push(...required(song, ["id", "slug", "title", "artistIds", "year", "whyItMatters", "status"]))
+    errors.push(...required(song, ["id", "slug", "title", "artistIds", "year", "whyItMatters", "addedAt", "status"]))
 
     const refs: Array<{ field: string; ids: string[] }> = [
       { field: "artistIds", ids: (song.data.artistIds as string[]) ?? [] },
+      { field: "featuredArtistIds", ids: (song.data.featuredArtistIds as string[]) ?? [] },
       { field: "themeIds", ids: (song.data.themeIds as string[]) ?? [] },
       { field: "memoryIds", ids: (song.data.memoryIds as string[]) ?? [] },
       { field: "relatedSongIds", ids: (song.data.relatedSongIds as string[]) ?? [] },
@@ -92,6 +93,11 @@ function main() {
       errors.push(`  ${song.file}: year ${year} looks wrong`)
     }
 
+    const addedAt = song.data.addedAt
+    if (addedAt && Number.isNaN(new Date(addedAt as string | Date).getTime())) {
+      errors.push(`  ${song.file}: addedAt "${String(addedAt)}" is not a valid date`)
+    }
+
     if (!song.body?.trim()) {
       warnings.push(`  ${song.file}: story body is empty`)
     }
@@ -102,6 +108,7 @@ function main() {
   for (const song of songs) {
     const allRefs: string[] = [
       ...((song.data.artistIds as string[]) ?? []),
+      ...((song.data.featuredArtistIds as string[]) ?? []),
       ...((song.data.themeIds as string[]) ?? []),
       ...((song.data.memoryIds as string[]) ?? []),
       ...((song.data.relatedSongIds as string[]) ?? []),

@@ -11,6 +11,8 @@ export type Song = {
   slug: string
   title: string
   artistIds: EntityId[]
+  featuredArtistIds?: EntityId[]
+  album?: string
   albumId?: EntityId
   year: number
   whyItMatters: string
