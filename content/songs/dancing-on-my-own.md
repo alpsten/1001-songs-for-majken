@@ -8,7 +8,7 @@ album: Body Talk Pt. 1
 year: 2010
 genreTags:
   - Electropop
-  - Synth Pop
+  - Synth-pop
 themeIds: []
 whyItMatters: '[No memory added]'
 addedAt: 2026-03-25

@@ -7,7 +7,7 @@ artistIds:
 album: Plastic Beach
 year: 2010
 genreTags:
-  - Synth Pop
+  - Synth-pop
   - Psychedelic Pop
 themeIds: []
 whyItMatters: '[No memory added]'

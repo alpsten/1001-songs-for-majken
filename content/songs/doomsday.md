@@ -9,7 +9,7 @@ featuredArtistIds:
 album: "Operation: Doomsday"
 year: 1999
 genreTags:
-  - Hip Hop
+  - Hip-hop
 themeIds: []
 whyItMatters: '[No memory added]'
 addedAt: 2026-03-26

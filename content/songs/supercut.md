@@ -7,7 +7,7 @@ artistIds:
 album: Melodrama
 year: 2017
 genreTags:
-  - Synth Pop
+  - Synth-pop
   - Electropop
 themeIds: []
 whyItMatters: '[No memory added]'

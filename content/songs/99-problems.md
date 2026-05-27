@@ -7,7 +7,7 @@ artistIds:
 album: The Black Album
 year: 2003
 genreTags:
-  - Hip Hop
+  - Hip-hop
   - Rap Rock
 themeIds: []
 whyItMatters: '[No memory added]'

@@ -25,6 +25,7 @@ export function formatGenreTag(tag: string): string {
 
   if (normalized === "r&b") return "R&B"
   if (normalized === "hip-hop") return "Hip-hop"
+  if (normalized === "synth-pop") return "Synth-pop"
 
   return tag
     .replace(/\br&b\b/gi, "R&B")

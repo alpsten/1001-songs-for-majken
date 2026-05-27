@@ -8,7 +8,7 @@ album: Heard It in a Past Life
 year: 2018
 genreTags:
   - Alternative Rock
-  - Synth Pop
+  - Synth-pop
 themeIds: []
 whyItMatters: '[No memory added]'
 addedAt: 2026-03-25

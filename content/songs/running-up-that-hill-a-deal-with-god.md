@@ -7,7 +7,7 @@ artistIds:
 album: Hounds of Love
 year: 1985
 genreTags:
-  - Synth Pop
+  - Synth-pop
   - Art Pop
 themeIds: []
 whyItMatters: '[No memory added]'

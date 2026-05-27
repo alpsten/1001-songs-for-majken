@@ -7,7 +7,7 @@ artistIds:
 album: Like Water for Chocolate
 year: 2000
 genreTags:
-  - Hip Hop
+  - Hip-hop
 themeIds: []
 whyItMatters: '[No memory added]'
 addedAt: 2026-03-23

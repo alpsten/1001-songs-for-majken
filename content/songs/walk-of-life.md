@@ -8,7 +8,7 @@ album: Brothers in Arms
 year: 1985
 genreTags:
   - Pop Rock
-  - Rock and Roll
+  - Rock
 themeIds: []
 whyItMatters: '[No memory added]'
 addedAt: 2026-03-25

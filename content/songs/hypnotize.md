@@ -7,8 +7,8 @@ artistIds:
 album: Life After Death
 year: 1997
 genreTags:
-  - Hip Hop
-  - East Coast Hip Hop
+  - Hip-hop
+  - East Coast Hip-hop
 themeIds: []
 whyItMatters: '[No memory added]'
 addedAt: 2026-03-23

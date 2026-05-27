@@ -7,7 +7,7 @@ artistIds:
 album: Strictly 4 My N.I.G.G.A.Z...
 year: 1993
 genreTags:
-  - Hip Hop
+  - Hip-hop
   - R&B
 themeIds: []
 whyItMatters: '[No memory added]'

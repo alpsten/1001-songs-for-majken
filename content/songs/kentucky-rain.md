@@ -4,7 +4,7 @@ slug: kentucky-rain
 title: Kentucky Rain
 artistIds:
   - artist-elvis-presley
-album: Elvis Live in Memphis
+album: From Elvis in Memphis
 year: 1969
 genreTags:
   - Country Rock

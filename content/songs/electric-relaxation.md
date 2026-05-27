@@ -8,7 +8,7 @@ album: Midnight Marauders
 year: 1993
 genreTags:
   - Jazz Rap
-  - Hip Hop
+  - Hip-hop
 themeIds: []
 whyItMatters: '[No memory added]'
 addedAt: 2026-03-23

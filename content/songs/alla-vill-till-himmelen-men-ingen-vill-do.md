@@ -7,7 +7,7 @@ artistIds:
 album: Alla vill till himmelen men ingen vill dö
 year: 2005
 genreTags:
-  - Hip Hop
+  - Hip-hop
 themeIds: []
 whyItMatters: '[No memory added]'
 addedAt: 2026-03-25

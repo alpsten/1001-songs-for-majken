@@ -7,8 +7,8 @@ artistIds:
 album: 93 'til Infinity
 year: 1993
 genreTags:
-  - Hip Hop
-  - Alternative Hip Hop
+  - Hip-hop
+  - Alternative Hip-hop
 themeIds: []
 whyItMatters: '[No memory added]'
 addedAt: 2026-03-25
