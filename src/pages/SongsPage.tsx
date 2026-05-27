@@ -153,10 +153,10 @@ export default function SongsPage() {
                 />
               </label>
 
-              <label className="filter-field">
+              <label className="filter-field filter-field-genre">
                 <select
                   aria-label="Filter songs by genre"
-                  className="filter-select"
+                  className="filter-select filter-select-compact"
                   value={selectedGenre}
                   onChange={(event) => updateFilter("genre", event.target.value)}
                 >
@@ -167,10 +167,10 @@ export default function SongsPage() {
                 </select>
               </label>
 
-              <label className="filter-field">
+              <label className="filter-field filter-field-year">
                 <select
                   aria-label="Filter songs by year"
-                  className="filter-select"
+                  className="filter-select filter-select-compact"
                   value={selectedDecade}
                   onChange={(event) => updateFilter("decade", event.target.value)}
                 >
@@ -185,7 +185,7 @@ export default function SongsPage() {
                 <label className="filter-field filter-field-multi-artist">
                   <select
                     aria-label="Filter songs by artists with two or more songs"
-                    className="filter-select"
+                    className="filter-select filter-select-wide"
                     value={artistsWithMultipleSongs.some(({ artist }) => artist.name === selectedArtistQuery) ? selectedArtistQuery : ""}
                     onChange={(event) => updateFilter("artist", event.target.value)}
                   >

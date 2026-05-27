@@ -261,13 +261,17 @@ a { color: #e07848; }
 
 .filter-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 0.9fr) minmax(0, 1.2fr);
   gap: 0.8rem;
 }
 
 .filter-field {
   display: flex;
   flex-direction: column;
+}
+
+.filter-field-search {
+  grid-column: 1 / -1;
 }
 
 .filter-select {
@@ -283,6 +287,16 @@ a { color: #e07848; }
   font-size: 0.9rem;
   appearance: none;
   outline: none;
+}
+
+.filter-select-compact {
+  min-height: 44px;
+  padding: 0 0.8rem;
+}
+
+.filter-select-wide {
+  min-height: 44px;
+  padding: 0 1.15rem;
 }
 
 .filter-input {
