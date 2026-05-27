@@ -4,7 +4,27 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>1001-songs-for-majken</title>
+    <title>1001 Songs for Majken</title>
+    <script>
+      // Restore path encoded by 404.html redirect
+      (function () {
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect !== location.href) {
+          history.replaceState(null, null, redirect);
+        }
+        var p = new URLSearchParams(location.search).get('p');
+        if (p) {
+          var qs = new URLSearchParams(location.search).get('q');
+          history.replaceState(
+            null, null,
+            location.pathname + (p ? '/' + p.replace(/~and~/g, '&') : '') +
+            (qs ? '?' + qs.replace(/~and~/g, '&') : '') +
+            location.hash
+          );
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
