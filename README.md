@@ -105,7 +105,7 @@ Every 6 hours (and on manual dispatch) it:
 - creates a new `content/songs/*.md` stub (and any missing `content/artists/*.md` stub) for tracks that aren't in the archive yet, tagged with `spotifyId` and a `[No memory added]` placeholder
 - links existing hand-written songs to their Spotify track by matching on title, backfilling `spotifyId` so future syncs recognize them directly
 - marks a song `status: archived` (never deletes it) when its track disappears from the playlist, and flips it back to `published` if it reappears
-- opens a pull request with the changes instead of committing straight to `master`, so new entries can be reviewed, tagged, or given a memory before they go live
+- if anything changed, commits straight to `master` and triggers the deploy workflow, so the live site updates automatically within a few minutes — no manual review step
 
 To enable it, create a [Spotify Developer app](https://developer.spotify.com/dashboard) and add these repository secrets (Settings → Secrets and variables → Actions):
 

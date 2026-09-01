@@ -7,7 +7,7 @@ on:
 
 permissions:
   contents: write
-  pull-requests: write
+  actions: write
 
 jobs:
   sync:
@@ -30,20 +30,23 @@ jobs:
 
       - run: npm run validate
 
-      - uses: peter-evans/create-pull-request@v7
-        with:
-          commit-message: "content: sync songs with Spotify playlist"
-          title: "Spotify playlist sync"
-          body: |
-            Auto-generated from the current state of the Spotify playlist.
+      - name: Commit and push if changed
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add content/songs content/artists
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git commit -m "content: sync songs with Spotify playlist"
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
 
-            - New tracks are added as song (and, where needed, artist) stubs with `[No memory added]` placeholders.
-            - Tracks removed from the playlist are marked `status: archived` rather than deleted.
-            - Tracks that reappear on the playlist are restored to `status: published`.
-
-            Review the new entries, add genre tags / a memory where you'd like, then merge.
-          branch: spotify-sync
-          delete-branch: true
-          add-paths: |
-            content/songs/**
-            content/artists/**
+      - name: Trigger site deploy
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref master

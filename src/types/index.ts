@@ -26,7 +26,8 @@ export type Song = {
   sourceLinks?: ExternalLink[]
   addedAt: string
   sortOrder?: number
-  status: "draft" | "published"
+  status: "draft" | "published" | "archived"
+  spotifyId?: string
 }
 
 export type Artist = {
@@ -40,6 +41,7 @@ export type Artist = {
   summary?: string
   notableSongIds?: EntityId[]
   relatedArtistIds?: EntityId[]
+  spotifyId?: string
 }
 
 export type Album = {
