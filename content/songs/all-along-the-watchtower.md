@@ -11,6 +11,8 @@ genreTags:
   - Psychedelic Rock
 themeIds: []
 whyItMatters: '[No memory added]'
-addedAt: 2026-03-26
+addedAt: '2026-03-26'
 status: published
+spotifyId: 2aoo2jlRnM3A0NyLQqMN2f
 ---
+

@@ -6,12 +6,14 @@ artistIds:
   - artist-mf-doom
 featuredArtistIds:
   - artist-pebbles-the-invisible-girl
-album: "Operation: Doomsday"
+album: 'Operation: Doomsday'
 year: 1999
 genreTags:
   - Hip-hop
 themeIds: []
 whyItMatters: '[No memory added]'
-addedAt: 2026-03-26
+addedAt: '2026-03-26'
 status: published
+spotifyId: 7EQvdUJqZ2i7SWvSB2VqGA
 ---
+

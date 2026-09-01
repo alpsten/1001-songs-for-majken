@@ -10,6 +10,8 @@ genreTags:
   - Rock
 themeIds: []
 whyItMatters: '[No memory added]'
-addedAt: 2026-03-23
+addedAt: '2026-03-23'
 status: published
+spotifyId: 6hTcuIQa0sxrrByu9wTD7s
 ---
+

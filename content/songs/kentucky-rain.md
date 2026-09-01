@@ -11,6 +11,8 @@ genreTags:
   - Soft Rock
 themeIds: []
 whyItMatters: '[No memory added]'
-addedAt: 2026-03-26
+addedAt: '2026-03-26'
 status: published
+spotifyId: 1dIChAQ6MLzIsXWl6vWAqX
 ---
+

@@ -10,6 +10,8 @@ genreTags:
   - Folk Rock
 themeIds: []
 whyItMatters: '[No memory added]'
-addedAt: 2026-03-23
+addedAt: '2026-03-23'
 status: published
+spotifyId: 1fDsrQ23eTAVFElUMaf38X
 ---
+

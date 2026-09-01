@@ -11,6 +11,8 @@ genreTags:
   - Psychedelic Pop
 themeIds: []
 whyItMatters: '[No memory added]'
-addedAt: 2026-03-26
+addedAt: '2026-03-26'
 status: published
+spotifyId: 0q6LuUqGLUiCPP1cbdwFs3
 ---
+

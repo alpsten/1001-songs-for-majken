@@ -4,7 +4,7 @@ slug: september
 title: September
 artistIds:
   - artist-earth-wind-and-fire
-album: The Best of Earth, Wind & Fire, Vol. 1
+album: 'The Best of Earth, Wind & Fire, Vol. 1'
 year: 1978
 genreTags:
   - Disco
@@ -12,6 +12,8 @@ genreTags:
   - R&B
 themeIds: []
 whyItMatters: '[No memory added]'
-addedAt: 2026-03-26
+addedAt: '2026-03-26'
 status: published
+spotifyId: 3kXoKlD84c6OmIcOLfrfEs
 ---
+

@@ -11,6 +11,8 @@ genreTags:
   - Country Rock
 themeIds: []
 whyItMatters: '[No memory added]'
-addedAt: 2026-03-23
+addedAt: '2026-03-23'
 status: published
+spotifyId: 2LawezPeJhN4AWuSB0GtAU
 ---
+

@@ -10,6 +10,8 @@ genreTags:
   - French House
 themeIds: []
 whyItMatters: '[No memory added]'
-addedAt: 2026-03-23
+addedAt: '2026-03-23'
 status: published
+spotifyId: 303ccTay2FiDTZ9fZ2AdBt
 ---
+

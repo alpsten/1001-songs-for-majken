@@ -11,6 +11,8 @@ genreTags:
   - Pop Rock
 themeIds: []
 whyItMatters: '[No memory added]'
-addedAt: 2026-03-26
+addedAt: '2026-03-26'
 status: published
+spotifyId: 6BvtcJlv2kdlUodAt7PD6c
 ---
+

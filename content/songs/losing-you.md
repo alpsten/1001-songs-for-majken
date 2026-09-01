@@ -4,13 +4,15 @@ slug: losing-you
 title: Losing You
 artistIds:
   - artist-solange
-album: True
+album: true
 year: 2012
 genreTags:
   - R&B
   - Dance Pop
 themeIds: []
 whyItMatters: '[No memory added]'
-addedAt: 2026-03-25
+addedAt: '2026-03-25'
 status: published
+spotifyId: 29kMmvimeOyKb60VEX7aj5
 ---
+
