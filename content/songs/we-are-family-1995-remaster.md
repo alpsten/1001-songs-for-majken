@@ -1,7 +1,7 @@
 ---
 id: song-we-are-family-1995-remaster
 slug: we-are-family-1995-remaster
-title: We Are Family - 1995 Remaster
+title: We Are Family
 artistIds:
   - artist-sister-sledge
 album: We Are Family (1995 Remaster)

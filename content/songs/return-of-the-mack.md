@@ -11,7 +11,12 @@ genreTags:
   - New Jack Swing
 themeIds: []
 whyItMatters: '[No memory added]'
-addedAt: 2026-03-23
+addedAt: '2026-03-23'
 status: published
+spotifyId: 01GJz5oTwuUtbxYbSwIOCO
+sourceLinks:
+  - label: Spotify
+    url: 'https://open.spotify.com/track/01GJz5oTwuUtbxYbSwIOCO'
+    kind: spotify
 ---
 The 7-minute C&J X-Tended Version.

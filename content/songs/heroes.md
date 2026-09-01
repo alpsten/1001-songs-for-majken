@@ -15,6 +15,12 @@ themeIds:
 relatedSongIds:
   - song-new-york-state-of-mind
 whyItMatters: '[No memory added]'
-addedAt: 2026-03-20
+addedAt: '2026-03-20'
 status: published
+spotifyId: 7Jh1bpe76CNTCgdgAdBw4Z
+sourceLinks:
+  - label: Spotify
+    url: 'https://open.spotify.com/track/7Jh1bpe76CNTCgdgAdBw4Z'
+    kind: spotify
 ---
+

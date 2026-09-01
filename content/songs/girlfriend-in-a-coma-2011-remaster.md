@@ -1,7 +1,7 @@
 ---
 id: song-girlfriend-in-a-coma-2011-remaster
 slug: girlfriend-in-a-coma-2011-remaster
-title: Girlfriend in a Coma - 2011 Remaster
+title: Girlfriend in a Coma
 artistIds:
   - artist-the-smiths
 album: 'Strangeways, Here We Come'

@@ -1,7 +1,7 @@
 ---
 id: song-ascension-don-t-ever-wonder-remastered-2021
 slug: ascension-don-t-ever-wonder-remastered-2021
-title: Ascension (Don't Ever Wonder) - Remastered 2021
+title: Ascension (Don't Ever Wonder)
 artistIds:
   - artist-maxwell
 album: Maxwell's Urban Hang Suite

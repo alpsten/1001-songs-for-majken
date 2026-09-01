@@ -1,7 +1,7 @@
 ---
 id: song-can-t-hardly-wait-2008-remaster
 slug: can-t-hardly-wait-2008-remaster
-title: Can't Hardly Wait - 2008 Remaster
+title: Can't Hardly Wait
 artistIds:
   - artist-the-replacements
 album: Pleased to Meet Me (Expanded)

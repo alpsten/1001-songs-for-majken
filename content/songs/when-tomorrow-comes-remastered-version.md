@@ -1,7 +1,7 @@
 ---
 id: song-when-tomorrow-comes-remastered-version
 slug: when-tomorrow-comes-remastered-version
-title: When Tomorrow Comes - Remastered Version
+title: When Tomorrow Comes
 artistIds:
   - artist-eurythmics
   - artist-annie-lennox

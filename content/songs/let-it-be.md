@@ -13,6 +13,12 @@ themeIds:
   - theme-peace
   - theme-belonging
 whyItMatters: '[No memory added]'
-addedAt: 2026-03-20
+addedAt: '2026-03-20'
 status: published
+spotifyId: 7iN1s7xHE4ifF5povM6A48
+sourceLinks:
+  - label: Spotify
+    url: 'https://open.spotify.com/track/7iN1s7xHE4ifF5povM6A48'
+    kind: spotify
 ---
+

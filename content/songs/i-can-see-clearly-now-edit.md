@@ -1,7 +1,7 @@
 ---
 id: song-i-can-see-clearly-now-edit
 slug: i-can-see-clearly-now-edit
-title: I Can See Clearly Now - Edit
+title: I Can See Clearly Now
 artistIds:
   - artist-johnny-nash
 album: I Can See Clearly Now

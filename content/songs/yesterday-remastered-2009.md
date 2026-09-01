@@ -1,7 +1,7 @@
 ---
 id: song-yesterday-remastered-2009
 slug: yesterday-remastered-2009
-title: Yesterday - Remastered 2009
+title: Yesterday
 artistIds:
   - artist-the-beatles
 album: Help! (Remastered)

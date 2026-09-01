@@ -1,7 +1,7 @@
 ---
 id: song-in-the-air-tonight-2015-remaster
 slug: in-the-air-tonight-2015-remaster
-title: In the Air Tonight - 2015 Remaster
+title: In the Air Tonight
 artistIds:
   - artist-phil-collins
 album: Face Value (Deluxe Editon)

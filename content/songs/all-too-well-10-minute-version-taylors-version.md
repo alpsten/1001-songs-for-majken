@@ -10,6 +10,12 @@ genreTags:
   - Pop Rock
 themeIds: []
 whyItMatters: '[No memory added]'
-addedAt: 2026-03-25
+addedAt: '2026-03-25'
 status: published
+spotifyId: 5enxwA8aAbwZbf5qCHORXi
+sourceLinks:
+  - label: Spotify
+    url: 'https://open.spotify.com/track/5enxwA8aAbwZbf5qCHORXi'
+    kind: spotify
 ---
+

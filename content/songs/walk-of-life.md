@@ -11,6 +11,12 @@ genreTags:
   - Rock
 themeIds: []
 whyItMatters: '[No memory added]'
-addedAt: 2026-03-25
+addedAt: '2026-03-25'
 status: published
+spotifyId: 5Hk4Mpex0s2ndUpDQ5v2rU
+sourceLinks:
+  - label: Spotify
+    url: 'https://open.spotify.com/track/5Hk4Mpex0s2ndUpDQ5v2rU'
+    kind: spotify
 ---
+

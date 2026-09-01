@@ -1,7 +1,7 @@
 ---
 id: song-papa-was-a-rollin-stone-single-version
 slug: papa-was-a-rollin-stone-single-version
-title: Papa Was A Rollin' Stone - Single Version
+title: Papa Was A Rollin' Stone
 artistIds:
   - artist-the-temptations
 album: >-

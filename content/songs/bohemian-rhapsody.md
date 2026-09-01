@@ -10,6 +10,12 @@ genreTags:
   - Progressive Rock
 themeIds: []
 whyItMatters: '[No memory added]'
-addedAt: 2026-03-25
+addedAt: '2026-03-25'
 status: published
+spotifyId: 4u7EnebtmKWzUH433cf5Qv
+sourceLinks:
+  - label: Spotify
+    url: 'https://open.spotify.com/track/4u7EnebtmKWzUH433cf5Qv'
+    kind: spotify
 ---
+

@@ -1,7 +1,7 @@
 ---
 id: song-edge-of-seventeen-2016-remaster
 slug: edge-of-seventeen-2016-remaster
-title: Edge of Seventeen - 2016 Remaster
+title: Edge of Seventeen
 artistIds:
   - artist-stevie-nicks
 album: Bella Donna (2016 Remastered)

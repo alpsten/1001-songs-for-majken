@@ -1,7 +1,7 @@
 ---
 id: song-don-t-stop-believin-2022-remaster
 slug: don-t-stop-believin-2022-remaster
-title: Don't Stop Believin' (2022 Remaster)
+title: Don't Stop Believin'
 artistIds:
   - artist-journey
 album: Escape (2022 Remaster)

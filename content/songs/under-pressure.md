@@ -12,6 +12,12 @@ genreTags:
   - Dance Rock
 themeIds: []
 whyItMatters: '[No memory added]'
-addedAt: 2026-03-25
+addedAt: '2026-03-25'
 status: published
+spotifyId: 2fuCquhmrzHpu5xcA1ci9x
+sourceLinks:
+  - label: Spotify
+    url: 'https://open.spotify.com/track/2fuCquhmrzHpu5xcA1ci9x'
+    kind: spotify
 ---
+

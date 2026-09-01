@@ -11,6 +11,12 @@ genreTags:
   - East Coast Hip-hop
 themeIds: []
 whyItMatters: '[No memory added]'
-addedAt: 2026-03-23
+addedAt: '2026-03-23'
 status: published
+spotifyId: 7KwZNVEaqikRSBSpyhXK2j
+sourceLinks:
+  - label: Spotify
+    url: 'https://open.spotify.com/track/7KwZNVEaqikRSBSpyhXK2j'
+    kind: spotify
 ---
+

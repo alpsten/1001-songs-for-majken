@@ -1,7 +1,7 @@
 ---
 id: song-sympathy-for-the-devil-50th-anniversary-edition
 slug: sympathy-for-the-devil-50th-anniversary-edition
-title: Sympathy For The Devil - 50th Anniversary Edition
+title: Sympathy For The Devil
 artistIds:
   - artist-the-rolling-stones
 album: Beggars Banquet (50th Anniversary Edition)

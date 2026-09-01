@@ -1,7 +1,7 @@
 ---
 id: song-be-young-be-foolish-be-happy-single-version
 slug: be-young-be-foolish-be-happy-single-version
-title: 'Be Young, Be Foolish, Be Happy - Single Version'
+title: 'Be Young, Be Foolish, Be Happy'
 artistIds:
   - artist-the-tams
 album: 'Hey Girl Don''t Bother Me: The Best Of The Tams'

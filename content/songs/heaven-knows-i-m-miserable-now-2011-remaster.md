@@ -1,7 +1,7 @@
 ---
 id: song-heaven-knows-i-m-miserable-now-2011-remaster
 slug: heaven-knows-i-m-miserable-now-2011-remaster
-title: Heaven Knows I'm Miserable Now - 2011 Remaster
+title: Heaven Knows I'm Miserable Now
 artistIds:
   - artist-the-smiths
 album: Hatful of Hollow
