@@ -107,11 +107,28 @@ Every 6 hours (and on manual dispatch) it:
 - marks a song `status: archived` (never deletes it) when its track disappears from the playlist, and flips it back to `published` if it reappears
 - if anything changed, commits straight to `master` and triggers the deploy workflow, so the live site updates automatically within a few minutes — no manual review step
 
-To enable it, create a [Spotify Developer app](https://developer.spotify.com/dashboard) and add these repository secrets (Settings → Secrets and variables → Actions):
+Spotify no longer allows app-only (Client Credentials) tokens to read playlist contents, even for public playlists, so this uses a real user's access via the Authorization Code flow instead. Set it up once:
+
+1. Create a [Spotify Developer app](https://developer.spotify.com/dashboard), noting its **Client ID**, **Client Secret**, and registered **Redirect URI** (Settings tab).
+2. Visit this URL in a browser (fill in your own client ID and redirect URI, and log in with the account that owns/follows the playlist), then approve access:
+   ```
+   https://accounts.spotify.com/authorize?client_id=YOUR_CLIENT_ID&response_type=code&redirect_uri=YOUR_REDIRECT_URI&scope=playlist-read-private%20playlist-read-collaborative
+   ```
+3. You'll land on an error page at your redirect URI (nothing's actually listening there) — that's fine, copy the `code` value out of the browser's address bar.
+4. Exchange it for a refresh token:
+   ```bash
+   curl -s -X POST https://accounts.spotify.com/api/token \
+     -H "Authorization: Basic $(printf '%s' "CLIENT_ID:CLIENT_SECRET" | base64)" \
+     -d grant_type=authorization_code -d code=PASTE_CODE_HERE -d redirect_uri=YOUR_REDIRECT_URI
+   ```
+   The JSON response includes a `refresh_token` — that's the long-lived credential the sync uses going forward.
+
+Add these repository secrets (Settings → Secrets and variables → Actions):
 
 - `SPOTIFY_CLIENT_ID`
 - `SPOTIFY_CLIENT_SECRET`
 - `SPOTIFY_PLAYLIST_ID` — the playlist's id from its Spotify URL/URI
+- `SPOTIFY_REFRESH_TOKEN` — from step 4 above
 
 To run it locally:
 
@@ -119,6 +136,7 @@ To run it locally:
 export SPOTIFY_CLIENT_ID=...
 export SPOTIFY_CLIENT_SECRET=...
 export SPOTIFY_PLAYLIST_ID=...
+export SPOTIFY_REFRESH_TOKEN=...
 npm run sync:spotify
 ```
 

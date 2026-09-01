@@ -9,6 +9,7 @@ const artistsDir = path.join(contentRoot, "artists")
 const CLIENT_ID = process.env.SPOTIFY_CLIENT_ID
 const CLIENT_SECRET = process.env.SPOTIFY_CLIENT_SECRET
 const PLAYLIST_ID = process.env.SPOTIFY_PLAYLIST_ID
+const REFRESH_TOKEN = process.env.SPOTIFY_REFRESH_TOKEN
 
 type SpotifyArtistRef = { id: string; name: string }
 type SpotifyTrack = {
@@ -71,16 +72,29 @@ function uniqueSlug(base: string, taken: Set<string>): string {
 }
 
 async function getAccessToken(): Promise<string> {
+  // Spotify's Client Credentials flow (app-only, no logged-in user) can no
+  // longer read playlist contents, even for fully public playlists. Reading
+  // a playlist now requires a token obtained on behalf of a real user, via
+  // the Authorization Code flow's long-lived refresh token instead.
   const res = await fetch("https://accounts.spotify.com/api/token", {
     method: "POST",
     headers: {
       "Content-Type": "application/x-www-form-urlencoded",
       Authorization: `Basic ${Buffer.from(`${CLIENT_ID}:${CLIENT_SECRET}`).toString("base64")}`,
     },
-    body: "grant_type=client_credentials",
+    body: new URLSearchParams({
+      grant_type: "refresh_token",
+      refresh_token: REFRESH_TOKEN!,
+    }),
   })
   if (!res.ok) throw new Error(`Spotify auth failed: ${res.status} ${await res.text()}`)
-  const data = (await res.json()) as { access_token: string }
+  const data = (await res.json()) as { access_token: string; refresh_token?: string }
+  if (data.refresh_token && data.refresh_token !== REFRESH_TOKEN) {
+    console.warn(
+      "  Spotify issued a new refresh token. Update the SPOTIFY_REFRESH_TOKEN secret with:\n  " +
+        data.refresh_token
+    )
+  }
   return data.access_token
 }
 
@@ -103,9 +117,9 @@ async function fetchPlaylistTracks(token: string): Promise<SpotifyTrack[]> {
 }
 
 function main() {
-  if (!CLIENT_ID || !CLIENT_SECRET || !PLAYLIST_ID) {
+  if (!CLIENT_ID || !CLIENT_SECRET || !PLAYLIST_ID || !REFRESH_TOKEN) {
     console.error(
-      "Missing SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET, or SPOTIFY_PLAYLIST_ID environment variables."
+      "Missing SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET, SPOTIFY_PLAYLIST_ID, or SPOTIFY_REFRESH_TOKEN environment variables."
     )
     process.exit(1)
   }
