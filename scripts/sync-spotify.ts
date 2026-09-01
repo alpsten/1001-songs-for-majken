@@ -100,16 +100,22 @@ async function getAccessToken(): Promise<string> {
 
 async function fetchPlaylistTracks(token: string): Promise<SpotifyTrack[]> {
   const tracks: SpotifyTrack[] = []
+  // Spotify renamed GET /playlists/{id}/tracks to GET /playlists/{id}/items,
+  // and the "track" field inside each item to "item" (which can also be a
+  // podcast episode, hence the type check below).
   let url: string | null =
-    `https://api.spotify.com/v1/playlists/${PLAYLIST_ID}/tracks` +
-    `?limit=100&fields=next,items(track(id,name,artists(id,name),album(name,release_date),external_urls))`
+    `https://api.spotify.com/v1/playlists/${PLAYLIST_ID}/items` +
+    `?limit=100&fields=next,items(item(id,name,type,artists(id,name),album(name,release_date),external_urls))`
 
   while (url) {
     const res = await fetch(url, { headers: { Authorization: `Bearer ${token}` } })
     if (!res.ok) throw new Error(`Spotify playlist fetch failed: ${res.status} ${await res.text()}`)
-    const data = (await res.json()) as { items: { track: SpotifyTrack | null }[]; next: string | null }
-    for (const item of data.items) {
-      if (item.track && item.track.id) tracks.push(item.track)
+    const data = (await res.json()) as {
+      items: { item: (SpotifyTrack & { type: string }) | null }[]
+      next: string | null
+    }
+    for (const entry of data.items) {
+      if (entry.item && entry.item.id && entry.item.type === "track") tracks.push(entry.item)
     }
     url = data.next
   }
