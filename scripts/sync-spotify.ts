@@ -54,6 +54,31 @@ function writeEntry(dir: string, slug: string, data: Record<string, any>, body: 
   return filePath
 }
 
+// Strips reissue/edit noise Spotify tacks onto track names (remasters,
+// "Taylor's Version", anniversary editions, radio edits, ...) so new
+// entries use a clean canonical title and correctly match existing
+// hand-curated songs instead of creating a near-duplicate.
+function cleanTitle(title: string): string {
+  let value = title
+  let changed = true
+  while (changed) {
+    const before = value
+    value = value
+      .replace(/\s*-\s*(\d{4}\s+)?remaster(ed)?(\s+(version|\d{4}))?\s*$/i, "")
+      .replace(/\s*\((\d{4}\s+)?remaster(ed)?(\s+\d{4})?\)\s*$/i, "")
+      .replace(/\s*\(taylor'?s version\)\s*$/i, "")
+      .replace(/\s*\(from the vault\)\s*$/i, "")
+      .replace(/\s*-\s*single version\s*$/i, "")
+      .replace(/\s*\(single version\)\s*$/i, "")
+      .replace(/\s*-\s*\d+(st|nd|rd|th)\s+anniversary(\s+edition)?\s*$/i, "")
+      .replace(/\s*\(\d+(st|nd|rd|th)\s+anniversary(\s+edition)?\)\s*$/i, "")
+      .replace(/\s+-\s+.*radio edit\s*$/i, "")
+      .replace(/\s*-\s*edit\s*$/i, "")
+    changed = value !== before
+  }
+  return value.trim()
+}
+
 function slugify(value: string): string {
   return value
     .normalize("NFD")
@@ -218,8 +243,11 @@ async function run() {
       continue
     }
 
-    const normalizedTitle = slugify(track.name)
-    const matchIndex = unlinkedSongs.findIndex((song) => slugify(String(song.data.title ?? "")) === normalizedTitle)
+    const cleanedTitle = cleanTitle(track.name)
+    const normalizedTitle = slugify(cleanedTitle)
+    const matchIndex = unlinkedSongs.findIndex(
+      (song) => slugify(cleanTitle(String(song.data.title ?? ""))) === normalizedTitle
+    )
 
     if (matchIndex !== -1) {
       const [song] = unlinkedSongs.splice(matchIndex, 1)
@@ -231,7 +259,7 @@ async function run() {
     }
 
     const artistIds = track.artists.map(resolveArtist)
-    const slug = uniqueSlug(slugify(track.name), allSlugs)
+    const slug = uniqueSlug(slugify(cleanedTitle), allSlugs)
     const id = `song-${slug}`
     allSlugs.add(slug)
     allIds.add(id)
@@ -240,7 +268,7 @@ async function run() {
     const data = {
       id,
       slug,
-      title: track.name,
+      title: cleanedTitle,
       artistIds,
       album: track.album.name,
       year,
@@ -256,7 +284,7 @@ async function run() {
     const newSong: ParsedFile = { file: path.basename(filePath), path: filePath, data, body: "" }
     songsBySpotifyId.set(track.id, newSong)
     created++
-    console.log(`  + new song: ${track.name} — ${track.artists.map((a) => a.name).join(", ")}`)
+    console.log(`  + new song: ${cleanedTitle} — ${track.artists.map((a) => a.name).join(", ")}`)
   }
 
   for (const song of songs) {
