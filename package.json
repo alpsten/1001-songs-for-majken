@@ -10,6 +10,7 @@
     "preview": "vite preview",
     "validate": "tsx scripts/validate-content.ts",
     "generate": "tsx scripts/generate-derived-data.ts",
+    "sync:spotify": "tsx scripts/sync-spotify.ts",
     "prebuild": "tsx scripts/validate-content.ts && tsx scripts/generate-derived-data.ts"
   },
   "dependencies": {

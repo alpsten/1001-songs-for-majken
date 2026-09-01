@@ -1,0 +1,49 @@
+name: Sync Spotify playlist
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - run: npm run sync:spotify
+        env:
+          SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+          SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+          SPOTIFY_PLAYLIST_ID: ${{ secrets.SPOTIFY_PLAYLIST_ID }}
+
+      - run: npm run validate
+
+      - uses: peter-evans/create-pull-request@v7
+        with:
+          commit-message: "content: sync songs with Spotify playlist"
+          title: "Spotify playlist sync"
+          body: |
+            Auto-generated from the current state of the Spotify playlist.
+
+            - New tracks are added as song (and, where needed, artist) stubs with `[No memory added]` placeholders.
+            - Tracks removed from the playlist are marked `status: archived` rather than deleted.
+            - Tracks that reappear on the playlist are restored to `status: published`.
+
+            Review the new entries, add genre tags / a memory where you'd like, then merge.
+          branch: spotify-sync
+          delete-branch: true
+          add-paths: |
+            content/songs/**
+            content/artists/**
