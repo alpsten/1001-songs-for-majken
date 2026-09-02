@@ -30,30 +30,60 @@ export default function HomePage() {
         className="flex items-center justify-center"
         style={{ minHeight: "min(100vh, 52rem)", padding: "7rem 2rem 4rem" }}
       >
-        <div className="flex flex-col items-center gap-8 w-full" style={{ maxWidth: 860 }}>
-          <h1
-            className="text-white font-normal text-center tracking-wide leading-none"
-            style={{ textShadow: "0 2px 40px rgba(0,0,0,0.25)" }}
-          >
-            <span className="block text-7xl sm:text-8xl lg:text-7xl">1001</span>
-            <span className="mt-3 hidden text-5xl tracking-[0.18em] uppercase lg:block">Songs for Majken</span>
-            <span className="mt-3 block text-5xl tracking-[0.18em] uppercase sm:text-5xl lg:hidden">Songs</span>
-            <span className="mt-3 block text-5xl tracking-[0.18em] uppercase sm:text-5xl lg:hidden">For</span>
-            <span className="mt-3 block text-5xl tracking-[0.18em] uppercase sm:text-5xl lg:hidden">Majken</span>
-          </h1>
+        <div className="flex flex-col items-center gap-10 w-full" style={{ maxWidth: 860 }}>
+          <div className="hero-postit">
+            <span className="tape-piece tape-tl" />
+            <span className="tape-piece tape-tr" />
+            <span className="tape-piece tape-bl" />
+            <span className="tape-piece tape-br" />
+            <h1 className="text-center leading-none">
+              <span
+                className="block"
+                style={{
+                  fontFamily: "var(--font-display)",
+                  fontStyle: "italic",
+                  fontSize: "clamp(4.5rem, 15vw, 7.5rem)",
+                  color: "var(--color-postit-ink)",
+                }}
+              >
+                1001
+              </span>
+              <span
+                className="mt-3 block"
+                style={{
+                  fontFamily: "var(--font-ui)",
+                  fontSize: "0.8rem",
+                  fontWeight: 700,
+                  letterSpacing: "0.3em",
+                  textTransform: "uppercase",
+                  color: "var(--color-postit-ink)",
+                  opacity: 0.7,
+                }}
+              >
+                Songs for Majken
+              </span>
+            </h1>
+          </div>
 
           {dailySong && (
             <div className="mx-auto w-fit max-w-full">
               <Link
                 to={`/songs/${dailySong.slug}`}
-                className="ui-surface ui-card-link sotd-card block max-w-full"
+                className="ui-card-link sotd-card block max-w-full"
               >
-                <div className="sotd-card-body text-center">
+                <div className="sotd-card-body">
                   <div className="sotd-kicker">Song of the day</div>
-                  <p className="font-sans text-[17px] font-semibold text-white">
-                    &apos;{dailySong.title}&apos;{dailySongArtists ? ` by ${dailySongArtists}` : ""}
+                  <p
+                    style={{
+                      fontFamily: "var(--font-display)",
+                      fontStyle: "italic",
+                      fontSize: "1.6rem",
+                      lineHeight: 1.25,
+                    }}
+                  >
+                    &apos;{dailySong.title}&apos;{dailySongArtists ? ` — ${dailySongArtists}` : ""}
                   </p>
-                  <p className="archive-meta archive-meta-center mt-0">
+                  <p className="archive-meta mt-3">
                     {dailySong.album ? `${dailySong.album} (${dailySong.year})` : `(${dailySong.year})`}
                   </p>
                 </div>

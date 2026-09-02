@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { Link, useParams } from "react-router-dom"
 import { loadSongs } from "../lib/parseContent"
 import { getGenreFamily, getGenreFamilyBySlug } from "../lib/genres"
+import TitlePostit from "../components/TitlePostit"
 import type { Song } from "../types"
 
 export default function GenreDetailPage() {
@@ -37,7 +38,7 @@ export default function GenreDetailPage() {
   return (
     <div className="detail-page">
       <header className="detail-header">
-        <h1 className="detail-title font-normal">{family.label}</h1>
+        <TitlePostit seedKey={family.slug}>{family.label}</TitlePostit>
         <p className="detail-note not-italic">
           Browse the subgenres collected under {family.label}.
         </p>
@@ -49,7 +50,7 @@ export default function GenreDetailPage() {
           {subGenres.length > 0 ? (
             <div className="detail-pill-list">
               {subGenres.map((genre) => (
-                <Link key={genre} to={`/songs?genre=${encodeURIComponent(genre)}`} className="ui-pill ui-pill-compact">
+                <Link key={genre} to={`/songs?genre=${encodeURIComponent(genre)}`} className="tag-postit">
                   <span>{genre}</span>
                 </Link>
               ))}

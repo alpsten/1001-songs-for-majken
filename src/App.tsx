@@ -9,27 +9,14 @@ import ThemeDetailPage from "./pages/ThemeDetailPage"
 import GenreDetailPage from "./pages/GenreDetailPage"
 import FamilyEntryDetailPage from "./pages/FamilyEntryDetailPage"
 import Nav from "./components/Nav"
+import DeskClutter from "./components/DeskClutter"
 
 export default function App() {
   const currentYear = new Date().getFullYear()
 
   return (
     <div className="app-shell">
-      {/* Animated gradient — fixed behind everything, always moving */}
-      <div
-        aria-hidden="true"
-        style={{
-          position: "fixed",
-          inset: 0,
-          zIndex: -10,
-          backgroundImage:
-            "linear-gradient(162deg, #ff1744 0%, #aa00ff 25%, #ff6d00 50%, #ff1744 75%, #aa00ff 100%)",
-          backgroundSize: "100% 300%",
-          backgroundPosition: "50% 0%",
-          animation: "gradientShift 13s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite alternate",
-        }}
-      />
-
+      <DeskClutter />
       <Nav />
 
       <main className="app-main">
@@ -53,7 +40,6 @@ export default function App() {
       <footer className="site-footer" aria-label="Site attribution">
         <div className="site-footer-inner">
           <aside className="site-signature">
-            <p className="site-signature-quote">"Majken, this is music provided from your cool old dad."</p>
             <div className="site-signature-name">&copy; {currentYear} Emil Alpsten</div>
           </aside>
         </div>

@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react"
 import { useParams, Link } from "react-router-dom"
 import { loadArtists, loadSongs } from "../lib/parseContent"
+import { formatGenreTag, getGenreFamily } from "../lib/genres"
+import TitlePostit from "../components/TitlePostit"
 import type { Artist, Song } from "../types"
 
 export default function ArtistDetailPage() {
@@ -25,11 +27,16 @@ export default function ArtistDetailPage() {
   return (
     <div className="detail-page">
       <header className="detail-header">
-        <h1 className="detail-title font-normal">{artist.name}</h1>
+        <TitlePostit seedKey={artist.id}>{artist.name}</TitlePostit>
         <div className="detail-meta-row">
           {artist.country && <span className="ui-pill ui-pill-compact"><span>{artist.country}</span></span>}
           {artist.birthYear && <span className="ui-pill ui-pill-compact"><span>b. {artist.birthYear}</span></span>}
           {artist.formedYear && <span className="ui-pill ui-pill-compact"><span>formed {artist.formedYear}</span></span>}
+          {artist.genreTags?.map((tag) => (
+            <Link key={tag} to={`/explore/genre/${getGenreFamily(tag).slug}`} className="tag-postit">
+              <span>{formatGenreTag(tag)}</span>
+            </Link>
+          ))}
         </div>
         {artist.summary && <p className="detail-note not-italic">{artist.summary}</p>}
       </header>

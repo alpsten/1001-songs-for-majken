@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom"
 import { getFamilyEntryBySlug } from "../lib/familyEntries"
+import TitlePostit from "../components/TitlePostit"
 
 export default function FamilyEntryDetailPage() {
   const { slug } = useParams<{ slug: string }>()
@@ -10,7 +11,7 @@ export default function FamilyEntryDetailPage() {
   return (
     <div className="detail-page">
       <header className="detail-header">
-        <h1 className="detail-title font-normal">{entry.name}</h1>
+        <TitlePostit seedKey={entry.slug}>{entry.name}</TitlePostit>
         <p className="detail-note not-italic">
           Songs picked by {entry.name} will appear here.
         </p>

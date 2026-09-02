@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { useParams, Link } from "react-router-dom"
 import { loadThemes, loadSongs } from "../lib/parseContent"
+import TitlePostit from "../components/TitlePostit"
 import type { Theme, Song } from "../types"
 
 const decadeOptions = [
@@ -54,7 +55,7 @@ export default function ThemeDetailPage() {
   return (
     <div className="detail-page">
       <header className="detail-header">
-        <h1 className="detail-title font-normal">{theme?.name ?? decadeLabel}</h1>
+        <TitlePostit seedKey={theme?.id ?? decadeLabel ?? "theme"}>{theme?.name ?? decadeLabel}</TitlePostit>
         {theme?.description && <p className="detail-note not-italic">{theme.description}</p>}
       </header>
 
@@ -85,7 +86,7 @@ export default function ThemeDetailPage() {
             <h3 className="detail-section-title">Related moods</h3>
             <div className="detail-pill-list">
               {relatedThemes.map((t) => (
-                <Link key={t.id} to={`/explore/${t.slug}`} className="ui-pill ui-pill-compact">
+                <Link key={t.id} to={`/explore/${t.slug}`} className="tag-postit">
                   <span>{t.name}</span>
                 </Link>
               ))}

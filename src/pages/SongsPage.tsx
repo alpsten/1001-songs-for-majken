@@ -3,6 +3,10 @@ import { Link, useSearchParams } from "react-router-dom"
 import { loadSongs, loadArtists } from "../lib/parseContent"
 import { getAllGenreFamilies, getGenreFamily } from "../lib/genres"
 import { getSongArtistCredit } from "../lib/songArtists"
+import { getCardNote } from "../lib/cardNote"
+import CardNoteMark from "../components/CardNoteMark"
+import PaperSelect from "../components/PaperSelect"
+import TitlePostit from "../components/TitlePostit"
 import type { Song, Artist } from "../types"
 
 const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("")
@@ -130,7 +134,7 @@ export default function SongsPage() {
   return (
     <div className="detail-page">
       <header className="detail-header">
-        <div aria-hidden="true" className="detail-title-spacer" />
+        <TitlePostit seedKey="page-songs">Songs</TitlePostit>
         <p className="detail-note not-italic">
           {isFiltered
             ? `There are currently ${filteredSongs.length} of ${songs.length} songs shown in the archive`
@@ -153,48 +157,39 @@ export default function SongsPage() {
                 />
               </label>
 
-              <label className="filter-field filter-field-genre">
-                <select
-                  aria-label="Filter songs by genre"
-                  className="filter-select filter-select-compact"
+              <div className="filter-field filter-field-genre">
+                <PaperSelect
+                  ariaLabel="Filter songs by genre"
+                  placeholder="All genres"
                   value={selectedGenre}
-                  onChange={(event) => updateFilter("genre", event.target.value)}
-                >
-                  <option value="">All genres</option>
-                  {genreOptions.map((genre) => (
-                    <option key={genre.slug} value={genre.slug}>{genre.label}</option>
-                  ))}
-                </select>
-              </label>
+                  onValueChange={(value) => updateFilter("genre", value)}
+                  options={genreOptions.map((genre) => ({ value: genre.slug, label: genre.label }))}
+                />
+              </div>
 
-              <label className="filter-field filter-field-year">
-                <select
-                  aria-label="Filter songs by year"
-                  className="filter-select filter-select-compact"
+              <div className="filter-field filter-field-year">
+                <PaperSelect
+                  ariaLabel="Filter songs by year"
+                  placeholder="All years"
                   value={selectedDecade}
-                  onChange={(event) => updateFilter("decade", event.target.value)}
-                >
-                  <option value="">All years</option>
-                  {decadeOptions.map((decade) => (
-                    <option key={decade} value={decade}>{getDecadeLabel(decade)}</option>
-                  ))}
-                </select>
-              </label>
+                  onValueChange={(value) => updateFilter("decade", value)}
+                  options={decadeOptions.map((decade) => ({ value: decade, label: getDecadeLabel(decade) }))}
+                />
+              </div>
 
               {artistsWithMultipleSongs.length > 0 && (
-                <label className="filter-field filter-field-multi-artist">
-                  <select
-                    aria-label="Filter songs by artists with two or more songs"
-                    className="filter-select filter-select-wide"
+                <div className="filter-field filter-field-multi-artist">
+                  <PaperSelect
+                    ariaLabel="Filter songs by artists with two or more songs"
+                    placeholder="Artist with multiple songs..."
                     value={artistsWithMultipleSongs.some(({ artist }) => artist.name === selectedArtistQuery) ? selectedArtistQuery : ""}
-                    onChange={(event) => updateFilter("artist", event.target.value)}
-                  >
-                    <option value="">Artist with multiple songs...</option>
-                    {artistsWithMultipleSongs.map(({ artist, count }) => (
-                      <option key={artist.id} value={artist.name}>{artist.name} ({count})</option>
-                    ))}
-                  </select>
-                </label>
+                    onValueChange={(value) => updateFilter("artist", value)}
+                    options={artistsWithMultipleSongs.map(({ artist, count }) => ({
+                      value: artist.name,
+                      label: `${artist.name} (${count})`,
+                    }))}
+                  />
+                </div>
               )}
             </div>
 
@@ -231,27 +226,26 @@ export default function SongsPage() {
 
         <section className="detail-panel">
           {isFiltered && visibleLetters.length > 0 ? (
-            <div className="song-groups">
+            <div className="record-rows">
               {visibleLetters.map((letter) => (
-                <section key={letter} id={`songs-letter-${letter}`} className="song-group">
-                  <h2 className="song-group-heading">{letter}</h2>
-                  <ul className="archive-list">
-                    {groupedSongs[letter].map((song) => (
-                      <li key={song.id} className="archive-item">
-                        <Link to={`/songs/${song.slug}`} className="archive-link archive-link-title">
-                          <span className="archive-song-title">&apos;{song.title}&apos;</span>
+                <section key={letter} id={`songs-letter-${letter}`} className="record-row-group">
+                  <h2 className="record-row-letter">{letter}</h2>
+                  <div className="record-row-scroller">
+                    {groupedSongs[letter].map((song) => {
+                      const note = getCardNote(song.id)
+                      return (
+                        <Link key={song.id} to={`/songs/${song.slug}`} className="record-card">
+                          {note && <CardNoteMark note={note} />}
+                          <span className="archive-link-title">&apos;{song.title}&apos;</span>
                           <span className="archive-song-artist">{getSongArtistCredit(song, artists)}</span>
+                          <div className="archive-meta">
+                            <span>{song.album ?? "[No album added]"}</span>
+                            <span>({song.year})</span>
+                          </div>
                         </Link>
-                        <div className="archive-meta">
-                          <span>{song.album ?? "[No album added]"}</span>
-                          <span>({song.year})</span>
-                        </div>
-                        {song.whyItMatters && (
-                          <p className="archive-copy">{song.whyItMatters}</p>
-                        )}
-                      </li>
-                    ))}
-                  </ul>
+                      )
+                    })}
+                  </div>
                 </section>
               ))}
             </div>

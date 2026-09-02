@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 import { familyEntries } from "../lib/familyEntries"
 import { loadThemes } from "../lib/parseContent"
 import { getAllGenreFamilies } from "../lib/genres"
+import TitlePostit from "../components/TitlePostit"
 import type { Theme } from "../types"
 
 const decadeOptions = [
@@ -56,7 +57,7 @@ export default function ThemesPage() {
   return (
     <div className="detail-page">
       <header className="detail-header">
-        <div aria-hidden="true" className="detail-title-spacer" />
+        <TitlePostit seedKey="page-explore-2">Explore</TitlePostit>
         <p className="detail-note not-italic">
           Open a category to browse by mood, genre, release decade, and family entries.
         </p>
@@ -74,7 +75,7 @@ export default function ThemesPage() {
           {openSection === "mood" && (
             <div className="detail-pill-list">
               {themes.map((theme) => (
-                <Link key={theme.id} to={`/explore/${theme.slug}`} className="ui-pill ui-pill-compact">
+                <Link key={theme.id} to={`/explore/${theme.slug}`} className="tag-postit">
                   <span>{theme.name}</span>
                 </Link>
               ))}
@@ -94,7 +95,7 @@ export default function ThemesPage() {
             genres.length > 0 ? (
               <div className="detail-pill-list">
                 {genres.map((genre) => (
-                  <Link key={genre.slug} to={`/explore/genre/${genre.slug}`} className="ui-pill ui-pill-compact">
+                  <Link key={genre.slug} to={`/explore/genre/${genre.slug}`} className="tag-postit">
                     <span>{genre.label}</span>
                   </Link>
                 ))}
@@ -116,7 +117,7 @@ export default function ThemesPage() {
           {openSection === "year" && (
             <div className="detail-pill-list">
               {decades.map((decade) => (
-                <Link key={decade} to={`/explore/${decade}`} className="ui-pill ui-pill-compact">
+                <Link key={decade} to={`/explore/${decade}`} className="tag-postit">
                   <span>{decadeOptions.find((option) => option.slug === decade)?.label ?? decade}</span>
                 </Link>
               ))}
@@ -135,7 +136,7 @@ export default function ThemesPage() {
           {openSection === "family" && (
             <div className="detail-pill-list">
               {familyEntries.map((entry) => (
-                <Link key={entry.slug} to={`/explore/family/${entry.slug}`} className="ui-pill ui-pill-compact">
+                <Link key={entry.slug} to={`/explore/family/${entry.slug}`} className="tag-postit">
                   <span>{entry.name}</span>
                 </Link>
               ))}

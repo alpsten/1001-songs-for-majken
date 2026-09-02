@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { useParams, Link } from "react-router-dom"
 import { loadSongs, loadArtists } from "../lib/parseContent"
 import { getSongArtistEntities } from "../lib/songArtists"
+import TitlePostit from "../components/TitlePostit"
 import type { Song, Artist } from "../types"
 
 const noMemoryPlaceholder = "[No memory added]"
@@ -31,24 +32,24 @@ export default function SongDetailPage() {
   return (
     <div className="detail-page">
       <header className="detail-header">
-        <h1 className="detail-title font-normal">{song.title}</h1>
+        <TitlePostit seedKey={song.id}>{song.title}</TitlePostit>
         <div className="detail-meta-row">
           {primary.map((a) => (
-            <Link key={a.id} to={`/artists/${a.slug}`} className="ui-pill ui-pill-compact">
+            <Link key={a.id} to={`/artists/${a.slug}`} className="tag-postit">
               <span>{a.name}</span>
             </Link>
           ))}
           {featured.map((a) => (
-            <Link key={a.id} to={`/artists/${a.slug}`} className="ui-pill ui-pill-compact">
+            <Link key={a.id} to={`/artists/${a.slug}`} className="tag-postit">
               <span>feat. {a.name}</span>
             </Link>
           ))}
-          <span className="ui-pill ui-pill-compact">
+          <span className="tag-postit">
             <span>{song.year}</span>
           </span>
         </div>
         {song.whyItMatters && song.whyItMatters !== noMemoryPlaceholder && (
-          <p className="detail-note">{song.whyItMatters}</p>
+          <p className="detail-note detail-note-personal">{song.whyItMatters}</p>
         )}
       </header>
 
