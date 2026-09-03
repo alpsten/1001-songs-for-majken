@@ -10,7 +10,7 @@ genreTags: []
 themeIds: []
 whyItMatters: '[No memory added]'
 addedAt: '2026-09-02'
-status: published
+status: archived
 spotifyId: 3fYytr3RxNUXyFesUVPHZA
 sourceLinks:
   - label: Spotify
