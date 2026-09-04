@@ -9,14 +9,15 @@ import ThemeDetailPage from "./pages/ThemeDetailPage"
 import GenreDetailPage from "./pages/GenreDetailPage"
 import FamilyEntryDetailPage from "./pages/FamilyEntryDetailPage"
 import Nav from "./components/Nav"
-import DeskClutter from "./components/DeskClutter"
+// DeskClutter (ambient background post-its/shapes) is switched off for
+// now — turned back on by re-adding the import and <DeskClutter /> below,
+// nothing else changed. See docs/DESIGN_SYSTEM.md §7.
 
 export default function App() {
   const currentYear = new Date().getFullYear()
 
   return (
     <div className="app-shell">
-      <DeskClutter />
       <Nav />
 
       <main className="app-main">
