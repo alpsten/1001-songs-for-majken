@@ -206,6 +206,30 @@
     "story": ""
   },
   {
+    "id": "song-ain-t-it-fun",
+    "slug": "ain-t-it-fun",
+    "title": "Ain't It Fun",
+    "artistIds": [
+      "artist-paramore"
+    ],
+    "album": "Paramore",
+    "year": 2013,
+    "genreTags": [],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-09-02",
+    "status": "published",
+    "spotifyId": "1j8z4TTjJ1YOdoFEDwJTQa",
+    "sourceLinks": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/track/1j8z4TTjJ1YOdoFEDwJTQa",
+        "kind": "spotify"
+      }
+    ],
+    "story": ""
+  },
+  {
     "id": "song-ain-t-no-mountain-high-enough",
     "slug": "ain-t-no-mountain-high-enough",
     "title": "Ain't No Mountain High Enough",
@@ -2008,6 +2032,30 @@
     "story": ""
   },
   {
+    "id": "song-everything",
+    "slug": "everything",
+    "title": "Everything",
+    "artistIds": [
+      "artist-michael-buble"
+    ],
+    "album": "Call Me Irresponsible",
+    "year": 2007,
+    "genreTags": [],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-09-02",
+    "status": "published",
+    "spotifyId": "4T6HLdP6OcAtqC6tGnQelG",
+    "sourceLinks": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/track/4T6HLdP6OcAtqC6tGnQelG",
+        "kind": "spotify"
+      }
+    ],
+    "story": ""
+  },
+  {
     "id": "song-faithful",
     "slug": "faithful",
     "title": "Faithful",
@@ -2215,6 +2263,30 @@
     "story": ""
   },
   {
+    "id": "song-fortunate-son",
+    "slug": "fortunate-son",
+    "title": "Fortunate Son",
+    "artistIds": [
+      "artist-creedence-clearwater-revival"
+    ],
+    "album": "Willy And The Poor Boys (Expanded Edition)",
+    "year": 1969,
+    "genreTags": [],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-09-03",
+    "status": "published",
+    "spotifyId": "4BP3uh0hFLFRb5cjsgLqDh",
+    "sourceLinks": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/track/4BP3uh0hFLFRb5cjsgLqDh",
+        "kind": "spotify"
+      }
+    ],
+    "story": ""
+  },
+  {
     "id": "song-fran-och-med-du",
     "slug": "fran-och-med-du",
     "title": "Från och med Du",
@@ -2335,6 +2407,30 @@
       }
     ],
     "story": "The special extended 7-minute version."
+  },
+  {
+    "id": "song-get-it-on",
+    "slug": "get-it-on",
+    "title": "Get It On",
+    "artistIds": [
+      "artist-t-rex"
+    ],
+    "album": "Electric Warrior",
+    "year": 1971,
+    "genreTags": [],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-09-02",
+    "status": "published",
+    "spotifyId": "0LoQuiekvzqx7n8flgEKzF",
+    "sourceLinks": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/track/0LoQuiekvzqx7n8flgEKzF",
+        "kind": "spotify"
+      }
+    ],
+    "story": ""
   },
   {
     "id": "song-get-ur-freak-on",
@@ -2845,6 +2941,30 @@
     "story": ""
   },
   {
+    "id": "song-i-don-t-want-to-be",
+    "slug": "i-don-t-want-to-be",
+    "title": "I Don't Want to Be",
+    "artistIds": [
+      "artist-gavin-degraw"
+    ],
+    "album": "Chariot",
+    "year": 2003,
+    "genreTags": [],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-09-03",
+    "status": "published",
+    "spotifyId": "17yReVjsDb7Hlvjqz6jhDm",
+    "sourceLinks": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/track/17yReVjsDb7Hlvjqz6jhDm",
+        "kind": "spotify"
+      }
+    ],
+    "story": ""
+  },
+  {
     "id": "song-i-just-called-to-say-i-love-you",
     "slug": "i-just-called-to-say-i-love-you",
     "title": "I Just Called to Say I Love You",
@@ -2907,6 +3027,30 @@
       {
         "label": "Spotify",
         "url": "https://open.spotify.com/track/2Cdvbe2G4hZsnhNMKyGrie",
+        "kind": "spotify"
+      }
+    ],
+    "story": ""
+  },
+  {
+    "id": "song-i-m-just-a-kid",
+    "slug": "i-m-just-a-kid",
+    "title": "I'm Just a Kid",
+    "artistIds": [
+      "artist-simple-plan"
+    ],
+    "album": "No Pads, No Helmets...Just Balls (15th Anniversary Tour Edition)",
+    "year": 2002,
+    "genreTags": [],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-09-02",
+    "status": "published",
+    "spotifyId": "6otiaV2fagE3s8IvP6WkwG",
+    "sourceLinks": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/track/6otiaV2fagE3s8IvP6WkwG",
         "kind": "spotify"
       }
     ],
@@ -3313,6 +3457,30 @@
       {
         "label": "Spotify",
         "url": "https://open.spotify.com/track/5hReWjUHqPqkHi31G7izL4",
+        "kind": "spotify"
+      }
+    ],
+    "story": ""
+  },
+  {
+    "id": "song-iris",
+    "slug": "iris",
+    "title": "Iris",
+    "artistIds": [
+      "artist-the-goo-goo-dolls"
+    ],
+    "album": "Dizzy up the Girl",
+    "year": 1998,
+    "genreTags": [],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-09-02",
+    "status": "published",
+    "spotifyId": "6Qyc6fS4DsZjB2mRW9DsQs",
+    "sourceLinks": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/track/6Qyc6fS4DsZjB2mRW9DsQs",
         "kind": "spotify"
       }
     ],
@@ -3946,6 +4114,30 @@
     "addedAt": "2026-03-25",
     "status": "published",
     "spotifyId": "0bRXwKfigvpKZUurwqAlEh",
+    "story": ""
+  },
+  {
+    "id": "song-make-your-own-kind-of-music",
+    "slug": "make-your-own-kind-of-music",
+    "title": "Make Your Own Kind Of Music",
+    "artistIds": [
+      "artist-cass-elliot"
+    ],
+    "album": "Mama's Big Ones",
+    "year": 1973,
+    "genreTags": [],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-09-02",
+    "status": "published",
+    "spotifyId": "6H3Wa6hWR9DRMzMSd4pZkT",
+    "sourceLinks": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/track/6H3Wa6hWR9DRMzMSd4pZkT",
+        "kind": "spotify"
+      }
+    ],
     "story": ""
   },
   {
@@ -5550,6 +5742,30 @@
     "story": ""
   },
   {
+    "id": "song-song-2",
+    "slug": "song-2",
+    "title": "Song 2",
+    "artistIds": [
+      "artist-blur"
+    ],
+    "album": "Blur (Special Edition)",
+    "year": 1997,
+    "genreTags": [],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-09-02",
+    "status": "published",
+    "spotifyId": "1FTSo4v6BOZH9QxKc3MbVM",
+    "sourceLinks": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/track/1FTSo4v6BOZH9QxKc3MbVM",
+        "kind": "spotify"
+      }
+    ],
+    "story": ""
+  },
+  {
     "id": "song-stad-i-ljus",
     "slug": "stad-i-ljus",
     "title": "Stad i ljus",
@@ -6308,6 +6524,30 @@
       {
         "label": "Spotify",
         "url": "https://open.spotify.com/track/5eJ314ozT4CTPlyjdsGq78",
+        "kind": "spotify"
+      }
+    ],
+    "story": ""
+  },
+  {
+    "id": "song-vacation",
+    "slug": "vacation",
+    "title": "Vacation",
+    "artistIds": [
+      "artist-simple-plan"
+    ],
+    "album": "No Pads, No Helmets...Just Balls (15th Anniversary Tour Edition)",
+    "year": 2002,
+    "genreTags": [],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-09-02",
+    "status": "archived",
+    "spotifyId": "3fYytr3RxNUXyFesUVPHZA",
+    "sourceLinks": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/track/3fYytr3RxNUXyFesUVPHZA",
         "kind": "spotify"
       }
     ],
