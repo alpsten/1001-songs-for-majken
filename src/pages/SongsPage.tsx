@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react"
-import { Link, useSearchParams } from "react-router-dom"
+import { useSearchParams } from "react-router-dom"
 import { loadSongs, loadArtists } from "../lib/parseContent"
 import { getAllGenreFamilies, getGenreFamily } from "../lib/genres"
 import { getSongArtistCredit } from "../lib/songArtists"
-import { getCardNote } from "../lib/cardNote"
-import CardNoteMark from "../components/CardNoteMark"
 import PaperSelect from "../components/PaperSelect"
 import TitlePostit from "../components/TitlePostit"
+import StatusPostit from "../components/StatusPostit"
+import NumberPostit from "../components/NumberPostit"
+import BrowseRow from "../components/BrowseRow"
 import type { Song, Artist } from "../types"
 
 const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("")
@@ -132,18 +133,33 @@ export default function SongsPage() {
   const isFiltered = Boolean(selectedArtistQuery || selectedGenre || selectedDecade || selectedLetter)
 
   return (
-    <div className="detail-page">
-      <header className="detail-header">
+    <div className="detail-page detail-page-wide">
+      <header className="detail-header detail-header-centered">
         <TitlePostit seedKey="page-songs">Songs</TitlePostit>
-        <p className="detail-note not-italic">
-          {isFiltered
-            ? `There are currently ${filteredSongs.length} of ${songs.length} songs shown in the archive`
-            : `There are currently ${songs.length} songs in the archive`}
-        </p>
+        <div className="detail-header-status-row">
+          <StatusPostit seedKey="page-songs-summary" align="flex-start">
+            {isFiltered ? (
+              <>
+                There are currently <NumberPostit value={filteredSongs.length} seedKey="page-songs-summary-count" /> of{" "}
+                <NumberPostit value={songs.length} seedKey="page-songs-summary-total" /> songs shown in the archive
+              </>
+            ) : (
+              <>
+                There are currently <NumberPostit value={songs.length} seedKey="page-songs-summary-count" /> songs in
+                the archive
+              </>
+            )}
+          </StatusPostit>
+          {!isFiltered && (
+            <StatusPostit seedKey="page-songs-placeholder" align="flex-start">
+              [Select a letter or filter to browse songs]
+            </StatusPostit>
+          )}
+        </div>
       </header>
 
       <div className="detail-stack">
-        <section className="detail-panel detail-section">
+        <section className="detail-panel detail-section filter-panel-compact">
           <div className="filter-toolbar">
             <div className="filter-grid">
               <label className="filter-field filter-field-search">
@@ -224,37 +240,46 @@ export default function SongsPage() {
           </nav>
         </section>
 
-        <section className="detail-panel">
-          {isFiltered && visibleLetters.length > 0 ? (
-            <div className="record-rows">
-              {visibleLetters.map((letter) => (
-                <section key={letter} id={`songs-letter-${letter}`} className="record-row-group">
-                  <h2 className="record-row-letter">{letter}</h2>
-                  <div className="record-row-scroller">
-                    {groupedSongs[letter].map((song) => {
-                      const note = getCardNote(song.id)
-                      return (
-                        <Link key={song.id} to={`/songs/${song.slug}`} className="record-card">
-                          {note && <CardNoteMark note={note} />}
-                          <span className="archive-link-title">&apos;{song.title}&apos;</span>
-                          <span className="archive-song-artist">{getSongArtistCredit(song, artists)}</span>
-                          <div className="archive-meta">
-                            <span>{song.album ?? "[No album added]"}</span>
-                            <span>({song.year})</span>
-                          </div>
-                        </Link>
-                      )
-                    })}
-                  </div>
-                </section>
-              ))}
-            </div>
-          ) : !isFiltered ? (
-            <p className="detail-placeholder">[Select a letter or filter to browse songs]</p>
-          ) : (
-            <p className="detail-placeholder">[No songs match these filters]</p>
-          )}
-        </section>
+        {isFiltered && (
+          <section className="detail-results">
+            {visibleLetters.length > 0 ? (
+              <div className="record-rows">
+                {visibleLetters.map((letter) => (
+                  <section key={letter} id={`songs-letter-${letter}`} className="record-row-group">
+                    <StatusPostit seedKey={`songs-letter-heading-${letter}`} align="center">
+                      Songs that begin with &apos;
+                      <NumberPostit value={letter} seedKey={`songs-letter-heading-${letter}`} />
+                      &apos;
+                    </StatusPostit>
+                    <div className="browse-row-list">
+                      {groupedSongs[letter].map((song) => {
+                        return (
+                          <BrowseRow key={song.id} to={`/songs/${song.slug}`} seedKey={song.id}>
+                            <div className="browse-row-title-line">
+                              <span className="archive-link-title">&apos;{song.title}&apos;</span>
+                              <span className="archive-song-artist browse-row-suffix">
+                                by {getSongArtistCredit(song, artists)}
+                              </span>
+                            </div>
+                            <div className="archive-meta">
+                              <span>{song.album ?? "[No album added]"} ({song.year})</span>
+                            </div>
+                          </BrowseRow>
+                        )
+                      })}
+                    </div>
+                  </section>
+                ))}
+              </div>
+            ) : (
+              <div className="detail-results-empty">
+                <StatusPostit seedKey="page-songs-no-results" align="center">
+                  [No songs match these filters]
+                </StatusPostit>
+              </div>
+            )}
+          </section>
+        )}
       </div>
     </div>
   )

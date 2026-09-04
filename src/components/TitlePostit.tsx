@@ -1,5 +1,6 @@
 import type { ReactNode } from "react"
 import { hashString } from "../lib/hash"
+import { contentTilt } from "../lib/postitTilt"
 
 // Every page title is its own post-it now — but each one should look
 // distinct, so color/shape/tape/rotation are all derived from the title's
@@ -22,7 +23,12 @@ export default function TitlePostit({ seedKey, children }: TitlePostitProps) {
   const color = pickFrom(colors, hashString(seedKey + "|color"))
   const torn = hashString(seedKey + "|shape") % 2 === 0
   const fourTape = hashString(seedKey + "|tape") % 2 === 0
-  const rotate = (hashString(seedKey + "|rotate") % 240) / 10 - 12
+  // Uses the same site-wide card-tilt rule as everything else now
+  // (lib/postitTilt.ts's MAX_CARD_TILT_DEG) — was its own hand-rolled
+  // ±10° formula (itself tightened from an original ±12° after feedback
+  // that a title tilted near the old max, combined with its own padding,
+  // could visually encroach on whatever sat right below it).
+  const rotate = contentTilt(seedKey + "|title")
 
   const radii = torn
     ? undefined

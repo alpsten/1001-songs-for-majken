@@ -1,10 +1,11 @@
 import { useEffect, useState, useMemo } from "react"
-import { Link, useSearchParams } from "react-router-dom"
+import { useSearchParams } from "react-router-dom"
 import { loadArtists, loadSongs } from "../lib/parseContent"
 import { formatGenreTag } from "../lib/genres"
-import { getCardNote } from "../lib/cardNote"
-import CardNoteMark from "../components/CardNoteMark"
 import TitlePostit from "../components/TitlePostit"
+import StatusPostit from "../components/StatusPostit"
+import NumberPostit from "../components/NumberPostit"
+import BrowseRow from "../components/BrowseRow"
 import type { Artist, Song } from "../types"
 
 const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("")
@@ -25,6 +26,7 @@ export default function ArtistsPage() {
   const [songs, setSongs] = useState<Song[]>([])
   const [searchParams, setSearchParams] = useSearchParams()
   const selectedLetter = searchParams.get("letter") ?? ""
+  const searchQuery = searchParams.get("q") ?? ""
 
   useEffect(() => {
     Promise.all([loadArtists(), loadSongs()]).then(([arts, sngs]) => {
@@ -44,18 +46,31 @@ export default function ArtistsPage() {
     return counts
   }, [songs])
 
-  const groupedByLetter = useMemo(() => {
+  const normalizedQuery = searchQuery.trim().toLowerCase()
+  const matchingArtists = normalizedQuery
+    ? artists.filter((artist) => artist.name.toLowerCase().includes(normalizedQuery))
+    : artists
+
+  const availableLetters = browseLetters.filter((letter) =>
+    matchingArtists.some((artist) => getArtistLetter(artist.name) === letter)
+  )
+
+  const isFiltered = Boolean(normalizedQuery || selectedLetter)
+  const visibleArtists = selectedLetter
+    ? matchingArtists.filter((artist) => getArtistLetter(artist.name) === selectedLetter)
+    : matchingArtists
+
+  const groupedResults = useMemo(() => {
     const map = new Map<string, Artist[]>()
-    for (const artist of artists) {
+    for (const artist of visibleArtists) {
       const letter = getArtistLetter(artist.name)
       if (!map.has(letter)) map.set(letter, [])
       map.get(letter)!.push(artist)
     }
     return map
-  }, [artists])
+  }, [visibleArtists])
 
-  const availableLetters = browseLetters.filter((letter) => groupedByLetter.has(letter))
-  const activeGroup = selectedLetter ? groupedByLetter.get(selectedLetter) ?? [] : []
+  const visibleLetters = browseLetters.filter((letter) => groupedResults.has(letter))
 
   function toggleLetter(letter: string) {
     const next = new URLSearchParams(searchParams)
@@ -64,14 +79,66 @@ export default function ArtistsPage() {
     setSearchParams(next)
   }
 
+  function updateSearch(value: string) {
+    const next = new URLSearchParams(searchParams)
+    if (value) next.set("q", value)
+    else next.delete("q")
+    setSearchParams(next)
+  }
+
+  function clearFilters() {
+    setSearchParams({})
+  }
+
   return (
-    <div className="detail-page">
-      <header className="detail-header">
+    <div className="detail-page detail-page-wide">
+      <header className="detail-header detail-header-centered">
         <TitlePostit seedKey="page-artists">Artists</TitlePostit>
+        <div className="detail-header-status-row">
+          <StatusPostit seedKey="page-artists-summary" align="flex-start">
+            {isFiltered ? (
+              <>
+                There are currently <NumberPostit value={visibleArtists.length} seedKey="page-artists-summary-count" /> of{" "}
+                <NumberPostit value={artists.length} seedKey="page-artists-summary-total" /> artists shown in the archive
+              </>
+            ) : (
+              <>
+                There are currently <NumberPostit value={artists.length} seedKey="page-artists-summary-count" /> artists
+                in the archive
+              </>
+            )}
+          </StatusPostit>
+          {!isFiltered && (
+            <StatusPostit seedKey="page-artists-placeholder" align="flex-start">
+              [Select a letter or search to browse artists]
+            </StatusPostit>
+          )}
+        </div>
       </header>
 
       <div className="detail-stack">
-        <section className="detail-panel detail-section">
+        <section className="detail-panel detail-section filter-panel-compact">
+          <div className="filter-toolbar">
+            <div className="filter-grid">
+              <label className="filter-field filter-field-search">
+                <input
+                  type="search"
+                  aria-label="Search artists and groups"
+                  className="filter-input"
+                  placeholder="Search for an artist or group..."
+                  value={searchQuery}
+                  onChange={(event) => updateSearch(event.target.value)}
+                />
+              </label>
+            </div>
+
+            {isFiltered && (
+              <button type="button" className="ui-pill ui-pill-compact" onClick={clearFilters}>
+                <span>Clear filters</span>
+              </button>
+            )}
+          </div>
+
           <nav className="jump-nav" aria-label="Jump to artist letter">
             {browseLetterRows.map((row, rowIndex) => (
               <div key={rowIndex} className={`jump-nav-row ${rowIndex === 0 ? "jump-nav-row-short" : "jump-nav-row-long"}`}>
@@ -96,44 +163,51 @@ export default function ArtistsPage() {
           </nav>
         </section>
 
-        <section className="detail-panel">
-          {selectedLetter && activeGroup.length > 0 ? (
-            <div className="record-rows">
-              <section className="record-row-group">
-                <h2 className="record-row-letter">{selectedLetter}</h2>
-                <div className="record-row-scroller">
-                  {activeGroup.map((artist) => {
-                    const count = songCountById[artist.id] ?? 0
-                    const note = getCardNote(artist.id)
-                    return (
-                      <Link key={artist.id} to={`/artists/${artist.slug}`} className="record-card">
-                        {note && <CardNoteMark note={note} />}
-                        <span className="artist-tree-pill">{artist.name}</span>
-                        {count > 0 && (
-                          <p className="artist-tree-count">
-                            {count} {count === 1 ? "song" : "songs"}
-                          </p>
-                        )}
-                        {artist.genreTags?.length ? (
-                          <div className="artist-tree-genre-pills">
-                            {artist.genreTags.slice(0, 2).map((tag) => (
-                              <span key={tag} className="artist-tree-tag">
-                                {formatGenreTag(tag)}
-                              </span>
-                            ))}
-                          </div>
-                        ) : null}
-                        {artist.summary && <p className="artist-tree-summary">{artist.summary}</p>}
-                      </Link>
-                    )
-                  })}
-                </div>
-              </section>
-            </div>
-          ) : (
-            <p className="detail-placeholder">[Select a letter to browse artists]</p>
-          )}
-        </section>
+        {isFiltered && (
+          <section className="detail-results">
+            {visibleLetters.length > 0 ? (
+              <div className="record-rows">
+                {visibleLetters.map((letter) => (
+                  <section key={letter} id={`artists-letter-${letter}`} className="record-row-group">
+                    <StatusPostit seedKey={`artists-letter-heading-${letter}`} align="center">
+                      Artists that begin with &apos;
+                      <NumberPostit value={letter} seedKey={`artists-letter-heading-${letter}`} />
+                      &apos;
+                    </StatusPostit>
+                    <div className="browse-row-list">
+                      {groupedResults.get(letter)!.map((artist) => {
+                        const count = songCountById[artist.id] ?? 0
+                        return (
+                          <BrowseRow key={artist.id} to={`/artists/${artist.slug}`} seedKey={artist.id}>
+                            <div className="browse-row-title-line">
+                              <span className="archive-link-title not-italic">{artist.name}</span>
+                              {count > 0 && (
+                                <span className="archive-song-artist browse-row-suffix">
+                                  {count} {count === 1 ? "song" : "songs"}
+                                </span>
+                              )}
+                            </div>
+                            {artist.genreTags?.length ? (
+                              <div className="archive-meta">
+                                <span>{artist.genreTags.slice(0, 3).map(formatGenreTag).join(", ")}</span>
+                              </div>
+                            ) : null}
+                          </BrowseRow>
+                        )
+                      })}
+                    </div>
+                  </section>
+                ))}
+              </div>
+            ) : (
+              <div className="detail-results-empty">
+                <StatusPostit seedKey="page-artists-no-results" align="center">
+                  [No artists match these filters]
+                </StatusPostit>
+              </div>
+            )}
+          </section>
+        )}
       </div>
     </div>
   )

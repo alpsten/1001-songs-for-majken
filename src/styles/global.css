@@ -18,6 +18,12 @@
   --color-postit-yellow: #d7bd63;
   --color-postit-pink: #cf9c8f;
   --color-postit-mint: #96a988;
+  --color-postit-blue: #7f9cae;
+  --color-postit-lavender: #a996b8;
+  --color-postit-peach: #d99b6c;
+  --color-postit-beige: #cbb98c;
+  --color-postit-white: #efe7d4;
+  --color-postit-grey: #98917f;
   --color-postit-ink: #2a2013;
   --color-card-accent: #a8492f;
 
@@ -135,9 +141,7 @@ a { color: var(--color-accent); }
 }
 
 .nav-mark {
-  display: flex;
-  flex-direction: column;
-  gap: 0.15rem;
+  display: inline-flex;
   padding: 0.6rem 1.1rem;
   background-color: var(--color-postit-yellow);
   color: var(--color-postit-ink);
@@ -145,8 +149,94 @@ a { color: var(--color-accent); }
   transform: rotate(-1.4deg);
 }
 
-.nav-mark:hover {
-  transform: rotate(0deg) translateY(-2px);
+/* The text-sized wrapper the hover/active underline actually attaches
+   to — see the ::after rules below for why this exists separately from
+   .nav-mark/.nav-link. */
+.nav-mark-text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+/* Hover used to rotate the card flat and lift it — feedback was that a
+   nav item visibly moving under the cursor read as unstable, not
+   interactive. A hand-drawn underline (same recipe as the active-state
+   one below, just muted instead of accent-colored) is the hover cue now;
+   the card itself stays put, just casts a slightly darker shadow.
+   It lives on .nav-mark-text/.nav-link-text (a wrapper sized to the text
+   itself), not .nav-mark/.nav-link (the padded card) — attached to the
+   card, `left:0;right:0` spanned the whole padded box and sat well below
+   the text, which read as "a line under the box," not "under the word."
+   Attached to a content-sized wrapper instead, it naturally matches the
+   text's own width and sits right at its baseline. */
+.nav-mark-text::after,
+.nav-link-text::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -3px;
+  height: 5px;
+  opacity: 0;
+  background-repeat: repeat-x;
+  background-position: left center;
+  transition: opacity 160ms ease;
+  pointer-events: none;
+}
+
+/* Four different hand-drawn line styles, one per card, rather than the
+   same wavy squiggle under everything — feedback was that all four
+   cards having an identical hover cue made them read as one repeated
+   effect instead of four distinct things being hovered. The wordmark
+   gets its own bolder double-wave (it's the one card that never has an
+   "active" state to distinguish from hover, so it only needs one
+   treatment); Songs/Artists/Explore each get a genuinely different
+   stroke shape — zigzag, a scratchy double-stroke, a broken dashed line
+   — not just a recolor of the same path. */
+.nav-mark-text::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='6' viewBox='0 0 12 6'%3E%3Cpath d='M0 2.2 Q1.5 0.2 3 2.2 T6 2.2 T9 2.2 T12 2.2' fill='none' stroke='%236b5a3d' stroke-width='1.2' stroke-linecap='round'/%3E%3Cpath d='M0 4.4 Q1.5 2.4 3 4.4 T6 4.4 T9 4.4 T12 4.4' fill='none' stroke='%236b5a3d' stroke-width='1.2' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-size: 12px 6px;
+}
+
+/* Songs — zigzag */
+.nav-links > .nav-link:nth-child(1) .nav-link-text::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='6' viewBox='0 0 14 6'%3E%3Cpath d='M0 5 L3.5 1 L7 5 L10.5 1 L14 5' fill='none' stroke='%236b5a3d' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-size: 14px 6px;
+}
+
+.nav-links > .nav-link:nth-child(1).nav-link-active .nav-link-text::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='6' viewBox='0 0 14 6'%3E%3Cpath d='M0 5 L3.5 1 L7 5 L10.5 1 L14 5' fill='none' stroke='%23a8492f' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+/* Artists — scratchy double-stroke */
+.nav-links > .nav-link:nth-child(2) .nav-link-text::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='6' viewBox='0 0 14 6'%3E%3Cpath d='M0 2 Q1.8 0.3 3.5 2 T7 2 T10.5 2 T14 2' fill='none' stroke='%236b5a3d' stroke-width='1.3' stroke-linecap='round'/%3E%3Cpath d='M0 4.6 Q1.8 6.2 3.5 4.6 T7 4.6 T10.5 4.6 T14 4.6' fill='none' stroke='%236b5a3d' stroke-width='1.3' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-size: 14px 6px;
+}
+
+.nav-links > .nav-link:nth-child(2).nav-link-active .nav-link-text::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='6' viewBox='0 0 14 6'%3E%3Cpath d='M0 2 Q1.8 0.3 3.5 2 T7 2 T10.5 2 T14 2' fill='none' stroke='%23a8492f' stroke-width='1.3' stroke-linecap='round'/%3E%3Cpath d='M0 4.6 Q1.8 6.2 3.5 4.6 T7 4.6 T10.5 4.6 T14 4.6' fill='none' stroke='%23a8492f' stroke-width='1.3' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+
+/* Explore — broken dashed line */
+.nav-links > .nav-link:nth-child(3) .nav-link-text::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='6' viewBox='0 0 14 6'%3E%3Cpath d='M0.5 4 L4.5 3.2 M8 4.3 L12 3.4' fill='none' stroke='%236b5a3d' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-size: 14px 6px;
+}
+
+.nav-links > .nav-link:nth-child(3).nav-link-active .nav-link-text::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='6' viewBox='0 0 14 6'%3E%3Cpath d='M0.5 4 L4.5 3.2 M8 4.3 L12 3.4' fill='none' stroke='%23a8492f' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+
+.nav-mark:hover .nav-mark-text::after,
+.nav-link:hover .nav-link-text::after {
+  opacity: 1;
+}
+
+.nav-mark:hover,
+.nav-link:hover {
+  box-shadow: 0 6px 14px -10px rgba(0, 0, 0, 0.75);
 }
 
 .nav-mark-index {
@@ -175,13 +265,19 @@ a { color: var(--color-accent); }
 .nav-link {
   padding: 0.65rem 1rem;
   color: var(--color-card-muted);
-  font-family: var(--font-ui);
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
   text-decoration: none;
   transform: rotate(1deg);
+}
+
+.nav-link-text {
+  position: relative;
+  display: inline-block;
 }
 
 .nav-links > .nav-link:nth-child(2) {
@@ -194,7 +290,6 @@ a { color: var(--color-accent); }
 
 .nav-link:hover {
   color: var(--color-card-ink);
-  transform: rotate(0deg) translateY(-2px);
 }
 
 .nav-link:focus-visible {
@@ -206,12 +301,15 @@ a { color: var(--color-accent); }
   color: var(--color-card-accent);
 }
 
-.nav-link-active::after {
-  right: 0;
-  height: 6px;
-  bottom: -5px;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='6' viewBox='0 0 12 6'%3E%3Cpath d='M0 3 Q1.5 0.5 3 3 T6 3 T9 3 T12 3' fill='none' stroke='%23a8492f' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E")
-    repeat-x left center / 12px 6px;
+/* Always-on, distinct from the muted hover one above — the per-card
+   accent-colored background-image is set by the nth-child rules above
+   (same shape as that card's hover line, just recolored); this just
+   forces it visible regardless of hover, so hovering the already-active
+   link doesn't fade it back out. (The base rule was previously missing
+   `content`/`position`, so none of this ever actually rendered — fixed
+   as part of the same pass this comment was written in.) */
+.nav-link-active .nav-link-text::after {
+  opacity: 1;
 }
 
 /* ---------- Chips / pills ---------- */
@@ -332,6 +430,14 @@ a { color: var(--color-accent); }
   pointer-events: none;
 }
 
+/* Corner tape's own fixed diagonal angle (~40deg) — no --tilt added
+   here. Tape's position is anchored (via the fixed rem offsets below)
+   relative to whichever element carries the rotation transform now:
+   the shared wrapper (.browse-row-link / .status-postit-wrap /
+   .desk-postit-wrap), not the note itself — see the comment on
+   .browse-row-link. Since tape is a *sibling* of the note but a *child*
+   of that rotated wrapper, it already rotates together with the note as
+   one rigid piece; adding --tilt again here would double-count it. */
 .tape-tl {
   top: -0.5rem;
   left: -0.6rem;
@@ -355,6 +461,38 @@ a { color: var(--color-accent); }
   right: -0.6rem;
   transform: rotate(-40deg);
 }
+
+/* Fastener.tsx's tape placements for content-tier post-its (§5.2). Top
+   corners/sides only, or all four together — never a bottom-only pair,
+   which would leave the note unsupported. */
+.tape-top-center {
+  top: -0.55rem;
+  left: 50%;
+  width: 3rem;
+  height: 1.15rem;
+  /* No relative rotation of its own — the wrapper's rotation already
+     carries it exactly along the note's own edge (see .tape-tl above). */
+  transform: translateX(-50%);
+}
+
+.tape-left {
+  top: 50%;
+  left: -0.6rem;
+  width: 1.1rem;
+  height: 2.4rem;
+  transform: translateY(-50%) rotate(-6deg);
+}
+
+.tape-right {
+  top: 50%;
+  right: -0.6rem;
+  width: 1.1rem;
+  height: 2.4rem;
+  transform: translateY(-50%) rotate(6deg);
+}
+
+/* The pin is a hand-sketched rough.js SVG now (PushPin.tsx), not CSS —
+   no styling lives here anymore. See docs/DESIGN_SYSTEM.md §5.2. */
 
 .sotd-card {
   position: relative;
@@ -488,6 +626,16 @@ a { color: var(--color-accent); }
 .paper-select-trigger:focus-visible {
   outline: none;
   border-color: var(--color-postit-ink);
+}
+
+/* Keeps a long placeholder/value ("Artist with multiple songs...") to one
+   line instead of wrapping inside the trigger's flex row. */
+.paper-select-value {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .paper-select-caret {
@@ -644,11 +792,45 @@ a { color: var(--color-accent); }
   padding: 6.5rem 1.5rem 5rem;
 }
 
+/* Browse list pages (/songs, /artists) only — narrative detail pages
+   (song/artist bios, single-column reading copy) keep the narrower
+   760px, which is sized for line-length readability, not row-packing.
+   Widened on request so .browse-row-list's flex-wrap can actually fit
+   more than one wide row per line on a normal desktop viewport instead
+   of the column being barely wider than a single row. */
+.detail-page-wide {
+  max-width: 1100px;
+}
+
 .detail-header {
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  align-items: flex-start;
+  gap: 1.7rem;
   margin-bottom: 2.75rem;
+}
+
+/* Browse pages (/songs, /artists) — the title sits centered above
+   whatever status notes follow it, rather than everything flush left.
+   Narrative detail pages keep the left-aligned default; this is scoped
+   the same way .detail-page-wide is. */
+.detail-header-centered {
+  align-items: center;
+}
+
+/* The count summary and the "[Select a letter...]" prompt side by side
+   instead of stacked — both centered as one group under the title. Each
+   StatusPostit's own hashed left/center/right scatter (meant for a
+   *column* of separate stacked notes) is overridden to a plain
+   flex-start via the `align` prop when used here, the same reasoning
+   BrowseRow's row-wrap dropped its own per-item scatter for: a scatter
+   built for a column's cross-axis doesn't mean the same thing once the
+   axis is a row. */
+.detail-header-status-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.1rem;
 }
 
 .detail-title {
@@ -692,10 +874,15 @@ a { color: var(--color-accent); }
 
 .title-postit-torn {
   border-radius: 0 !important;
+  /* Deliberately gentle — a deckled-paper edge, not a shredded one. An
+     earlier version had ~10-15% deviations with sharp back-and-forth
+     zigzags; feedback was that it read as "too torn." This sweeps
+     monotonically around each edge with a max ~4-5% deviation instead. */
   clip-path: polygon(
-    0% 8%, 12% 0%, 30% 6%, 48% 0%, 62% 9%, 78% 2%, 100% 10%,
-    96% 30%, 100% 52%, 92% 68%, 100% 84%, 85% 100%, 62% 94%,
-    45% 100%, 25% 92%, 8% 100%, 0% 78%, 6% 55%, 0% 35%
+    0% 4%, 15% 0%, 35% 3%, 55% 0%, 75% 3%, 100% 4%,
+    97% 25%, 100% 50%, 97% 75%,
+    100% 96%, 80% 100%, 60% 97%, 40% 100%, 20% 97%, 0% 96%,
+    3% 75%, 0% 50%, 3% 25%
   );
 }
 
@@ -705,6 +892,47 @@ a { color: var(--color-accent); }
   width: 3rem;
   height: 1.15rem;
   transform: translateX(-50%) rotate(-2deg);
+}
+
+/* A status line (a count, a placeholder message) as its own post-it —
+   StatusPostit.tsx. Same fastener pattern as .browse-row-link: tape/pin
+   render as siblings of the shaped note, not children of it. */
+.status-postit-wrap {
+  position: relative;
+  display: inline-flex;
+  width: fit-content;
+  max-width: 100%;
+  /* Rotation lives here, not on .status-postit — same reasoning as
+     .browse-row-link (tape is a sibling of the note; rotating the shared
+     wrapper instead keeps tape's position locked to the note's actual
+     rotated corner, not its unrotated one). */
+  transform: rotate(var(--tilt, 0deg));
+}
+
+.status-postit {
+  padding: 0.9rem 1.1rem 0.8rem;
+  border: 1px solid var(--color-card-line);
+  color: var(--color-card-ink);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  filter: drop-shadow(0 10px 12px rgba(0, 0, 0, 0.4));
+}
+
+/* The "note stuck onto a note" badge for a number inside a StatusPostit —
+   NumberPostit.tsx. Deliberately not italic/serif, so it reads as a label
+   pinned onto the sentence rather than a typed-in word. */
+.number-postit {
+  display: inline-block;
+  margin: 0 0.15rem;
+  padding: 0.05rem 0.45rem;
+  border: 1px solid var(--color-card-line);
+  color: var(--color-postit-ink);
+  font-family: var(--font-ui);
+  font-weight: 700;
+  font-size: 0.95rem;
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.35);
 }
 
 .detail-meta-row {
@@ -775,7 +1003,8 @@ a { color: var(--color-accent); }
   content: "";
   position: absolute;
   top: -0.4rem;
-  left: 1.7rem;
+  left: 50%;
+  transform: translateX(-50%);
   width: 0.55rem;
   height: 0.55rem;
   border-radius: 50%;
@@ -788,8 +1017,6 @@ a { color: var(--color-accent); }
 }
 
 .detail-stack > .detail-panel:nth-of-type(2)::before {
-  left: auto;
-  right: 1.9rem;
   background: var(--color-postit-mint);
 }
 
@@ -826,6 +1053,17 @@ a { color: var(--color-accent); }
   gap: 1rem;
 }
 
+/* The search/filter panel on /songs and /artists — kept at its original
+   size even though .detail-page-wide widened the column around it, so
+   only the row-packing "board" below it (.detail-results) gets to use
+   the extra width. Centered in the wider column since it's no longer
+   edge-to-edge with its container. */
+.filter-panel-compact {
+  max-width: 760px;
+  align-self: center;
+  width: 100%;
+}
+
 .detail-section-title {
   color: var(--color-card-muted);
   font-family: var(--font-ui);
@@ -841,39 +1079,144 @@ a { color: var(--color-accent); }
   gap: 0.55rem;
 }
 
+/* /explore's four lists (ThemesPage.tsx) only — real TagCard post-its
+   now, not the small flat .ui-pill/.tag-postit chips this base class
+   still holds on artist/theme/genre detail pages (kept untouched there,
+   on purpose — those are lists of dozens of song titles, not a handful
+   of hashed cards). Centered, like §11's browse rows: direct feedback
+   ("from the middle like we have done with /songs and /artists") once
+   this held real cards instead of small flat pills. Gap widened for the
+   same reason as .browse-row-list's own (§11): at the base 0.55rem,
+   several of these crowded onto one tight line — real margin between
+   them reads as separate notes instead of one packed block. */
+.detail-pill-list-explore {
+  justify-content: center;
+  gap: 2rem 2.2rem;
+}
+
+/* Centered column — title badge, meta line, +/- badge, all stacked and
+   centered — not the old left-title/right-icon space-between row.
+   Direct request: "based from the centre." */
 .explore-toggle {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
+  gap: 0.5rem;
   width: 100%;
   padding: 0;
   border: 0;
   background: transparent;
   color: inherit;
-  text-align: left;
+  text-align: center;
   cursor: pointer;
 }
 
+/* A short summary sentence now, not a "N moods" count — direct feedback
+   that a bare count didn't say anything about what the category was.
+   Italic serif, like .archive-copy's other short body copy, not the
+   monospace label register the count used to sit in. max-width keeps a
+   line from stretching edge-to-edge now that the card can be as wide as
+   its content (§ above) instead of the old full 760px column. */
 .explore-toggle-meta {
-  display: block;
-  margin-top: 0.3rem;
+  max-width: 22rem;
   color: var(--color-card-muted);
-  font-family: var(--font-ui);
-  font-size: 0.78rem;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
-.explore-toggle-icon {
-  flex-shrink: 0;
-  width: 1.9rem;
-  height: 1.9rem;
-  border: 1px solid var(--color-card-line);
-  border-radius: 0.3rem;
+.explore-toggle-hint {
   color: var(--color-card-accent);
   font-family: var(--font-ui);
-  font-size: 1.1rem;
-  line-height: 1.75rem;
-  text-align: center;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* /explore's Mood/Genre/Year/Family Entries cards — a hashed-color
+   post-it with top-center tape (ExploreCategoryCard, ThemesPage.tsx),
+   same architecture as .explore-tag-link below: rotation on the wrapper,
+   PostitBase for shape/grain/shadow, Fastener as a sibling. Replaces the
+   old plain .detail-panel + fixed accent-color pin dot, which only ever
+   cycled through 3 colors across however many cards used it. Tilt is
+   panelTilt() though, not contentTilt() — see postitTilt.ts. */
+/* Hugs its own content instead of stretching to fill .detail-page's
+   width — trimmed the same way .filter-panel-compact and every hashed
+   post-it elsewhere already do ("the post-it should not be larger than
+   the text allows it"). align-self: center overrides .detail-stack's
+   default align-items: stretch, which would otherwise force this back
+   to full width since it's a direct flex child of that column. */
+.explore-category-wrap {
+  position: relative;
+  width: fit-content;
+  max-width: 100%;
+  align-self: center;
+  transform: rotate(var(--tilt, 0deg));
+}
+
+.explore-category-postit {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem 1.5rem 1.6rem;
+  color: var(--color-postit-ink);
+}
+
+.explore-category-postit .explore-toggle-meta,
+.explore-category-postit .archive-copy {
+  color: var(--color-postit-ink);
+  opacity: 0.7;
+}
+
+/* 2x2 instead of a single stacked column — direct request, with an
+   explicit reading order (Mood/Family Entries on top, Genre/Year below)
+   that's just JSX source order here (ThemesPage.tsx), not a grid-order
+   override. justify-items: center keeps each card centered in its own
+   cell rather than stretched to fill it — .explore-category-wrap's own
+   width: fit-content (§ above) still matters for grid item sizing, but
+   justify-items is the belt-and-suspenders that guarantees it in a grid
+   context specifically. align-items: start (not the grid default,
+   stretch) so opening one card doesn't stretch its shorter row-mate to
+   match its height — the row grows to fit the tallest card, but the
+   other one just sits at its own natural height inside that taller row
+   instead of being pulled down to fill it. */
+.explore-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  justify-items: center;
+  align-items: start;
+  gap: 1.5rem;
+}
+
+/* The "one category open" layout (ThemesPage.tsx) — swaps in for
+   .explore-grid entirely rather than trying to make one grid do both
+   jobs (a spanning grid item plus re-centering an odd leftover item in
+   the row below gets fighting with grid auto-placement fast). Direct
+   request: the open card centers on its own row up top; the other three
+   collect underneath, also centered as a group. Both are plain
+   flex-wrap rows with justify-content: center — flexbox centers a
+   leftover lone or odd-numbered row on its own, which a 2-column grid's
+   auto-placement doesn't do without extra per-item span rules. */
+.explore-focus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.explore-focus-open {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.explore-focus-rest {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
 }
 
 /* ---------- Footer ---------- */
@@ -931,172 +1274,220 @@ a { color: var(--color-accent); }
 }
 
 .record-row-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
   scroll-margin-top: 7rem;
 }
 
-.record-row-group:first-child .record-row-letter {
-  padding-top: 0;
+/* Custom-fitted post-it rows for /songs and /artists — see
+   docs/DESIGN_SYSTEM.md §11.1. Shared by BrowseRow.tsx; the surrounding
+   panel is now bare (.detail-results, below) rather than a solid parchment
+   box, so rows read as scattered directly on the desk. */
+
+.detail-results {
+  padding: 0.5rem 0 1rem;
 }
 
-.record-row-letter {
-  padding: 0 0 0.4rem;
-  color: var(--color-accent);
-  font-family: var(--font-ui);
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  border-bottom: 1px solid var(--color-line);
-}
-
-.record-row-scroller {
+/* The "no results" StatusPostit (SongsPage.tsx/ArtistsPage.tsx) — a
+   plain <p> before, replaced with a real post-it on direct request, same
+   rules as the "There are currently N of M shown" count StatusPostit:
+   auto-sized to the text, centered, never stretched. .detail-results
+   itself stays a plain block (its other state, .record-rows, needs to
+   stay block-level), so this wrapper does the centering instead of
+   putting display:flex on .detail-results directly. */
+.detail-results-empty {
   display: flex;
-  gap: 1rem;
+  justify-content: center;
+}
+
+/* Rows pack left-to-right and wrap — 1, 2, or 3 notes on a line depending
+   on how wide each one is (each note's width is still hugging its own
+   content, per §11.1's fluid sizing). A strict one-per-line stack left a
+   lot of empty space next to every short title; this fills it in without
+   giving up the per-note custom-fit sizing. */
+.browse-row-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  /* Centered, not left-packed — a wrapped line of a few rows sitting
+     flush against the left edge with empty space on the right read as
+     lopsided once the column got wide enough to fit more than one per
+     line (.detail-page-wide). Direct feedback: "can we do from the
+     middle, looks more natural." */
+  justify-content: center;
+  /* Wide rows can tilt up to MAX_CARD_TILT_DEG (§5.1) — rotation pivots
+     around the card's own center, so a wide card's corners swing outside
+     its unrotated layout box by more than this gap alone accounts for.
+     Direct feedback: rows read as touching/overlapping at the old
+     0.85rem-then-1.1rem gap; still felt tight at 1.9rem once tape was
+     fixed to actually track the note's rotated corner (§5.2) — this is
+     the third widening, each on direct feedback. */
+  gap: 2.4rem;
   margin-top: 0.9rem;
   padding: 0.4rem 0.2rem 1rem;
-  overflow-x: auto;
-  scroll-snap-type: x proximity;
-  scrollbar-width: thin;
-  scrollbar-color: var(--color-line) transparent;
 }
 
-.record-card {
+/* A real positioned box (not display:contents) — the tape fastener
+   renders as its direct child, a sibling of the shaped .browse-row-postit
+   rather than a descendant of it. A clip-path applied to a "cut" corner
+   treatment clips everything painted inside that element, including
+   children positioned outside its own box (negative-offset tape) and its
+   own box-shadow — keeping the fastener here, one level up, is what
+   keeps it from being cut off. This element also carries the rotation
+   transform itself now (see its own comment below), so tape and note
+   rotate together as one piece. See docs/DESIGN_SYSTEM.md §5.2's note on
+   this. */
+.browse-row-link {
+  position: relative;
+  display: inline-flex;
+  width: fit-content;
+  max-width: 100%;
+  color: inherit;
+  text-decoration: none;
+  border-radius: 0.3rem;
+  /* Rotation lives here, on the wrapper, not on .browse-row-postit —
+     tape is a *sibling* of the note (§5.2's clip-path caveat), so if
+     only the note itself rotated, tape's fixed rem offsets stayed
+     anchored to the note's *unrotated* corner position while the note's
+     actual corner swung away from it under rotation (a lot, for a wide
+     rect-wide note at a few degrees — the far corner is a long way from
+     the pivot). Rotating the wrapper instead makes the note and its tape
+     rotate together as one rigid piece, so tape stays stuck to the
+     corner it's supposed to be on. Reported directly: "some of the tape
+     are way off the post its." */
+  transform: rotate(var(--tilt, 0deg));
+}
+
+.browse-row-postit {
   position: relative;
   display: flex;
-  flex: 0 0 auto;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 168px;
-  min-height: 168px;
-  padding: 1.2rem 1rem;
+  align-items: flex-start;
+  width: fit-content;
+  max-width: min(90vw, 34rem);
+  padding: 0.9rem 1.3rem 1rem;
   border: 1px solid var(--color-card-line);
-  border-radius: 0.3rem;
-  background-color: var(--color-card);
-  background-image: var(--paper-grain);
-  background-blend-mode: overlay;
   color: var(--color-card-ink);
-  text-decoration: none;
-  text-align: center;
-  scroll-snap-align: start;
-  transform: rotate(-0.5deg);
-  box-shadow: 0 14px 30px -22px rgba(0, 0, 0, 0.5);
-  transition: box-shadow 180ms ease, transform 180ms ease;
+  /* filter: drop-shadow, not box-shadow — box-shadow is clipped away
+     entirely on "cut" corner treatments (clip-path removes anything
+     painted outside the polygon, shadow included); drop-shadow is
+     computed from the already-clipped rendered shape, so it survives. */
+  filter: drop-shadow(0 10px 12px rgba(0, 0, 0, 0.4));
+  transition: filter 180ms ease;
+  cursor: pointer;
 }
 
-.record-card:nth-child(3n) {
-  transform: rotate(0.6deg);
+/* A darker, tighter shadow on hover — not a lift. A real note on a desk
+   doesn't float when you point at it; user feedback: the earlier
+   translateY "pop up" read as unrealistic, especially with tape/pins that
+   didn't move with it. */
+.browse-row-link:hover .browse-row-postit {
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.65));
 }
 
-.record-card:nth-child(3n + 1) {
-  transform: rotate(-0.7deg);
-}
-
-.record-card:hover {
-  transform: rotate(0deg) translateY(-3px);
-  box-shadow: 0 18px 36px -20px rgba(0, 0, 0, 0.55);
-}
-
-.record-card:focus-visible {
+.browse-row-link:focus-visible {
   outline: none;
   box-shadow: 0 0 0 3px rgba(168, 73, 47, 0.35);
 }
 
-.record-card .artist-tree-summary {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+.browse-row-postit .archive-link-title {
+  font-size: 1.2rem;
 }
 
-.record-card .archive-link-title {
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  font-size: 1.15rem;
-  line-height: 1.25;
+.browse-row-title-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: 0.5rem;
+  row-gap: 0.1rem;
 }
 
-.record-card .archive-song-artist {
-  margin-top: 0.35rem;
+.browse-row-suffix {
+  display: inline;
+  margin-top: 0;
 }
 
-.record-card .archive-meta {
-  justify-content: center;
+/* One font per card here, not two — the title's already the "handwriting"
+   face (§2); the artist credit and album/year line switch to match it
+   instead of the site's usual monospace "ledger" face, on direct
+   request toward a more unified, hand-written feel (the long-term plan
+   is real scanned handwriting; this is the interim step with what the
+   type system already has). Scoped to browse rows only — every other
+   card's title/metadata split (nav, status lines, detail panels) is
+   unchanged, so this is a deliberate one-component exception to the
+   site-wide two-face rule, not a change to the rule itself. */
+.browse-row-postit .archive-song-artist {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 0.95rem;
+  letter-spacing: normal;
+  text-transform: none;
 }
 
-/* A small blank note some cards carry — which card, which corner, which
-   color/shape is derived per-item from lib/cardNote.ts (see there for why). */
-
-.card-note-svg {
-  position: absolute;
-  filter: drop-shadow(2px 3px 3px rgba(0, 0, 0, 0.35));
-  pointer-events: none;
+.browse-row-postit .archive-meta {
+  margin-top: 0.45rem;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 0.85rem;
 }
 
-.card-note {
-  position: absolute;
-  border-radius: 0.05rem 0.35rem 0.05rem 0.35rem;
-  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.35);
-  background-image: var(--paper-grain);
-  background-blend-mode: overlay;
-  pointer-events: none;
+/* Ruled-paper texture (§4.4) — layered over the grain, same recipe as
+   .sotd-card-body's ruled lines. (An earlier version paired this with
+   punched holes down the left edge on some notes — removed; plain
+   striped is the only variant now.)
+   The repeat/offset here approximate the note's own text rhythm (title
+   row + the meta row below it) — it's a heuristic, not a pixel-perfect
+   measurement of the actual text (content varies: a two-line title wraps
+   differently than a one-line one), but it's tuned to land close instead
+   of arbitrarily off. Re-tuned once already: `1.5rem`/`0.95rem` was
+   measured against the title-row's own line-height back when every
+   browse-row text was monospace at the smaller §2 sizes; once the
+   artist-credit and meta rows switched to the larger italic serif
+   (above), that spacing no longer matched — lines were landing across
+   the title's cap-height instead of under it. `1.8rem`/`1.1rem` was
+   measured directly off real rendered rows (`getBoundingClientRect` on
+   `.browse-row-title-line`/`.archive-meta`) after that font change,
+   rather than recomputed from font metrics by hand. */
+.browse-row-postit-striped {
+  background-image:
+    repeating-linear-gradient(0deg, transparent 0 1.8rem, rgba(40, 30, 15, 0.3) 1.8rem calc(1.8rem + 1px)),
+    var(--paper-grain);
+  background-position: 0 1.1rem;
+  background-blend-mode: normal, overlay;
 }
 
-.card-note-yellow {
-  background-color: var(--color-postit-yellow);
+/* Crinkle texture (§4.4) — a few large, soft, low-opacity creases layered
+   over the grain, not a live filter (a filter on the note would distort
+   the text inside it). The three crease angles come from CSS custom
+   properties (--crinkle-a/b/c, set per-instance from a hash in
+   BrowseRow.tsx) rather than fixed values — every crinkled note used to
+   share the exact same three angles, so the "crinkle" always leaned the
+   same direction across the whole page. Fallback values here only apply
+   if a caller forgets to set them. Combinable with
+   .browse-row-postit-striped — the two-class rule below exists because
+   background-image isn't additive across two single-class rules of equal
+   specificity; without it, whichever rule is later in the stylesheet
+   would silently win outright and the other texture would vanish. */
+.browse-row-postit-crinkled {
+  background-image:
+    linear-gradient(var(--crinkle-a, 115deg), transparent 30%, rgba(255, 255, 255, 0.1) 42%, transparent 54%),
+    linear-gradient(var(--crinkle-b, 200deg), transparent 40%, rgba(0, 0, 0, 0.14) 50%, transparent 62%),
+    linear-gradient(var(--crinkle-c, 65deg), transparent 55%, rgba(255, 255, 255, 0.08) 66%, transparent 78%),
+    var(--paper-grain);
+  background-blend-mode: soft-light, multiply, soft-light, overlay;
 }
 
-.card-note-pink {
-  background-color: var(--color-postit-pink);
-}
-
-.card-note-mint {
-  background-color: var(--color-postit-mint);
-}
-
-.card-note-tl {
-  top: -0.55rem;
-  left: -0.5rem;
-  transform: rotate(-11deg);
-}
-
-.card-note-tr {
-  top: -0.55rem;
-  right: -0.5rem;
-  transform: rotate(12deg);
-}
-
-.card-note-bl {
-  bottom: -0.55rem;
-  left: -0.5rem;
-  transform: rotate(9deg);
-}
-
-.card-note-br {
-  bottom: -0.55rem;
-  right: -0.5rem;
-  transform: rotate(-10deg);
-}
-
-.card-note-torn {
-  border-radius: 0;
-  clip-path: polygon(
-    0% 8%, 12% 0%, 30% 6%, 48% 0%, 62% 9%, 78% 2%, 100% 10%,
-    96% 30%, 100% 52%, 92% 68%, 100% 84%, 85% 100%, 62% 94%,
-    45% 100%, 25% 92%, 8% 100%, 0% 78%, 6% 55%, 0% 35%
-  );
-}
-
-.artist-tree-count {
-  margin-top: 0.4rem;
-  color: var(--color-card-muted);
-  font-family: var(--font-ui);
-  font-size: 0.64rem;
-  letter-spacing: 0.06em;
-  text-align: center;
-  text-transform: uppercase;
+.browse-row-postit-crinkled.browse-row-postit-striped {
+  background-image:
+    linear-gradient(var(--crinkle-a, 115deg), transparent 30%, rgba(255, 255, 255, 0.1) 42%, transparent 54%),
+    linear-gradient(var(--crinkle-b, 200deg), transparent 40%, rgba(0, 0, 0, 0.14) 50%, transparent 62%),
+    linear-gradient(var(--crinkle-c, 65deg), transparent 55%, rgba(255, 255, 255, 0.08) 66%, transparent 78%),
+    repeating-linear-gradient(0deg, transparent 0 1.8rem, rgba(40, 30, 15, 0.3) 1.8rem calc(1.8rem + 1px)),
+    var(--paper-grain);
+  background-position: 0 0, 0 0, 0 0, 0 1.1rem, 0 0;
+  background-blend-mode: soft-light, multiply, soft-light, normal, overlay;
 }
 
 .artist-tree-genre-pills {
@@ -1105,17 +1496,6 @@ a { color: var(--color-accent); }
   flex-wrap: wrap;
   gap: 0.3rem;
   margin-top: 0.45rem;
-}
-
-.artist-tree-pill {
-  display: inline-block;
-  max-width: 100%;
-  color: var(--color-card-ink);
-  font-family: var(--font-display);
-  font-style: italic;
-  font-size: 1.3rem;
-  text-align: center;
-  word-break: break-word;
 }
 
 .artist-tree-summary {
@@ -1185,6 +1565,45 @@ a { color: var(--color-accent); }
   outline-offset: 2px;
 }
 
+/* /explore's tag postits (ThemesPage.tsx's TagCard — Mood/Genre/Year/
+   Family Entries all share this now) — a real card like BrowseRow's
+   rows, not a flat .tag-postit pill: PostitBase (shape taxonomy, grain,
+   drop-shadow) plus a tape Fastener as a sibling, same architecture as
+   .browse-row-link (rotation on the wrapper so tape stays locked to the
+   note's actual corner — see that class's own comment). Started as
+   Family Entries only; direct feedback that Mood/Genre/Year still being
+   flat 3-color pills read as "not a valid [taxonomy] one" and
+   inconsistent with Family Entries right next to them extended it to
+   all four lists. */
+.explore-tag-link {
+  position: relative;
+  display: inline-flex;
+  width: fit-content;
+  text-decoration: none;
+  color: inherit;
+  transform: rotate(var(--tilt, 0deg));
+}
+
+.explore-tag-postit {
+  padding: 0.7rem 1.2rem;
+  color: var(--color-postit-ink);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.1rem;
+  filter: drop-shadow(0 8px 10px rgba(0, 0, 0, 0.35));
+  transition: filter 180ms ease;
+  cursor: pointer;
+}
+
+.explore-tag-link:hover .explore-tag-postit {
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.55));
+}
+
+.explore-tag-link:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(168, 73, 47, 0.35);
+}
+
 /* ---------- Desk clutter: ambient stuff in the margins ---------- */
 
 .desk-clutter {
@@ -1203,51 +1622,65 @@ a { color: var(--color-accent); }
 
 .desk-postit {
   position: absolute;
-  border-radius: 0.1rem 0.7rem 0.1rem 0.7rem;
   box-shadow: 3px 5px 12px rgba(0, 0, 0, 0.4);
   background-image: var(--paper-grain);
   background-blend-mode: overlay;
 }
 
-.desk-postit::before {
-  content: "";
-  position: absolute;
-  top: -0.5rem;
-  left: 50%;
-  width: 1.8rem;
-  height: 0.9rem;
-  background: rgba(236, 224, 197, 0.3);
-  border: 1px solid rgba(236, 224, 197, 0.15);
-  transform: translateX(-50%) rotate(-2deg);
-}
-
 /* Wrapper for the rough.js variant of the ambient desk post-its — the
-   note itself is an SVG, so its tape is a real sibling rather than a
-   pseudo-element. */
+   note itself is an SVG, so its tape/pin is a real sibling rather than a
+   pseudo-element. Also the plain variant's positioning context — both
+   render a Fastener (§5.2) as a child now instead of the single hardcoded
+   top-center tape strip this used to be. */
 .desk-postit-wrap {
   position: absolute;
-}
-
-.desk-postit-tape {
-  top: -0.5rem;
-  left: 50%;
-  width: 1.8rem;
-  height: 0.9rem;
-  transform: translateX(-50%) rotate(-2deg);
 }
 
 /* A folded/dog-eared corner, like a page corner peeled up — appears on
    some post-its at random rather than every note using the same shape. */
 .postit-fold {
   position: absolute;
-  bottom: 0;
-  right: 0;
   width: 0;
   height: 0;
   border-style: solid;
+  filter: drop-shadow(-1px -1px 1px rgba(0, 0, 0, 0.18));
+}
+
+/* Four corner positions — see docs/DESIGN_SYSTEM.md §4 for the derivation
+   (verified against the original bottom-right-only version). */
+.postit-fold-br {
+  bottom: 0;
+  right: 0;
   border-width: 0 0 0.85rem 0.85rem;
   border-color: transparent transparent rgba(20, 14, 6, 0.28) transparent;
-  filter: drop-shadow(-1px -1px 1px rgba(0, 0, 0, 0.18));
+}
+
+.postit-fold-bl {
+  bottom: 0;
+  left: 0;
+  border-width: 0 0.85rem 0.85rem 0;
+  border-color: transparent transparent rgba(20, 14, 6, 0.28) transparent;
+}
+
+.postit-fold-tr {
+  top: 0;
+  right: 0;
+  border-width: 0.85rem 0 0 0.85rem;
+  border-color: rgba(20, 14, 6, 0.28) transparent transparent transparent;
+}
+
+.postit-fold-tl {
+  top: 0;
+  left: 0;
+  border-width: 0.85rem 0.85rem 0 0;
+  border-color: rgba(20, 14, 6, 0.28) transparent transparent transparent;
+}
+
+.postit-base {
+  position: relative;
+  box-shadow: 3px 5px 12px rgba(0, 0, 0, 0.4);
+  background-image: var(--paper-grain);
+  background-blend-mode: overlay;
 }
 
 .desk-icon {
@@ -1290,6 +1723,10 @@ a { color: var(--color-accent); }
   }
 
   .artist-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .explore-grid {
     grid-template-columns: 1fr;
   }
 

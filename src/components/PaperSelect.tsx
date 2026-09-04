@@ -23,7 +23,12 @@ export default function PaperSelect({ value, onValueChange, placeholder, options
   return (
     <Select.Root value={value || ALL} onValueChange={(next) => onValueChange(next === ALL ? "" : next)}>
       <Select.Trigger className={`paper-select-trigger ${className ?? ""}`} aria-label={ariaLabel}>
-        <Select.Value />
+        {/* Select.Value drops className/style (see @radix-ui/react-select's
+            source — it destructures and discards both), so the overflow/
+            ellipsis handling has to live on a wrapper around it instead. */}
+        <span className="paper-select-value">
+          <Select.Value />
+        </span>
         <Select.Icon className="paper-select-caret">▾</Select.Icon>
       </Select.Trigger>
       <Select.Portal>

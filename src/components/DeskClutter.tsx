@@ -17,6 +17,8 @@
 import type { CSSProperties } from "react"
 import RoughNote from "./RoughNote"
 import RoughShape, { type ShapeKind } from "./RoughShape"
+import Fastener from "./Fastener"
+import { MAX_CARD_TILT_DEG } from "../lib/postitTilt"
 
 const CLUTTER_SEED = 20260901
 
@@ -45,7 +47,12 @@ type PostIt = Placement & {
   height: number
   rough: boolean
   folded: boolean
-  radii: string
+  /** Uniform per-note corner treatment — never independently random per
+   *  corner (that produced notes with one round corner and one sharp
+   *  corner on the same piece of paper, which isn't a real post-it
+   *  shape). Matches the taxonomy's sharp/round pruning in §4.1. */
+  round: boolean
+  roundRadius: string
   seed: number
 }
 
@@ -61,7 +68,11 @@ type Icon = Placement & {
 type ClutterItem = PostIt | Icon
 
 const postitColors: PostIt["color"][] = ["yellow", "pink", "mint"]
-const shapeKinds: ShapeKind[] = ["star", "heart", "sun", "lego"]
+const shapeKinds: ShapeKind[] = [
+  "star", "heart", "sun", "lego",
+  "cassette", "vinyl", "headphones", "paperclip", "ticket", "musicNote", "coffeeRing",
+  "cloud", "lightningBolt", "balloon", "flower", "smileyFace",
+]
 const shapeColors: Icon["color"][] = ["yellow", "pink", "mint", "ink"]
 const cornerOptions = ["0.05rem", "0.15rem", "0.55rem", "0.9rem"]
 
@@ -73,12 +84,13 @@ function pick<T>(list: T[]): T {
   return list[Math.floor(rand() * list.length)]
 }
 
-function randomRadii(): string {
-  return `${pick(cornerOptions)} ${pick(cornerOptions)} ${pick(cornerOptions)} ${pick(cornerOptions)}`
-}
-
 function generateClutter(count: number): ClutterItem[] {
-  const usedTops: Record<"left" | "right", number[]> = { left: [], right: [] }
+  // Same-bucket minimum-gap check for all three placement buckets (left
+  // margin, right margin, center) — see docs/DESIGN_SYSTEM.md §5.3. This
+  // is a spacing floor, not a true no-overlap guarantee: a little overlap
+  // between two decorative items is fine and part of the look, but items
+  // in the same bucket shouldn't stack directly on each other.
+  const usedTops: Record<"left" | "right" | "center", number[]> = { left: [], right: [], center: [] }
   const items: ClutterItem[] = []
 
   for (let i = 0; i < count; i++) {
@@ -89,7 +101,15 @@ function generateClutter(count: number): ClutterItem[] {
     // directly behind the centered content column — z-index keeps them
     // safely behind cards, so they only show through in the gaps.
     if (rand() < 0.34) {
-      placement = { mode: "center", left: `${randomBetween(6, 94).toFixed(1)}%`, top: `${randomBetween(2, 97).toFixed(1)}%` }
+      let top = randomBetween(2, 97)
+      let attempts = 0
+      while (usedTops.center.some((t) => Math.abs(t - top) < 5) && attempts < 12) {
+        top = randomBetween(2, 97)
+        attempts++
+      }
+      usedTops.center.push(top)
+
+      placement = { mode: "center", left: `${randomBetween(6, 94).toFixed(1)}%`, top: `${top.toFixed(1)}%` }
     } else {
       const side = rand() < 0.5 ? "left" : "right"
 
@@ -114,6 +134,9 @@ function generateClutter(count: number): ClutterItem[] {
         kind: "icon",
         shape: pick(shapeKinds),
         color: pick(shapeColors),
+        // Icons are doodles, not cards — the site-wide card-tilt rule
+        // (MAX_CARD_TILT_DEG, used just below for the post-it branch)
+        // doesn't apply to them, so this stays its own wider range.
         rotate: randomBetween(-20, 22),
         size: Math.round(randomBetween(34, 56)),
         seed: Math.floor(rand() * 2147483647),
@@ -130,12 +153,13 @@ function generateClutter(count: number): ClutterItem[] {
       ...placement,
       kind: "postit",
       color: pick(postitColors),
-      rotate: randomBetween(-16, 17),
+      rotate: randomBetween(-MAX_CARD_TILT_DEG, MAX_CARD_TILT_DEG),
       width: Math.round(width),
       height: Math.round(height),
       rough: rand() < 0.4,
       folded: rand() < 0.35,
-      radii: randomRadii(),
+      round: rand() < 0.5,
+      roundRadius: pick(cornerOptions),
       seed: Math.floor(rand() * 2147483647),
     })
   }
@@ -151,9 +175,10 @@ export default function DeskClutter() {
       {clutter.map((item, i) => {
         const positionStyle: CSSProperties =
           item.mode === "center" ? { left: item.left, top: item.top } : { [item.side]: item.edge, top: item.top }
-        const wrapperStyle: CSSProperties = {
+        const wrapperStyle: CSSProperties & { "--tilt"?: string } = {
           ...positionStyle,
           transform: `rotate(${item.rotate}deg)`,
+          "--tilt": `${item.rotate}deg`,
         }
 
         if (item.kind === "icon") {
@@ -164,6 +189,12 @@ export default function DeskClutter() {
           )
         }
 
+        // Same fastener pool as content-tier notes (§5.2: 4 tape styles)
+        // — this used to always be one hardcoded top-center strip, which
+        // read as "every post-it looks the same" once there were enough
+        // of them on screen at once.
+        const fastenerSeed = `desk-clutter-${i}`
+
         if (item.rough) {
           return (
             <div
@@ -171,9 +202,9 @@ export default function DeskClutter() {
               className="desk-postit-wrap"
               style={{ ...wrapperStyle, width: item.width, height: item.height }}
             >
-              <span className="tape-piece desk-postit-tape" />
               <RoughNote width={item.width} height={item.height} color={item.color} seed={item.seed} />
               {item.folded && <span className="postit-fold" />}
+              <Fastener seedKey={fastenerSeed} />
             </div>
           )
         }
@@ -182,9 +213,16 @@ export default function DeskClutter() {
           <div
             key={i}
             className={`desk-postit desk-postit-${item.color}`}
-            style={{ ...wrapperStyle, position: "absolute", width: item.width, height: item.height, borderRadius: item.radii }}
+            style={{
+              ...wrapperStyle,
+              position: "absolute",
+              width: item.width,
+              height: item.height,
+              borderRadius: item.round ? item.roundRadius : "0",
+            }}
           >
             {item.folded && <span className="postit-fold" />}
+            <Fastener seedKey={fastenerSeed} />
           </div>
         )
       })}

@@ -9,3 +9,8 @@ export function hashString(value: string): number {
   }
   return Math.abs(hash)
 }
+
+/** Deterministically pick one item from a list using a hash from hashString(). */
+export function pickFrom<T>(list: readonly T[], hash: number): T {
+  return list[hash % list.length]
+}
