@@ -15,16 +15,6 @@
   --color-card-muted: #6b5a3d;
   --color-card-line: rgba(36, 26, 13, 0.18);
 
-  --color-postit-yellow: #d7bd63;
-  --color-postit-pink: #cf9c8f;
-  --color-postit-mint: #96a988;
-  --color-postit-blue: #7f9cae;
-  --color-postit-lavender: #a996b8;
-  --color-postit-peach: #d99b6c;
-  --color-postit-beige: #cbb98c;
-  --color-postit-white: #efe7d4;
-  --color-postit-grey: #98917f;
-  --color-postit-ink: #2a2013;
   --color-card-accent: #a8492f;
 
   /* Two faces, two jobs: Instrument Serif italic is the "handwriting" —
@@ -35,6 +25,32 @@
 }
 
 :root {
+  /* The post-it palette lives in a plain :root block, not @theme, on
+     purpose. Every color here is consumed either as a literal CSS
+     var(--color-postit-x) or via a runtime-built var(--color-postit-${x})
+     string in component code (BrowseRow, StatusPostit, NumberPostit,
+     ThemesPage) — never as a Tailwind utility class like bg-postit-x.
+     Tailwind v4 tree-shakes unused @theme tokens based on static usage
+     it can find in scanned project text; a runtime-interpolated var()
+     is invisible to that scan, so tokens only reached that way were
+     silently dropped from production builds (confirmed against the
+     committed lockfile's vite@8.0.1 in an isolated `npm ci`) — locally
+     they looked fine only because docs/DESIGN_SYSTEM.md (uncommitted)
+     happens to spell the variable names out in prose, which is enough
+     for Tailwind's scanner to count them as "used". A plain :root
+     block isn't subject to that pruning, so it's always emitted in full
+     regardless of which other files happen to be on disk. */
+  --color-postit-yellow: #d7bd63;
+  --color-postit-pink: #cf9c8f;
+  --color-postit-mint: #96a988;
+  --color-postit-blue: #7f9cae;
+  --color-postit-lavender: #a996b8;
+  --color-postit-peach: #d99b6c;
+  --color-postit-beige: #cbb98c;
+  --color-postit-white: #efe7d4;
+  --color-postit-grey: #98917f;
+  --color-postit-ink: #2a2013;
+
   /* Reusable paper-grain noise, shared by the page background and every
      paper surface (cards, notes, post-its) so texture reads consistently. */
   --paper-grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.35'/%3E%3C/svg%3E");
