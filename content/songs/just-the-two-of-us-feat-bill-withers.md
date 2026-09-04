@@ -1,7 +1,7 @@
 ---
 id: song-just-the-two-of-us-feat-bill-withers
 slug: just-the-two-of-us-feat-bill-withers
-title: Just the Two of Us (feat. Bill Withers)
+title: Just the Two of Us
 artistIds:
   - artist-grover-washington-jr
   - artist-bill-withers

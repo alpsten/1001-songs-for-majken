@@ -1,7 +1,7 @@
 ---
 id: song-you-are-my-melody-full-length-album-mix
 slug: you-are-my-melody-full-length-album-mix
-title: You Are My Melody - Full Length Album Mix
+title: You Are My Melody
 artistIds:
   - artist-change
 album: Change of Heart (Original Album and Rare Tracks)

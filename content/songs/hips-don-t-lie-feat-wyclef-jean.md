@@ -1,7 +1,7 @@
 ---
 id: song-hips-don-t-lie-feat-wyclef-jean
 slug: hips-don-t-lie-feat-wyclef-jean
-title: Hips Don't Lie (feat. Wyclef Jean)
+title: Hips Don't Lie
 artistIds:
   - artist-shakira
   - artist-wyclef-jean

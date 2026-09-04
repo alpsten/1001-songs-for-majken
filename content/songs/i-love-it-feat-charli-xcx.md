@@ -1,7 +1,7 @@
 ---
 id: song-i-love-it-feat-charli-xcx
 slug: i-love-it-feat-charli-xcx
-title: I Love It (feat. Charli XCX)
+title: I Love It
 artistIds:
   - artist-icona-pop
   - artist-charli-xcx

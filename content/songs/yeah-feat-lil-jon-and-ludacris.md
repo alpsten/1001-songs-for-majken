@@ -1,7 +1,7 @@
 ---
 id: song-yeah-feat-lil-jon-and-ludacris
 slug: yeah-feat-lil-jon-and-ludacris
-title: Yeah! (feat. Lil Jon & Ludacris)
+title: Yeah!
 artistIds:
   - artist-usher
   - artist-lil-jon

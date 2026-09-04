@@ -1,7 +1,7 @@
 ---
 id: song-sittin-on-the-dock-of-the-bay-mono
 slug: sittin-on-the-dock-of-the-bay-mono
-title: (Sittin' On) the Dock of the Bay - Mono
+title: (Sittin' On) the Dock of the Bay
 artistIds:
   - artist-otis-redding
 album: The Dock of the Bay (Mono)

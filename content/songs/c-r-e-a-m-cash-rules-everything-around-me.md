@@ -1,14 +1,14 @@
 ---
 id: song-c-r-e-a-m-cash-rules-everything-around-me
 slug: c-r-e-a-m-cash-rules-everything-around-me
-title: C.R.E.A.M. (Cash Rules Everything Around Me)
+title: C.R.E.A.M.
 artistIds:
   - artist-wu-tang-clan
 album: 'Enter The Wu-Tang (36 Chambers) [Expanded Edition]'
 year: 1993
 genreTags: []
 themeIds: []
-whyItMatters: '[No memory added]'
+whyItMatters: "C.R.E.A.M. stands for 'Cash Rules Everything Around Me.'"
 addedAt: '2026-09-01'
 status: published
 spotifyId: 119c93MHjrDLJTApCVGpvx

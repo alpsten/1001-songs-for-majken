@@ -349,7 +349,7 @@
   {
     "id": "song-all-too-well-10-minute-version-taylors-version",
     "slug": "all-too-well-10-minute-version-taylors-version",
-    "title": "All Too Well (10 Minute Version) (Taylor's Version)",
+    "title": "All Too Well",
     "artistIds": [
       "artist-taylor-swift"
     ],
@@ -359,7 +359,7 @@
       "Pop Rock"
     ],
     "themeIds": [],
-    "whyItMatters": "[No memory added]",
+    "whyItMatters": "This is the extended 10-minute version, from Taylor's Version of Red.",
     "addedAt": "2026-03-25",
     "status": "published",
     "spotifyId": "5enxwA8aAbwZbf5qCHORXi",
@@ -865,7 +865,7 @@
   {
     "id": "song-blue-in-green-feat-john-coltrane-and-bill-evans",
     "slug": "blue-in-green-feat-john-coltrane-and-bill-evans",
-    "title": "Blue in Green (feat. John Coltrane & Bill Evans)",
+    "title": "Blue in Green",
     "artistIds": [
       "artist-miles-davis",
       "artist-john-coltrane",
@@ -1030,30 +1030,6 @@
     "story": ""
   },
   {
-    "id": "song-build-me-up-buttercup-mono",
-    "slug": "build-me-up-buttercup-mono",
-    "title": "Build Me Up Buttercup - Mono",
-    "artistIds": [
-      "artist-the-foundations"
-    ],
-    "album": "Baby Now That I've Found You",
-    "year": 1967,
-    "genreTags": [],
-    "themeIds": [],
-    "whyItMatters": "[No memory added]",
-    "addedAt": "2026-09-01",
-    "status": "published",
-    "spotifyId": "1tfZtA15BfJHQTUy3dqTKC",
-    "sourceLinks": [
-      {
-        "label": "Spotify",
-        "url": "https://open.spotify.com/track/1tfZtA15BfJHQTUy3dqTKC",
-        "kind": "spotify"
-      }
-    ],
-    "story": ""
-  },
-  {
     "id": "song-build-me-up-buttercup",
     "slug": "build-me-up-buttercup",
     "title": "Build Me Up Buttercup",
@@ -1128,7 +1104,7 @@
   {
     "id": "song-c-r-e-a-m-cash-rules-everything-around-me",
     "slug": "c-r-e-a-m-cash-rules-everything-around-me",
-    "title": "C.R.E.A.M. (Cash Rules Everything Around Me)",
+    "title": "C.R.E.A.M.",
     "artistIds": [
       "artist-wu-tang-clan"
     ],
@@ -1136,7 +1112,7 @@
     "year": 1993,
     "genreTags": [],
     "themeIds": [],
-    "whyItMatters": "[No memory added]",
+    "whyItMatters": "C.R.E.A.M. stands for 'Cash Rules Everything Around Me.'",
     "addedAt": "2026-09-01",
     "status": "published",
     "spotifyId": "119c93MHjrDLJTApCVGpvx",
@@ -1361,7 +1337,7 @@
   {
     "id": "song-crazy-in-love-feat-jay-z",
     "slug": "crazy-in-love-feat-jay-z",
-    "title": "Crazy In Love (feat. JAY-Z)",
+    "title": "Crazy In Love",
     "artistIds": [
       "artist-beyonce",
       "artist-jay-z"
@@ -1520,7 +1496,7 @@
   {
     "id": "song-danger-zone-from-top-gun-original-soundtrack",
     "slug": "danger-zone-from-top-gun-original-soundtrack",
-    "title": "Danger Zone - From \"Top Gun\" Original Soundtrack",
+    "title": "Danger Zone",
     "artistIds": [
       "artist-kenny-loggins"
     ],
@@ -1528,7 +1504,7 @@
     "year": 1997,
     "genreTags": [],
     "themeIds": [],
-    "whyItMatters": "[No memory added]",
+    "whyItMatters": "From the Top Gun (1986) soundtrack.",
     "addedAt": "2026-09-01",
     "status": "published",
     "spotifyId": "34x6hEJgGAOQvmlMql5Ige",
@@ -1979,30 +1955,6 @@
     "story": ""
   },
   {
-    "id": "song-everybody-s-talkin-from-midnight-cowboy",
-    "slug": "everybody-s-talkin-from-midnight-cowboy",
-    "title": "Everybody's Talkin' - From \"Midnight Cowboy\"",
-    "artistIds": [
-      "artist-harry-nilsson"
-    ],
-    "album": "Aerial Ballet",
-    "year": 1968,
-    "genreTags": [],
-    "themeIds": [],
-    "whyItMatters": "[No memory added]",
-    "addedAt": "2026-09-01",
-    "status": "published",
-    "spotifyId": "1jcPcDu2YawPfLhwjYnqK2",
-    "sourceLinks": [
-      {
-        "label": "Spotify",
-        "url": "https://open.spotify.com/track/1jcPcDu2YawPfLhwjYnqK2",
-        "kind": "spotify"
-      }
-    ],
-    "story": ""
-  },
-  {
     "id": "song-everybodys-talkin",
     "slug": "everybodys-talkin",
     "title": "Everybody's Talkin'",
@@ -2016,9 +1968,17 @@
       "Soft Rock"
     ],
     "themeIds": [],
-    "whyItMatters": "[No memory added]",
+    "whyItMatters": "From the Midnight Cowboy (1969) soundtrack.",
     "addedAt": "2026-03-25T00:00:00.000Z",
     "status": "published",
+    "spotifyId": "1jcPcDu2YawPfLhwjYnqK2",
+    "sourceLinks": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/track/1jcPcDu2YawPfLhwjYnqK2",
+        "kind": "spotify"
+      }
+    ],
     "story": ""
   },
   {
@@ -2182,7 +2142,7 @@
   {
     "id": "song-folsom-prison-blues-live-at-folsom-prison",
     "slug": "folsom-prison-blues-live-at-folsom-prison",
-    "title": "Folsom Prison Blues - Live at Folsom Prison",
+    "title": "Folsom Prison Blues",
     "artistIds": [
       "artist-johnny-cash"
     ],
@@ -2193,24 +2153,8 @@
       "Rockabilly"
     ],
     "themeIds": [],
-    "whyItMatters": "[No memory added]",
+    "whyItMatters": "Recorded live at Folsom State Prison, January 1968.",
     "addedAt": "2026-03-26T00:00:00.000Z",
-    "status": "published",
-    "story": ""
-  },
-  {
-    "id": "song-folsom-prison-blues-live-at-folsom-state-prison-folsom-ca-january-1968",
-    "slug": "folsom-prison-blues-live-at-folsom-state-prison-folsom-ca-january-1968",
-    "title": "Folsom Prison Blues - Live at Folsom State Prison, Folsom, CA - January 1968",
-    "artistIds": [
-      "artist-johnny-cash"
-    ],
-    "album": "At Folsom Prison",
-    "year": 1968,
-    "genreTags": [],
-    "themeIds": [],
-    "whyItMatters": "[No memory added]",
-    "addedAt": "2026-09-01",
     "status": "published",
     "spotifyId": "2fDHuS1PTkHBbCWWZF1ph9",
     "sourceLinks": [
@@ -2365,30 +2309,6 @@
     "story": ""
   },
   {
-    "id": "song-get-down-saturday-night-special-extended-version",
-    "slug": "get-down-saturday-night-special-extended-version",
-    "title": "Get Down Saturday Night - Special Extended Version",
-    "artistIds": [
-      "artist-oliver-cheatham"
-    ],
-    "album": "Saturday Night (Expanded Edition)",
-    "year": 1983,
-    "genreTags": [],
-    "themeIds": [],
-    "whyItMatters": "[No memory added]",
-    "addedAt": "2026-09-01",
-    "status": "published",
-    "spotifyId": "1WfAYsfd5BbrxWhj66DU8E",
-    "sourceLinks": [
-      {
-        "label": "Spotify",
-        "url": "https://open.spotify.com/track/1WfAYsfd5BbrxWhj66DU8E",
-        "kind": "spotify"
-      }
-    ],
-    "story": ""
-  },
-  {
     "id": "song-get-down-saturday-night",
     "slug": "get-down-saturday-night",
     "title": "Get Down Saturday Night",
@@ -2406,6 +2326,14 @@
     "whyItMatters": "[No memory added]",
     "addedAt": "2026-03-25T00:00:00.000Z",
     "status": "published",
+    "spotifyId": "1WfAYsfd5BbrxWhj66DU8E",
+    "sourceLinks": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/track/1WfAYsfd5BbrxWhj66DU8E",
+        "kind": "spotify"
+      }
+    ],
     "story": "The special extended 7-minute version."
   },
   {
@@ -2746,7 +2674,7 @@
   {
     "id": "song-hips-don-t-lie-feat-wyclef-jean",
     "slug": "hips-don-t-lie-feat-wyclef-jean",
-    "title": "Hips Don't Lie (feat. Wyclef Jean)",
+    "title": "Hips Don't Lie",
     "artistIds": [
       "artist-shakira",
       "artist-wyclef-jean"
@@ -2938,7 +2866,7 @@
   {
     "id": "song-i-love-it-feat-charli-xcx",
     "slug": "i-love-it-feat-charli-xcx",
-    "title": "I Love It (feat. Charli XCX)",
+    "title": "I Love It",
     "artistIds": [
       "artist-icona-pop",
       "artist-charli-xcx"
@@ -3059,7 +2987,7 @@
   {
     "id": "song-i-ve-had-the-time-of-my-life-theme-from-the-motion-picture-dirty-dancing",
     "slug": "i-ve-had-the-time-of-my-life-theme-from-the-motion-picture-dirty-dancing",
-    "title": "(I've Had) The Time Of My Life - theme from the motion picture \"Dirty Dancing\"",
+    "title": "(I've Had) The Time Of My Life",
     "artistIds": [
       "artist-bill-medley",
       "artist-jennifer-warnes"
@@ -3068,7 +2996,7 @@
     "year": 1988,
     "genreTags": [],
     "themeIds": [],
-    "whyItMatters": "[No memory added]",
+    "whyItMatters": "From the Dirty Dancing (1987) soundtrack.",
     "addedAt": "2026-09-01",
     "status": "published",
     "spotifyId": "2JCTiiJQFWQNC0Zp8rsJRB",
@@ -3221,30 +3149,6 @@
     "story": ""
   },
   {
-    "id": "song-if-i-had-a-hammer-the-hammer-song-live",
-    "slug": "if-i-had-a-hammer-the-hammer-song-live",
-    "title": "If I Had A Hammer (The Hammer Song) - Live",
-    "artistIds": [
-      "artist-sam-cooke"
-    ],
-    "album": "Sam Cooke At The Copa (Live From Copacabana, New York City/July 7 & 8, 1964)",
-    "year": 1964,
-    "genreTags": [],
-    "themeIds": [],
-    "whyItMatters": "[No memory added]",
-    "addedAt": "2026-09-01",
-    "status": "published",
-    "spotifyId": "1LPL9jbdLJ8VmBBPkUwrcM",
-    "sourceLinks": [
-      {
-        "label": "Spotify",
-        "url": "https://open.spotify.com/track/1LPL9jbdLJ8VmBBPkUwrcM",
-        "kind": "spotify"
-      }
-    ],
-    "story": ""
-  },
-  {
     "id": "song-if-i-had-a-hammer-the-hammer-song",
     "slug": "if-i-had-a-hammer-the-hammer-song",
     "title": "If I Had a Hammer (The Hammer Song)",
@@ -3261,6 +3165,14 @@
     "whyItMatters": "[No memory added]",
     "addedAt": "2026-03-23T00:00:00.000Z",
     "status": "published",
+    "spotifyId": "1LPL9jbdLJ8VmBBPkUwrcM",
+    "sourceLinks": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/track/1LPL9jbdLJ8VmBBPkUwrcM",
+        "kind": "spotify"
+      }
+    ],
     "story": "Live at the Copa."
   },
   {
@@ -3558,7 +3470,7 @@
   {
     "id": "song-just-the-two-of-us-feat-bill-withers",
     "slug": "just-the-two-of-us-feat-bill-withers",
-    "title": "Just the Two of Us (feat. Bill Withers)",
+    "title": "Just the Two of Us",
     "artistIds": [
       "artist-grover-washington-jr",
       "artist-bill-withers"
@@ -3857,7 +3769,7 @@
   {
     "id": "song-levels-original-version",
     "slug": "levels-original-version",
-    "title": "Levels - Original Version",
+    "title": "Levels",
     "artistIds": [
       "artist-avicii"
     ],
@@ -3865,7 +3777,7 @@
     "year": 2011,
     "genreTags": [],
     "themeIds": [],
-    "whyItMatters": "[No memory added]",
+    "whyItMatters": "This is the original 2011 version of 'Levels' — not the radio edit.",
     "addedAt": "2026-09-01",
     "status": "published",
     "spotifyId": "6Xe9wT5xeZETPwtaP2ynUz",
@@ -3881,7 +3793,7 @@
   {
     "id": "song-life-s-a-bitch-feat-az-and-olu-dara",
     "slug": "life-s-a-bitch-feat-az-and-olu-dara",
-    "title": "Life's a Bitch (feat. AZ & Olu Dara)",
+    "title": "Life's a Bitch",
     "artistIds": [
       "artist-nas",
       "artist-az",
@@ -4178,7 +4090,7 @@
   {
     "id": "song-midnight-city-eric-prydz-private-remix",
     "slug": "midnight-city-eric-prydz-private-remix",
-    "title": "Midnight City - Eric Prydz Private Remix",
+    "title": "Midnight City",
     "artistIds": [
       "artist-m83",
       "artist-eric-prydz"
@@ -4187,7 +4099,7 @@
     "year": 2012,
     "genreTags": [],
     "themeIds": [],
-    "whyItMatters": "[No memory added]",
+    "whyItMatters": "This is the Eric Prydz Private Remix.",
     "addedAt": "2026-09-01",
     "status": "published",
     "spotifyId": "0FoSiffuAmaJ3VyPaebY6I",
@@ -4248,7 +4160,7 @@
   {
     "id": "song-move-on-up-extended-version",
     "slug": "move-on-up-extended-version",
-    "title": "Move on Up - Extended Version",
+    "title": "Move On Up",
     "artistIds": [
       "artist-curtis-mayfield"
     ],
@@ -4357,30 +4269,6 @@
     "story": ""
   },
   {
-    "id": "song-my-heart-will-go-on-love-theme-from-titanic",
-    "slug": "my-heart-will-go-on-love-theme-from-titanic",
-    "title": "My Heart Will Go On - Love Theme from \"Titanic\"",
-    "artistIds": [
-      "artist-celine-dion"
-    ],
-    "album": "Let's Talk About Love",
-    "year": 1997,
-    "genreTags": [],
-    "themeIds": [],
-    "whyItMatters": "[No memory added]",
-    "addedAt": "2026-09-01",
-    "status": "published",
-    "spotifyId": "33LC84JgLvK2KuW43MfaNq",
-    "sourceLinks": [
-      {
-        "label": "Spotify",
-        "url": "https://open.spotify.com/track/33LC84JgLvK2KuW43MfaNq",
-        "kind": "spotify"
-      }
-    ],
-    "story": ""
-  },
-  {
     "id": "song-my-heart-will-go-on",
     "slug": "my-heart-will-go-on",
     "title": "My Heart Will Go On",
@@ -4393,9 +4281,17 @@
       "Pop"
     ],
     "themeIds": [],
-    "whyItMatters": "[No memory added]",
+    "whyItMatters": "The love theme from Titanic (1997).",
     "addedAt": "2026-03-23T00:00:00.000Z",
     "status": "published",
+    "spotifyId": "33LC84JgLvK2KuW43MfaNq",
+    "sourceLinks": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/track/33LC84JgLvK2KuW43MfaNq",
+        "kind": "spotify"
+      }
+    ],
     "story": ""
   },
   {
@@ -4520,7 +4416,7 @@
   {
     "id": "song-no-woman-no-cry-live-at-the-lyceum-london-july-17-1975",
     "slug": "no-woman-no-cry-live-at-the-lyceum-london-july-17-1975",
-    "title": "No Woman, No Cry - Live At The Lyceum, London/July 17,1975",
+    "title": "No Woman, No Cry",
     "artistIds": [
       "artist-bob-marley-and-the-wailers"
     ],
@@ -4528,7 +4424,7 @@
     "year": 1975,
     "genreTags": [],
     "themeIds": [],
-    "whyItMatters": "[No memory added]",
+    "whyItMatters": "This is the famous live recording from the Lyceum Theatre, London, July 1975.",
     "addedAt": "2026-09-01",
     "status": "published",
     "spotifyId": "3P2SuYpBfOZT2pnkULjiKX",
@@ -4819,7 +4715,7 @@
   {
     "id": "song-pata-pata-stereo-version",
     "slug": "pata-pata-stereo-version",
-    "title": "Pata Pata - Stereo Version",
+    "title": "Pata Pata",
     "artistIds": [
       "artist-miriam-makeba"
     ],
@@ -5516,7 +5412,7 @@
   {
     "id": "song-sittin-on-the-dock-of-the-bay-mono",
     "slug": "sittin-on-the-dock-of-the-bay-mono",
-    "title": "(Sittin' On) the Dock of the Bay - Mono",
+    "title": "(Sittin' On) the Dock of the Bay",
     "artistIds": [
       "artist-otis-redding"
     ],
@@ -5722,7 +5618,7 @@
   {
     "id": "song-stayin-alive-from-saturday-night-fever-soundtrack",
     "slug": "stayin-alive-from-saturday-night-fever-soundtrack",
-    "title": "Stayin' Alive - From \"Saturday Night Fever\" Soundtrack",
+    "title": "Stayin' Alive",
     "artistIds": [
       "artist-bee-gees"
     ],
@@ -5730,7 +5626,7 @@
     "year": 1979,
     "genreTags": [],
     "themeIds": [],
-    "whyItMatters": "[No memory added]",
+    "whyItMatters": "From the Saturday Night Fever (1977) soundtrack.",
     "addedAt": "2026-09-01",
     "status": "published",
     "spotifyId": "3mRM4NM8iO7UBqrSigCQFH",
@@ -5943,30 +5839,6 @@
     "story": ""
   },
   {
-    "id": "song-the-message-extended-version",
-    "slug": "the-message-extended-version",
-    "title": "The Message - Extended Version",
-    "artistIds": [
-      "artist-grandmaster-flash-and-the-furious-five"
-    ],
-    "album": "The Message (Expanded Edition)",
-    "year": 2010,
-    "genreTags": [],
-    "themeIds": [],
-    "whyItMatters": "[No memory added]",
-    "addedAt": "2026-09-01",
-    "status": "published",
-    "spotifyId": "5isA9icHWl2651hvfr1EOV",
-    "sourceLinks": [
-      {
-        "label": "Spotify",
-        "url": "https://open.spotify.com/track/5isA9icHWl2651hvfr1EOV",
-        "kind": "spotify"
-      }
-    ],
-    "story": ""
-  },
-  {
     "id": "song-the-message",
     "slug": "the-message",
     "title": "The Message",
@@ -5983,6 +5855,14 @@
     "whyItMatters": "[No memory added]",
     "addedAt": "2026-03-23T00:00:00.000Z",
     "status": "published",
+    "spotifyId": "5isA9icHWl2651hvfr1EOV",
+    "sourceLinks": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/track/5isA9icHWl2651hvfr1EOV",
+        "kind": "spotify"
+      }
+    ],
     "story": "The 7-minute version."
   },
   {
@@ -6436,7 +6316,7 @@
   {
     "id": "song-valerie-bbc-radio-1-live-lounge",
     "slug": "valerie-bbc-radio-1-live-lounge",
-    "title": "Valerie - BBC Radio 1 Live Lounge",
+    "title": "Valerie",
     "artistIds": [
       "artist-amy-winehouse"
     ],
@@ -6444,7 +6324,7 @@
     "year": 2015,
     "genreTags": [],
     "themeIds": [],
-    "whyItMatters": "[No memory added]",
+    "whyItMatters": "This is the BBC Radio 1 Live Lounge cover.",
     "addedAt": "2026-09-01",
     "status": "published",
     "spotifyId": "5it9RIRXDwiLpJKdce6Z7e",
@@ -6715,7 +6595,7 @@
   {
     "id": "song-what-is-love-7-mix",
     "slug": "what-is-love-7-mix",
-    "title": "What Is Love - 7\" Mix",
+    "title": "What Is Love",
     "artistIds": [
       "artist-haddaway"
     ],
@@ -6805,32 +6685,6 @@
     "story": ""
   },
   {
-    "id": "song-when-tomorrow-comes-remastered-version",
-    "slug": "when-tomorrow-comes-remastered-version",
-    "title": "When Tomorrow Comes",
-    "artistIds": [
-      "artist-eurythmics",
-      "artist-annie-lennox",
-      "artist-dave-stewart"
-    ],
-    "album": "Revenge",
-    "year": 1986,
-    "genreTags": [],
-    "themeIds": [],
-    "whyItMatters": "[No memory added]",
-    "addedAt": "2026-09-01",
-    "status": "published",
-    "spotifyId": "37ChXB1nAYEFkzhNhgLt39",
-    "sourceLinks": [
-      {
-        "label": "Spotify",
-        "url": "https://open.spotify.com/track/37ChXB1nAYEFkzhNhgLt39",
-        "kind": "spotify"
-      }
-    ],
-    "story": ""
-  },
-  {
     "id": "song-when-tomorrow-comes",
     "slug": "when-tomorrow-comes",
     "title": "When Tomorrow Comes",
@@ -6846,6 +6700,14 @@
     "whyItMatters": "[No memory added]",
     "addedAt": "2026-03-25T00:00:00.000Z",
     "status": "published",
+    "spotifyId": "37ChXB1nAYEFkzhNhgLt39",
+    "sourceLinks": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/track/37ChXB1nAYEFkzhNhgLt39",
+        "kind": "spotify"
+      }
+    ],
     "story": ""
   },
   {
@@ -6995,7 +6857,7 @@
   {
     "id": "song-yeah-feat-lil-jon-and-ludacris",
     "slug": "yeah-feat-lil-jon-and-ludacris",
-    "title": "Yeah! (feat. Lil Jon & Ludacris)",
+    "title": "Yeah!",
     "artistIds": [
       "artist-usher",
       "artist-lil-jon",
@@ -7045,7 +6907,7 @@
   {
     "id": "song-you-are-my-melody-full-length-album-mix",
     "slug": "you-are-my-melody-full-length-album-mix",
-    "title": "You Are My Melody - Full Length Album Mix",
+    "title": "You Are My Melody",
     "artistIds": [
       "artist-change"
     ],
@@ -7117,7 +6979,7 @@
   {
     "id": "song-you-re-the-one-that-i-want-from-grease",
     "slug": "you-re-the-one-that-i-want-from-grease",
-    "title": "You're The One That I Want - From “Grease”",
+    "title": "You're The One That I Want",
     "artistIds": [
       "artist-john-travolta",
       "artist-olivia-newton-john"
@@ -7126,7 +6988,7 @@
     "year": 1978,
     "genreTags": [],
     "themeIds": [],
-    "whyItMatters": "[No memory added]",
+    "whyItMatters": "From the Grease (1978) soundtrack.",
     "addedAt": "2026-09-01",
     "status": "published",
     "spotifyId": "0B9x2BRHqj3Qer7biM3pU3",

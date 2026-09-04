@@ -74,6 +74,33 @@ function cleanTitle(title: string): string {
       .replace(/\s*\(\d+(st|nd|rd|th)\s+anniversary(\s+edition)?\)\s*$/i, "")
       .replace(/\s+-\s+.*radio edit\s*$/i, "")
       .replace(/\s*-\s*edit\s*$/i, "")
+      .replace(/\s*-\s*original version\s*$/i, "")
+      .replace(/\s*\(original version\)\s*$/i, "")
+      // Featured-artist credit — always redundant with the sync's own
+      // artist matching, never information that only lives in the title.
+      .replace(/\s*\((feat\.?|featuring)\s+.+?\)\s*$/i, "")
+      .replace(/\s*-\s*mono\s*$/i, "")
+      .replace(/\s*\(mono\)\s*$/i, "")
+      // "- From "Movie Name"" or "- From "Movie Name" (Original ...
+      // Soundtrack)" — soundtrack/movie attribution Spotify tacks onto
+      // the title instead of the album field, with or without a trailing
+      // "Original Soundtrack" and with or without parens around it.
+      // Worth a manual whyItMatters note when this fires on a real song,
+      // not something this script can infer well enough to write itself.
+      .replace(/\s*-\s*from\s+["“].+?["”]\s*(\(?original\s+(motion\s+picture\s+)?soundtrack\)?)?\s*$/i, "")
+      // "- theme from the motion picture "X"" / "- Love Theme from "X""
+      // — same idea, a different Spotify phrasing for the same
+      // movie-attribution noise.
+      .replace(/\s*-\s*(love\s+)?theme\s+from\s+(the\s+motion\s+picture\s+)?["“].+?["”]\s*$/i, "")
+      // "- Live" or "- Live at <anything>" (a venue, a date, both) — a
+      // live-recording tag Spotify appends instead of using a distinct
+      // album/edition field. Worth a manual whyItMatters note for a
+      // genuinely famous live cut (same reasoning as the movie-theme
+      // case above), not something to infer here.
+      .replace(/\s*-\s*live(\s+at\s+.+)?\s*$/i, "")
+      .replace(/\s*-\s*(special\s+)?extended\s+version\s*$/i, "")
+      .replace(/\s*-\s*stereo\s+version\s*$/i, "")
+      .replace(/\s*-\s*full\s+length\s+album\s+mix\s*$/i, "")
     changed = value !== before
   }
   return value.trim()

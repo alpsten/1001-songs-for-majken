@@ -1,7 +1,7 @@
 ---
 id: song-blue-in-green-feat-john-coltrane-and-bill-evans
 slug: blue-in-green-feat-john-coltrane-and-bill-evans
-title: Blue in Green (feat. John Coltrane & Bill Evans)
+title: Blue in Green
 artistIds:
   - artist-miles-davis
   - artist-john-coltrane

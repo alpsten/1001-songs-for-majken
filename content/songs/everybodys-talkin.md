@@ -10,7 +10,12 @@ genreTags:
   - Folk Rock
   - Soft Rock
 themeIds: []
-whyItMatters: '[No memory added]'
+whyItMatters: 'From the Midnight Cowboy (1969) soundtrack.'
 addedAt: 2026-03-25
 status: published
+spotifyId: 1jcPcDu2YawPfLhwjYnqK2
+sourceLinks:
+  - label: Spotify
+    url: 'https://open.spotify.com/track/1jcPcDu2YawPfLhwjYnqK2'
+    kind: spotify
 ---

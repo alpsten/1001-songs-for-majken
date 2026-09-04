@@ -1,14 +1,14 @@
 ---
 id: song-levels-original-version
 slug: levels-original-version
-title: Levels - Original Version
+title: Levels
 artistIds:
   - artist-avicii
 album: Levels
 year: 2011
 genreTags: []
 themeIds: []
-whyItMatters: '[No memory added]'
+whyItMatters: "This is the original 2011 version of 'Levels' — not the radio edit."
 addedAt: '2026-09-01'
 status: published
 spotifyId: 6Xe9wT5xeZETPwtaP2ynUz

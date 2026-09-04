@@ -14,5 +14,10 @@ themeIds: []
 whyItMatters: '[No memory added]'
 addedAt: 2026-03-25
 status: published
+spotifyId: 1WfAYsfd5BbrxWhj66DU8E
+sourceLinks:
+  - label: Spotify
+    url: 'https://open.spotify.com/track/1WfAYsfd5BbrxWhj66DU8E'
+    kind: spotify
 ---
 The special extended 7-minute version.

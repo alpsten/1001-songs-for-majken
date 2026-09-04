@@ -1,7 +1,7 @@
 ---
 id: song-life-s-a-bitch-feat-az-and-olu-dara
 slug: life-s-a-bitch-feat-az-and-olu-dara
-title: Life's a Bitch (feat. AZ & Olu Dara)
+title: Life's a Bitch
 artistIds:
   - artist-nas
   - artist-az

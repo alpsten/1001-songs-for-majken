@@ -1,7 +1,7 @@
 ---
 id: song-what-is-love-7-mix
 slug: what-is-love-7-mix
-title: What Is Love - 7" Mix
+title: What Is Love
 artistIds:
   - artist-haddaway
 album: The Album

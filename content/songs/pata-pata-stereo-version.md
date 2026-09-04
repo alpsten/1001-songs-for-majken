@@ -1,7 +1,7 @@
 ---
 id: song-pata-pata-stereo-version
 slug: pata-pata-stereo-version
-title: Pata Pata - Stereo Version
+title: Pata Pata
 artistIds:
   - artist-miriam-makeba
 album: Pata Pata

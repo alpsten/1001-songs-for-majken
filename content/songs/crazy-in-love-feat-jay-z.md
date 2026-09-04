@@ -1,7 +1,7 @@
 ---
 id: song-crazy-in-love-feat-jay-z
 slug: crazy-in-love-feat-jay-z
-title: Crazy In Love (feat. JAY-Z)
+title: Crazy In Love
 artistIds:
   - artist-beyonce
   - artist-jay-z

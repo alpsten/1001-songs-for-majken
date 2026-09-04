@@ -13,5 +13,10 @@ themeIds: []
 whyItMatters: '[No memory added]'
 addedAt: 2026-03-23
 status: published
+spotifyId: 1LPL9jbdLJ8VmBBPkUwrcM
+sourceLinks:
+  - label: Spotify
+    url: 'https://open.spotify.com/track/1LPL9jbdLJ8VmBBPkUwrcM'
+    kind: spotify
 ---
 Live at the Copa.

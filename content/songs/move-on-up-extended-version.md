@@ -1,7 +1,7 @@
 ---
 id: song-move-on-up-extended-version
 slug: move-on-up-extended-version
-title: Move on Up - Extended Version
+title: Move On Up
 artistIds:
   - artist-curtis-mayfield
 album: Curtis (Expanded Edition)

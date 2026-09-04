@@ -1,7 +1,7 @@
 ---
 id: song-midnight-city-eric-prydz-private-remix
 slug: midnight-city-eric-prydz-private-remix
-title: Midnight City - Eric Prydz Private Remix
+title: Midnight City
 artistIds:
   - artist-m83
   - artist-eric-prydz
@@ -9,7 +9,7 @@ album: Midnight City (Eric Prydz Private Remix)
 year: 2012
 genreTags: []
 themeIds: []
-whyItMatters: '[No memory added]'
+whyItMatters: 'This is the Eric Prydz Private Remix.'
 addedAt: '2026-09-01'
 status: published
 spotifyId: 0FoSiffuAmaJ3VyPaebY6I
