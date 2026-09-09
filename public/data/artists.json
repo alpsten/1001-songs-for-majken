@@ -105,6 +105,14 @@
     "spotifyId": "6QzMY3tnu0m56eKUnr4uCF"
   },
   {
+    "id": "artist-alice-cooper",
+    "slug": "alice-cooper",
+    "name": "Alice Cooper",
+    "genreTags": [],
+    "summary": "[No memory added]",
+    "spotifyId": "3EhbVgyfGd7HkpsagwL9GS"
+  },
+  {
     "id": "artist-allen-toussaint",
     "slug": "allen-toussaint",
     "name": "Allen Toussaint",
@@ -394,7 +402,8 @@
       "dance-pop",
       "teen-pop"
     ],
-    "summary": "[No memory added]"
+    "summary": "[No memory added]",
+    "spotifyId": "26dSoYclwsYLMAKD3tpOr4"
   },
   {
     "id": "artist-broder-daniel",
@@ -512,6 +521,14 @@
     "genreTags": [],
     "summary": "[No memory added]",
     "spotifyId": "6UtYvUtXnmg5EtllDFlWp8"
+  },
+  {
+    "id": "artist-childish-gambino",
+    "slug": "childish-gambino",
+    "name": "Childish Gambino",
+    "genreTags": [],
+    "summary": "[No memory added]",
+    "spotifyId": "73sIBHcqh3Z3NyqHKZ7FOL"
   },
   {
     "id": "artist-chris-brown",
@@ -792,6 +809,14 @@
     "summary": "[No memory added]"
   },
   {
+    "id": "artist-ebba-gron",
+    "slug": "ebba-gron",
+    "name": "Ebba Grön",
+    "genreTags": [],
+    "summary": "[No memory added]",
+    "spotifyId": "2gvwV7CcpLmKyaE0fiSKI9"
+  },
+  {
     "id": "artist-ed-sheeran",
     "slug": "ed-sheeran",
     "name": "Ed Sheeran",
@@ -1010,6 +1035,14 @@
     "spotifyId": "5DYAABs8rkY9VhwtENoQCz"
   },
   {
+    "id": "artist-gil-scott-heron",
+    "slug": "gil-scott-heron",
+    "name": "Gil Scott-Heron",
+    "genreTags": [],
+    "summary": "[No memory added]",
+    "spotifyId": "0kEfub5RzlZOB2zGomqVSU"
+  },
+  {
     "id": "artist-gipsy-kings",
     "slug": "gipsy-kings",
     "name": "Gipsy Kings",
@@ -1062,6 +1095,14 @@
     "genreTags": [],
     "summary": "[No memory added]",
     "spotifyId": "05YVYeV4HxYp5rrWalvuE1"
+  },
+  {
+    "id": "artist-guns-n-roses",
+    "slug": "guns-n-roses",
+    "name": "Guns N' Roses",
+    "genreTags": [],
+    "summary": "[No memory added]",
+    "spotifyId": "3qm84nBOXUEQ2vnTfUTTFC"
   },
   {
     "id": "artist-haddaway",
@@ -1502,6 +1543,14 @@
     "spotifyId": "49aaHxvAJ0tCh0F15OnwIl"
   },
   {
+    "id": "artist-lucinda-williams",
+    "slug": "lucinda-williams",
+    "name": "Lucinda Williams",
+    "genreTags": [],
+    "summary": "[No memory added]",
+    "spotifyId": "60ht0hWRy1yjUDfNsLuHuP"
+  },
+  {
     "id": "artist-ludacris",
     "slug": "ludacris",
     "name": "Ludacris",
@@ -1772,6 +1821,14 @@
     "spotifyId": "3LIJJJkO7R5RasRwt7xIn5"
   },
   {
+    "id": "artist-n-w-a",
+    "slug": "n-w-a",
+    "name": "N.W.A.",
+    "genreTags": [],
+    "summary": "[No memory added]",
+    "spotifyId": "4EnEZVjo3w1cwcQYePccay"
+  },
+  {
     "id": "artist-nas",
     "slug": "nas",
     "name": "Nas",
@@ -1810,6 +1867,14 @@
     "genreTags": [],
     "summary": "[No memory added]",
     "spotifyId": "4Otx4bRLSfpah5kX8hdgDC"
+  },
+  {
+    "id": "artist-ne-yo",
+    "slug": "ne-yo",
+    "name": "Ne-Yo",
+    "genreTags": [],
+    "summary": "[No memory added]",
+    "spotifyId": "21E3waRsmPlU7jZsS13rcj"
   },
   {
     "id": "artist-nelly-furtado",
@@ -2015,6 +2080,14 @@
       "r&b"
     ],
     "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-pitbull",
+    "slug": "pitbull",
+    "name": "Pitbull",
+    "genreTags": [],
+    "summary": "[No memory added]",
+    "spotifyId": "0TnOYISbd1XYRBk9myaseg"
   },
   {
     "id": "artist-pokemon",
@@ -2380,6 +2453,14 @@
     "summary": "[No memory added]"
   },
   {
+    "id": "artist-the-buggles",
+    "slug": "the-buggles",
+    "name": "The Buggles",
+    "genreTags": [],
+    "summary": "[No memory added]",
+    "spotifyId": "057gc1fxmJ2vkctjQJ7Tal"
+  },
+  {
     "id": "artist-the-chords",
     "slug": "the-chords",
     "name": "The Chords",
@@ -2585,6 +2666,14 @@
     "genreTags": [],
     "summary": "[No memory added]",
     "spotifyId": "6R21HSNyo7HVac8pyqY3T2"
+  },
+  {
+    "id": "artist-toots-and-the-maytals",
+    "slug": "toots-and-the-maytals",
+    "name": "Toots & The Maytals",
+    "genreTags": [],
+    "summary": "[No memory added]",
+    "spotifyId": "6ZFv3wQwwWPiVDWhv0mjQK"
   },
   {
     "id": "artist-tracy-chapman",

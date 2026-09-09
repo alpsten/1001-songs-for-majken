@@ -69,6 +69,30 @@
     "story": ""
   },
   {
+    "id": "song-800",
+    "slug": "800",
+    "title": "800°",
+    "artistIds": [
+      "artist-ebba-gron"
+    ],
+    "album": "Kärlek och uppror",
+    "year": 1981,
+    "genreTags": [],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-09-04",
+    "status": "published",
+    "spotifyId": "3zgJHNEorjbLLThp6TiMhz",
+    "sourceLinks": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/track/3zgJHNEorjbLLThp6TiMhz",
+        "kind": "spotify"
+      }
+    ],
+    "story": ""
+  },
+  {
     "id": "song-9-to-5",
     "slug": "9-to-5",
     "title": "9 to 5",
@@ -598,7 +622,7 @@
       "artist-justin-bieber",
       "artist-ludacris"
     ],
-    "album": "My Worlds (International Version)",
+    "album": "My Worlds",
     "year": 2010,
     "genreTags": [],
     "themeIds": [],
@@ -622,7 +646,7 @@
     "artistIds": [
       "artist-inner-circle"
     ],
-    "album": "Sweat (A La La La La Long)",
+    "album": "One Way",
     "year": 1992,
     "genreTags": [],
     "themeIds": [],
@@ -686,7 +710,7 @@
     "artistIds": [
       "artist-the-tams"
     ],
-    "album": "Hey Girl Don't Bother Me: The Best Of The Tams",
+    "album": "A Little More Soul",
     "year": 1995,
     "genreTags": [],
     "themeIds": [],
@@ -945,7 +969,7 @@
     "artistIds": [
       "artist-lady-gaga"
     ],
-    "album": "Born This Way (International Special Edition Version)",
+    "album": "Born This Way",
     "year": 2011,
     "genreTags": [],
     "themeIds": [],
@@ -1054,6 +1078,30 @@
     "story": ""
   },
   {
+    "id": "song-build-me-up-buttercup-2",
+    "slug": "build-me-up-buttercup-2",
+    "title": "Build Me Up Buttercup",
+    "artistIds": [
+      "artist-the-foundations"
+    ],
+    "album": "Baby Now That I've Found You",
+    "year": 1967,
+    "genreTags": [],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-09-04",
+    "status": "published",
+    "spotifyId": "1tfZtA15BfJHQTUy3dqTKC",
+    "sourceLinks": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/track/1tfZtA15BfJHQTUy3dqTKC",
+        "kind": "spotify"
+      }
+    ],
+    "story": ""
+  },
+  {
     "id": "song-build-me-up-buttercup",
     "slug": "build-me-up-buttercup",
     "title": "Build Me Up Buttercup",
@@ -1132,7 +1180,7 @@
     "artistIds": [
       "artist-wu-tang-clan"
     ],
-    "album": "Enter The Wu-Tang (36 Chambers) [Expanded Edition]",
+    "album": "Enter The Wu-Tang (36 Chambers)",
     "year": 1993,
     "genreTags": [],
     "themeIds": [],
@@ -1660,7 +1708,7 @@
     "artistIds": [
       "artist-journey"
     ],
-    "album": "Escape (2022 Remaster)",
+    "album": "Escape",
     "year": 1981,
     "genreTags": [],
     "themeIds": [],
@@ -1874,7 +1922,7 @@
     "artistIds": [
       "artist-stevie-nicks"
     ],
-    "album": "Bella Donna (2016 Remastered)",
+    "album": "Bella Donna",
     "year": 1981,
     "genreTags": [],
     "themeIds": [],
@@ -1961,7 +2009,7 @@
     "artistIds": [
       "artist-the-police"
     ],
-    "album": "Synchronicity (Remastered 2003)",
+    "album": "Synchronicity",
     "year": 1983,
     "genreTags": [],
     "themeIds": [],
@@ -2269,7 +2317,7 @@
     "artistIds": [
       "artist-creedence-clearwater-revival"
     ],
-    "album": "Willy And The Poor Boys (Expanded Edition)",
+    "album": "Willy And The Poor Boys",
     "year": 1969,
     "genreTags": [],
     "themeIds": [],
@@ -2350,6 +2398,30 @@
       {
         "label": "Spotify",
         "url": "https://open.spotify.com/track/2nx0EIlIKMnMgWnj40O0HQ",
+        "kind": "spotify"
+      }
+    ],
+    "story": ""
+  },
+  {
+    "id": "song-fuck-tha-police",
+    "slug": "fuck-tha-police",
+    "title": "Fuck Tha Police",
+    "artistIds": [
+      "artist-n-w-a"
+    ],
+    "album": "Straight Outta Compton",
+    "year": 1988,
+    "genreTags": [],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-09-04",
+    "status": "published",
+    "spotifyId": "5n8Aro6j1bEGIy7Tpo7FV7",
+    "sourceLinks": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/track/5n8Aro6j1bEGIy7Tpo7FV7",
         "kind": "spotify"
       }
     ],
@@ -2775,7 +2847,7 @@
       "artist-shakira",
       "artist-wyclef-jean"
     ],
-    "album": "Oral Fixation, Vol. 2 (Expanded Edition)",
+    "album": "Oral Fixation, Vol. 2",
     "year": 2005,
     "genreTags": [],
     "themeIds": [],
@@ -3015,7 +3087,7 @@
     "artistIds": [
       "artist-joan-jett-and-the-blackhearts"
     ],
-    "album": "I Love Rock 'N' Roll (Expanded Edition)",
+    "album": "I Love Rock 'N' Roll",
     "year": 1981,
     "genreTags": [],
     "themeIds": [],
@@ -3063,7 +3135,7 @@
     "artistIds": [
       "artist-nelly-furtado"
     ],
-    "album": "Whoa, Nelly! (Expanded Edition)",
+    "album": "Whoa, Nelly!",
     "year": 2000,
     "genreTags": [],
     "themeIds": [],
@@ -3136,7 +3208,7 @@
       "artist-bill-medley",
       "artist-jennifer-warnes"
     ],
-    "album": "The Best Of Bill Medley",
+    "album": "Dirty Dancing: Soundtrack",
     "year": 1988,
     "genreTags": [],
     "themeIds": [],
@@ -3251,7 +3323,7 @@
     "artistIds": [
       "artist-nina-simone"
     ],
-    "album": "Silk & Soul (Expanded Edition)",
+    "album": "Silk & Soul",
     "year": 1967,
     "genreTags": [],
     "themeIds": [],
@@ -3463,6 +3535,30 @@
     "story": ""
   },
   {
+    "id": "song-into-the-groove",
+    "slug": "into-the-groove",
+    "title": "Into the Groove",
+    "artistIds": [
+      "artist-madonna"
+    ],
+    "album": "Angel",
+    "year": 1985,
+    "genreTags": [],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-09-04",
+    "status": "published",
+    "spotifyId": "3y2Y3Bc6GDxAWAMIpbW7RU",
+    "sourceLinks": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/track/3y2Y3Bc6GDxAWAMIpbW7RU",
+        "kind": "spotify"
+      }
+    ],
+    "story": ""
+  },
+  {
     "id": "song-iris",
     "slug": "iris",
     "title": "Iris",
@@ -3493,7 +3589,7 @@
     "artistIds": [
       "artist-beyonce"
     ],
-    "album": "B'Day Deluxe Edition",
+    "album": "B'Day",
     "year": 2007,
     "genreTags": [],
     "themeIds": [],
@@ -4035,7 +4131,7 @@
     "artistIds": [
       "artist-bon-jovi"
     ],
-    "album": "Slippery When Wet (Deluxe Edition)",
+    "album": "Slippery When Wet",
     "year": 1986,
     "genreTags": [],
     "themeIds": [],
@@ -4059,7 +4155,7 @@
     "artistIds": [
       "artist-the-clash"
     ],
-    "album": "London Calling (Expanded Edition)",
+    "album": "London Calling",
     "year": 1979,
     "genreTags": [],
     "themeIds": [],
@@ -4356,7 +4452,7 @@
     "artistIds": [
       "artist-curtis-mayfield"
     ],
-    "album": "Curtis (Expanded Edition)",
+    "album": "Curtis",
     "year": 1970,
     "genreTags": [],
     "themeIds": [],
@@ -4612,7 +4708,7 @@
     "artistIds": [
       "artist-bob-marley-and-the-wailers"
     ],
-    "album": "Live! (Deluxe Edition)",
+    "album": "Live!",
     "year": 1975,
     "genreTags": [],
     "themeIds": [],
@@ -4857,6 +4953,30 @@
     "story": ""
   },
   {
+    "id": "song-paint-it-black",
+    "slug": "paint-it-black",
+    "title": "Paint It, Black",
+    "artistIds": [
+      "artist-the-rolling-stones"
+    ],
+    "album": "Aftermath",
+    "year": 1966,
+    "genreTags": [],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-09-04",
+    "status": "published",
+    "spotifyId": "63T7DJ1AFDD6Bn8VzG6JE8",
+    "sourceLinks": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/track/63T7DJ1AFDD6Bn8VzG6JE8",
+        "kind": "spotify"
+      }
+    ],
+    "story": ""
+  },
+  {
     "id": "song-papa-was-a-rollin-stone-single-version",
     "slug": "papa-was-a-rollin-stone-single-version",
     "title": "Papa Was A Rollin' Stone",
@@ -4899,6 +5019,30 @@
       {
         "label": "Spotify",
         "url": "https://open.spotify.com/track/1ixbwbeBi5ufN4noUKmW5a",
+        "kind": "spotify"
+      }
+    ],
+    "story": ""
+  },
+  {
+    "id": "song-passionate-kisses",
+    "slug": "passionate-kisses",
+    "title": "Passionate Kisses",
+    "artistIds": [
+      "artist-lucinda-williams"
+    ],
+    "album": "Lucinda Williams (Deluxe Edition)",
+    "year": 2014,
+    "genreTags": [],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-09-04",
+    "status": "published",
+    "spotifyId": "4kbkYebCqM0JGHVWrbRU0u",
+    "sourceLinks": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/track/4kbkYebCqM0JGHVWrbRU0u",
         "kind": "spotify"
       }
     ],
@@ -4979,6 +5123,30 @@
     "story": ""
   },
   {
+    "id": "song-pressure-drop",
+    "slug": "pressure-drop",
+    "title": "Pressure Drop",
+    "artistIds": [
+      "artist-toots-and-the-maytals"
+    ],
+    "album": "The Harder They Come (Original Motion Picture Soundtrack)",
+    "year": 1972,
+    "genreTags": [],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-09-04",
+    "status": "published",
+    "spotifyId": "7xwYJuQaNzwqAXnbce1doD",
+    "sourceLinks": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/track/7xwYJuQaNzwqAXnbce1doD",
+        "kind": "spotify"
+      }
+    ],
+    "story": ""
+  },
+  {
     "id": "song-purple-rain",
     "slug": "purple-rain",
     "title": "Purple Rain",
@@ -5028,7 +5196,7 @@
       "artist-wyclef-jean",
       "artist-pras"
     ],
-    "album": "The Score (Expanded Edition)",
+    "album": "The Score",
     "year": 1996,
     "genreTags": [],
     "themeIds": [],
@@ -5040,6 +5208,30 @@
       {
         "label": "Spotify",
         "url": "https://open.spotify.com/track/3vZO25GdYuqFrR1kzZADnp",
+        "kind": "spotify"
+      }
+    ],
+    "story": ""
+  },
+  {
+    "id": "song-redbone-2",
+    "slug": "redbone-2",
+    "title": "Redbone",
+    "artistIds": [
+      "artist-childish-gambino"
+    ],
+    "album": "\"Awaken, My Love!\"",
+    "year": 2016,
+    "genreTags": [],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-09-04",
+    "status": "published",
+    "spotifyId": "3vQ4T78TTMOjQXGfXVKQJo",
+    "sourceLinks": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/track/3vQ4T78TTMOjQXGfXVKQJo",
         "kind": "spotify"
       }
     ],
@@ -5307,7 +5499,7 @@
     "artistIds": [
       "artist-the-pharcyde"
     ],
-    "album": "Labcabincalifornia (Deluxe Edition)",
+    "album": "Labcabincalifornia",
     "year": 1995,
     "genreTags": [],
     "themeIds": [],
@@ -5371,7 +5563,7 @@
     "artistIds": [
       "artist-darude"
     ],
-    "album": "Before the Storm, Special Edition",
+    "album": "Before the Storm",
     "year": 2001,
     "genreTags": [],
     "themeIds": [],
@@ -5419,7 +5611,7 @@
     "artistIds": [
       "artist-nelly-furtado"
     ],
-    "album": "Loose (Expanded Edition)",
+    "album": "Loose",
     "year": 2021,
     "genreTags": [],
     "themeIds": [],
@@ -5455,6 +5647,30 @@
       {
         "label": "Spotify",
         "url": "https://open.spotify.com/track/7H6ev70Weq6DdpZyyTmUXk",
+        "kind": "spotify"
+      }
+    ],
+    "story": ""
+  },
+  {
+    "id": "song-school-s-out",
+    "slug": "school-s-out",
+    "title": "School's Out",
+    "artistIds": [
+      "artist-alice-cooper"
+    ],
+    "album": "School's Out",
+    "year": 1972,
+    "genreTags": [],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-09-04",
+    "status": "published",
+    "spotifyId": "5Z8EDau8uNcP1E8JvmfkZe",
+    "sourceLinks": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/track/5Z8EDau8uNcP1E8JvmfkZe",
         "kind": "spotify"
       }
     ],
@@ -5656,7 +5872,7 @@
     "artistIds": [
       "artist-nirvana"
     ],
-    "album": "Nevermind (Remastered)",
+    "album": "Nevermind",
     "year": 1991,
     "genreTags": [],
     "themeIds": [],
@@ -5748,7 +5964,7 @@
     "artistIds": [
       "artist-blur"
     ],
-    "album": "Blur (Special Edition)",
+    "album": "Blur",
     "year": 1997,
     "genreTags": [],
     "themeIds": [],
@@ -5829,6 +6045,54 @@
     "addedAt": "2026-03-25",
     "status": "published",
     "spotifyId": "7jmHyHMEqm9MJWiMAneF05",
+    "story": ""
+  },
+  {
+    "id": "song-staten-and-kapitalet",
+    "slug": "staten-and-kapitalet",
+    "title": "Staten & kapitalet",
+    "artistIds": [
+      "artist-ebba-gron"
+    ],
+    "album": "Ebba Grön 1978 - 1982",
+    "year": 1987,
+    "genreTags": [],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-09-04",
+    "status": "published",
+    "spotifyId": "4bofKUmzk2mYjUlsL3NVeF",
+    "sourceLinks": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/track/4bofKUmzk2mYjUlsL3NVeF",
+        "kind": "spotify"
+      }
+    ],
+    "story": ""
+  },
+  {
+    "id": "song-stayin-alive-from-saturday-night-fever-soundtrack-2",
+    "slug": "stayin-alive-from-saturday-night-fever-soundtrack-2",
+    "title": "Stayin' Alive - From \"Saturday Night Fever\" Soundtrack",
+    "artistIds": [
+      "artist-bee-gees"
+    ],
+    "album": "Saturday Night Fever (The Original Movie Soundtrack Deluxe Edition)",
+    "year": 1977,
+    "genreTags": [],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-09-04",
+    "status": "published",
+    "spotifyId": "2xSXw1EqGSAKc1e4TPaQvV",
+    "sourceLinks": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/track/2xSXw1EqGSAKc1e4TPaQvV",
+        "kind": "spotify"
+      }
+    ],
     "story": ""
   },
   {
@@ -5924,6 +6188,30 @@
     "story": ""
   },
   {
+    "id": "song-sweet-child-o-mine",
+    "slug": "sweet-child-o-mine",
+    "title": "Sweet Child O' Mine",
+    "artistIds": [
+      "artist-guns-n-roses"
+    ],
+    "album": "Appetite For Destruction",
+    "year": 1987,
+    "genreTags": [],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-09-04",
+    "status": "published",
+    "spotifyId": "7snQQk1zcKl8gZ92AnueZW",
+    "sourceLinks": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/track/7snQQk1zcKl8gZ92AnueZW",
+        "kind": "spotify"
+      }
+    ],
+    "story": ""
+  },
+  {
     "id": "song-sweet-touch-of-love",
     "slug": "sweet-touch-of-love",
     "title": "Sweet Touch Of Love",
@@ -5954,7 +6242,7 @@
     "artistIds": [
       "artist-the-rolling-stones"
     ],
-    "album": "Beggars Banquet (50th Anniversary Edition)",
+    "album": "Beggars Banquet",
     "year": 1968,
     "genreTags": [],
     "themeIds": [],
@@ -6106,6 +6394,30 @@
     "story": ""
   },
   {
+    "id": "song-the-revolution-will-not-be-televised",
+    "slug": "the-revolution-will-not-be-televised",
+    "title": "The Revolution Will Not Be Televised",
+    "artistIds": [
+      "artist-gil-scott-heron"
+    ],
+    "album": "Pieces of a Man",
+    "year": 1971,
+    "genreTags": [],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-09-04",
+    "status": "published",
+    "spotifyId": "7ni78Vjslqo2VxiDOahYlV",
+    "sourceLinks": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/track/7ni78Vjslqo2VxiDOahYlV",
+        "kind": "spotify"
+      }
+    ],
+    "story": ""
+  },
+  {
     "id": "song-the-sign",
     "slug": "the-sign",
     "title": "The Sign",
@@ -6226,6 +6538,31 @@
     "story": ""
   },
   {
+    "id": "song-time-of-our-lives",
+    "slug": "time-of-our-lives",
+    "title": "Time of Our Lives",
+    "artistIds": [
+      "artist-pitbull",
+      "artist-ne-yo"
+    ],
+    "album": "Globalization",
+    "year": 2014,
+    "genreTags": [],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-09-05",
+    "status": "published",
+    "spotifyId": "2bJvI42r8EF3wxjOuDav4r",
+    "sourceLinks": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/track/2bJvI42r8EF3wxjOuDav4r",
+        "kind": "spotify"
+      }
+    ],
+    "story": ""
+  },
+  {
     "id": "song-torn",
     "slug": "torn",
     "title": "Torn",
@@ -6288,6 +6625,30 @@
       {
         "label": "Spotify",
         "url": "https://open.spotify.com/track/1VrfLrBviw9A6JzRoo3t2C",
+        "kind": "spotify"
+      }
+    ],
+    "story": ""
+  },
+  {
+    "id": "song-toxic",
+    "slug": "toxic",
+    "title": "Toxic",
+    "artistIds": [
+      "artist-britney-spears"
+    ],
+    "album": "In The Zone",
+    "year": 2003,
+    "genreTags": [],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-09-04",
+    "status": "published",
+    "spotifyId": "6I9VzXrHxO9rA9A5euc8Ak",
+    "sourceLinks": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/track/6I9VzXrHxO9rA9A5euc8Ak",
         "kind": "spotify"
       }
     ],
@@ -6578,6 +6939,30 @@
     "story": ""
   },
   {
+    "id": "song-video-killed-the-radio-star",
+    "slug": "video-killed-the-radio-star",
+    "title": "Video Killed The Radio Star",
+    "artistIds": [
+      "artist-the-buggles"
+    ],
+    "album": "The Age Of Plastic",
+    "year": 1980,
+    "genreTags": [],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-09-05",
+    "status": "published",
+    "spotifyId": "7o7E1nrHWncYY7PY94gCiX",
+    "sourceLinks": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/track/7o7E1nrHWncYY7PY94gCiX",
+        "kind": "spotify"
+      }
+    ],
+    "story": ""
+  },
+  {
     "id": "song-viva-la-vida",
     "slug": "viva-la-vida",
     "title": "Viva la Vida",
@@ -6791,7 +7176,7 @@
     "artistIds": [
       "artist-sister-sledge"
     ],
-    "album": "We Are Family (1995 Remaster)",
+    "album": "We Are Family",
     "year": 1979,
     "genreTags": [],
     "themeIds": [],
@@ -7053,7 +7438,7 @@
     "artistIds": [
       "artist-chris-brown"
     ],
-    "album": "Exclusive (Expanded Edition)",
+    "album": "Exclusive",
     "year": 2007,
     "genreTags": [],
     "themeIds": [],
@@ -7103,7 +7488,7 @@
       "artist-lil-jon",
       "artist-ludacris"
     ],
-    "album": "Confessions (Expanded Edition)",
+    "album": "Confessions",
     "year": 2004,
     "genreTags": [],
     "themeIds": [],
@@ -7127,7 +7512,7 @@
     "artistIds": [
       "artist-the-beatles"
     ],
-    "album": "Help! (Remastered)",
+    "album": "Help!",
     "year": 1965,
     "genreTags": [],
     "themeIds": [],
@@ -7175,7 +7560,7 @@
     "artistIds": [
       "artist-paul-simon"
     ],
-    "album": "Graceland (25th Anniversary Deluxe Edition)",
+    "album": "Graceland",
     "year": 1986,
     "genreTags": [],
     "themeIds": [],
