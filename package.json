@@ -14,6 +14,7 @@
     "prebuild": "tsx scripts/validate-content.ts && tsx scripts/generate-derived-data.ts"
   },
   "dependencies": {
+    "@paper-design/shaders-react": "^0.0.80",
     "@radix-ui/react-select": "^2.3.7",
     "@tailwindcss/vite": "^4.2.2",
     "react": "^19.2.4",
