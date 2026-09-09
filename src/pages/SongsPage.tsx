@@ -255,12 +255,10 @@ export default function SongsPage() {
                       {groupedSongs[letter].map((song) => {
                         return (
                           <BrowseRow key={song.id} to={`/songs/${song.slug}`} seedKey={song.id}>
-                            <div className="browse-row-title-line">
-                              <span className="archive-link-title">&apos;{song.title}&apos;</span>
-                              <span className="archive-song-artist browse-row-suffix">
-                                by {getSongArtistCredit(song, artists)}
-                              </span>
-                            </div>
+                            <span className="archive-link-title">&apos;{song.title}&apos;</span>
+                            <span className="archive-song-artist browse-row-line">
+                              by {getSongArtistCredit(song, artists)}
+                            </span>
                             <div className="archive-meta">
                               <span>{song.album ?? "[No album added]"} ({song.year})</span>
                             </div>

@@ -1425,6 +1425,15 @@ a { color: var(--color-accent); }
   margin-top: 0;
 }
 
+/* Its own line, not inline next to the title — used on /songs where title,
+   artist, and album+year each get a separate row (as opposed to
+   .browse-row-suffix, still used on /artists to keep the song count
+   inline next to the artist's name on one line). */
+.browse-row-line {
+  display: block;
+  margin-top: 0.2rem;
+}
+
 /* One font per card here, not two — the title's already the "handwriting"
    face (§2); the artist credit and album/year line switch to match it
    instead of the site's usual monospace "ledger" face, on direct
