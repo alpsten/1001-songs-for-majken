@@ -4,7 +4,7 @@ slug: smells-like-teen-spirit
 title: Smells Like Teen Spirit
 artistIds:
   - artist-nirvana
-album: Nevermind (Remastered)
+album: Nevermind
 year: 1991
 genreTags: []
 themeIds: []

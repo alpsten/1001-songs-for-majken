@@ -4,7 +4,7 @@ slug: born-this-way
 title: Born This Way
 artistIds:
   - artist-lady-gaga
-album: Born This Way (International Special Edition Version)
+album: Born This Way
 year: 2011
 genreTags: []
 themeIds: []

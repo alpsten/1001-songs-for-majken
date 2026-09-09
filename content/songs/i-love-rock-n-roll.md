@@ -4,7 +4,7 @@ slug: i-love-rock-n-roll
 title: I Love Rock 'N Roll
 artistIds:
   - artist-joan-jett-and-the-blackhearts
-album: I Love Rock 'N' Roll (Expanded Edition)
+album: I Love Rock 'N' Roll
 year: 1981
 genreTags: []
 themeIds: []

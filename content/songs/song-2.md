@@ -4,7 +4,7 @@ slug: song-2
 title: Song 2
 artistIds:
   - artist-blur
-album: Blur (Special Edition)
+album: Blur
 year: 1997
 genreTags: []
 themeIds: []

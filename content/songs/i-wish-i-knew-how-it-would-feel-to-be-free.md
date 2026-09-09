@@ -4,7 +4,7 @@ slug: i-wish-i-knew-how-it-would-feel-to-be-free
 title: I Wish I Knew How It Would Feel to Be Free
 artistIds:
   - artist-nina-simone
-album: Silk & Soul (Expanded Edition)
+album: Silk & Soul
 year: 1967
 genreTags: []
 themeIds: []

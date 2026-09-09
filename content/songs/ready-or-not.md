@@ -7,7 +7,7 @@ artistIds:
   - artist-ms-lauryn-hill
   - artist-wyclef-jean
   - artist-pras
-album: The Score (Expanded Edition)
+album: The Score
 year: 1996
 genreTags: []
 themeIds: []

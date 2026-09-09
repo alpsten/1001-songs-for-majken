@@ -4,7 +4,7 @@ slug: london-calling
 title: London Calling
 artistIds:
   - artist-the-clash
-album: London Calling (Expanded Edition)
+album: London Calling
 year: 1979
 genreTags: []
 themeIds: []

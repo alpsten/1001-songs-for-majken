@@ -5,7 +5,7 @@ title: Hips Don't Lie
 artistIds:
   - artist-shakira
   - artist-wyclef-jean
-album: 'Oral Fixation, Vol. 2 (Expanded Edition)'
+album: 'Oral Fixation, Vol. 2'
 year: 2005
 genreTags: []
 themeIds: []

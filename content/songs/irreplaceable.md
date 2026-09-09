@@ -4,7 +4,7 @@ slug: irreplaceable
 title: Irreplaceable
 artistIds:
   - artist-beyonce
-album: B'Day Deluxe Edition
+album: B'Day
 year: 2007
 genreTags: []
 themeIds: []

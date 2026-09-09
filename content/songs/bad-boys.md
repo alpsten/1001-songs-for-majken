@@ -4,7 +4,7 @@ slug: bad-boys
 title: Bad Boys
 artistIds:
   - artist-inner-circle
-album: Sweat (A La La La La Long)
+album: One Way
 year: 1992
 genreTags: []
 themeIds: []

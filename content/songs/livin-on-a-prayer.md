@@ -4,7 +4,7 @@ slug: livin-on-a-prayer
 title: Livin' On A Prayer
 artistIds:
   - artist-bon-jovi
-album: Slippery When Wet (Deluxe Edition)
+album: Slippery When Wet
 year: 1986
 genreTags: []
 themeIds: []

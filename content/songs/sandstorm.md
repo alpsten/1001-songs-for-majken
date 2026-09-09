@@ -4,7 +4,7 @@ slug: sandstorm
 title: Sandstorm
 artistIds:
   - artist-darude
-album: 'Before the Storm, Special Edition'
+album: Before the Storm
 year: 2001
 genreTags: []
 themeIds: []

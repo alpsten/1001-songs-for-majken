@@ -4,7 +4,7 @@ slug: fortunate-son
 title: Fortunate Son
 artistIds:
   - artist-creedence-clearwater-revival
-album: Willy And The Poor Boys (Expanded Edition)
+album: Willy And The Poor Boys
 year: 1969
 genreTags: []
 themeIds: []

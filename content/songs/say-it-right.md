@@ -4,7 +4,7 @@ slug: say-it-right
 title: Say It Right
 artistIds:
   - artist-nelly-furtado
-album: Loose (Expanded Edition)
+album: Loose
 year: 2021
 genreTags: []
 themeIds: []

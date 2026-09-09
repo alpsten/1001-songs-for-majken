@@ -4,7 +4,7 @@ slug: runnin
 title: Runnin'
 artistIds:
   - artist-the-pharcyde
-album: Labcabincalifornia (Deluxe Edition)
+album: Labcabincalifornia
 year: 1995
 genreTags: []
 themeIds: []

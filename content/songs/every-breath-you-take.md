@@ -4,7 +4,7 @@ slug: every-breath-you-take
 title: Every Breath You Take
 artistIds:
   - artist-the-police
-album: Synchronicity (Remastered 2003)
+album: Synchronicity
 year: 1983
 genreTags: []
 themeIds: []

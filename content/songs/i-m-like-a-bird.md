@@ -4,7 +4,7 @@ slug: i-m-like-a-bird
 title: I'm Like A Bird
 artistIds:
   - artist-nelly-furtado
-album: 'Whoa, Nelly! (Expanded Edition)'
+album: 'Whoa, Nelly!'
 year: 2000
 genreTags: []
 themeIds: []

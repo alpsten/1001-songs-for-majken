@@ -4,7 +4,7 @@ slug: c-r-e-a-m-cash-rules-everything-around-me
 title: C.R.E.A.M.
 artistIds:
   - artist-wu-tang-clan
-album: 'Enter The Wu-Tang (36 Chambers) [Expanded Edition]'
+album: Enter The Wu-Tang (36 Chambers)
 year: 1993
 genreTags: []
 themeIds: []

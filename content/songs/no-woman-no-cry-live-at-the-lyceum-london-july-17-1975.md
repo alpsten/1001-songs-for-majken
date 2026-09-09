@@ -4,7 +4,7 @@ slug: no-woman-no-cry-live-at-the-lyceum-london-july-17-1975
 title: 'No Woman, No Cry'
 artistIds:
   - artist-bob-marley-and-the-wailers
-album: Live! (Deluxe Edition)
+album: Live!
 year: 1975
 genreTags: []
 themeIds: []

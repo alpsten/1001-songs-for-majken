@@ -4,7 +4,7 @@ slug: be-young-be-foolish-be-happy-single-version
 title: 'Be Young, Be Foolish, Be Happy'
 artistIds:
   - artist-the-tams
-album: 'Hey Girl Don''t Bother Me: The Best Of The Tams'
+album: A Little More Soul
 year: 1995
 genreTags: []
 themeIds: []

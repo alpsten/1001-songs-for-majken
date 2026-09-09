@@ -5,7 +5,7 @@ title: Baby
 artistIds:
   - artist-justin-bieber
   - artist-ludacris
-album: My Worlds (International Version)
+album: My Worlds
 year: 2010
 genreTags: []
 themeIds: []

@@ -6,7 +6,7 @@ artistIds:
   - artist-usher
   - artist-lil-jon
   - artist-ludacris
-album: Confessions (Expanded Edition)
+album: Confessions
 year: 2004
 genreTags: []
 themeIds: []

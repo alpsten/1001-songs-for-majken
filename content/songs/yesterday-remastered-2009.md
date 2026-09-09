@@ -4,7 +4,7 @@ slug: yesterday-remastered-2009
 title: Yesterday
 artistIds:
   - artist-the-beatles
-album: Help! (Remastered)
+album: Help!
 year: 1965
 genreTags: []
 themeIds: []

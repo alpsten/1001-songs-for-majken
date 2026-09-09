@@ -4,7 +4,7 @@ slug: don-t-stop-believin-2022-remaster
 title: Don't Stop Believin'
 artistIds:
   - artist-journey
-album: Escape (2022 Remaster)
+album: Escape
 year: 1981
 genreTags: []
 themeIds: []

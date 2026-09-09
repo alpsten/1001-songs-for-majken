@@ -4,7 +4,7 @@ slug: you-can-call-me-al
 title: You Can Call Me Al
 artistIds:
   - artist-paul-simon
-album: Graceland (25th Anniversary Deluxe Edition)
+album: Graceland
 year: 1986
 genreTags: []
 themeIds: []

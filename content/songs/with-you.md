@@ -4,7 +4,7 @@ slug: with-you
 title: With You
 artistIds:
   - artist-chris-brown
-album: Exclusive (Expanded Edition)
+album: Exclusive
 year: 2007
 genreTags: []
 themeIds: []

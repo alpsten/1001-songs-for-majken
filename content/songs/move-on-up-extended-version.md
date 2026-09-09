@@ -4,7 +4,7 @@ slug: move-on-up-extended-version
 title: Move On Up
 artistIds:
   - artist-curtis-mayfield
-album: Curtis (Expanded Edition)
+album: Curtis
 year: 1970
 genreTags: []
 themeIds: []

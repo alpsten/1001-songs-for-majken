@@ -5,7 +5,7 @@ title: (I've Had) The Time Of My Life
 artistIds:
   - artist-bill-medley
   - artist-jennifer-warnes
-album: The Best Of Bill Medley
+album: 'Dirty Dancing: Soundtrack'
 year: 1988
 genreTags: []
 themeIds: []
