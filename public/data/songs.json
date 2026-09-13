@@ -19,6 +19,30 @@
     "story": ""
   },
   {
+    "id": "song-54-46-was-my-number",
+    "slug": "54-46-was-my-number",
+    "title": "54-46 Was My Number",
+    "artistIds": [
+      "artist-toots-and-the-maytals"
+    ],
+    "album": "In The Dark",
+    "year": 1973,
+    "genreTags": [],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-09-11",
+    "status": "published",
+    "spotifyId": "1q8gelFgFYUwoWpQV7WNCe",
+    "sourceLinks": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/track/1q8gelFgFYUwoWpQV7WNCe",
+        "kind": "spotify"
+      }
+    ],
+    "story": ""
+  },
+  {
     "id": "song-7-days",
     "slug": "7-days",
     "title": "7 Days",
@@ -199,6 +223,30 @@
       {
         "label": "Spotify",
         "url": "https://open.spotify.com/track/2Fw5S2gaOSZzdN5dFoC2dj",
+        "kind": "spotify"
+      }
+    ],
+    "story": ""
+  },
+  {
+    "id": "song-a-thousand-miles",
+    "slug": "a-thousand-miles",
+    "title": "A Thousand Miles",
+    "artistIds": [
+      "artist-vanessa-carlton"
+    ],
+    "album": "Be Not Nobody",
+    "year": 2002,
+    "genreTags": [],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-09-11",
+    "status": "published",
+    "spotifyId": "4w1lzcaoZ1IC2K5TwjalRP",
+    "sourceLinks": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/track/4w1lzcaoZ1IC2K5TwjalRP",
         "kind": "spotify"
       }
     ],
@@ -1363,6 +1411,30 @@
     "story": ""
   },
   {
+    "id": "song-coconut",
+    "slug": "coconut",
+    "title": "Coconut",
+    "artistIds": [
+      "artist-harry-nilsson"
+    ],
+    "album": "Nilsson Schmilsson",
+    "year": 1971,
+    "genreTags": [],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-09-11",
+    "status": "published",
+    "spotifyId": "4o5GyaeGMgDsrclBsL3au7",
+    "sourceLinks": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/track/4o5GyaeGMgDsrclBsL3au7",
+        "kind": "spotify"
+      }
+    ],
+    "story": ""
+  },
+  {
     "id": "song-collide",
     "slug": "collide",
     "title": "Collide",
@@ -2121,6 +2193,30 @@
     "addedAt": "2026-03-23",
     "status": "published",
     "spotifyId": "13YyYNBofurxZCNYiFDibB",
+    "story": ""
+  },
+  {
+    "id": "song-family-affair",
+    "slug": "family-affair",
+    "title": "Family Affair",
+    "artistIds": [
+      "artist-sly-and-the-family-stone"
+    ],
+    "album": "There's a Riot Goin' On",
+    "year": 1971,
+    "genreTags": [],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-09-11",
+    "status": "published",
+    "spotifyId": "4f3u4Oy0JqJRIhMmTqRcxj",
+    "sourceLinks": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/track/4f3u4Oy0JqJRIhMmTqRcxj",
+        "kind": "spotify"
+      }
+    ],
     "story": ""
   },
   {
@@ -2914,6 +3010,30 @@
     "story": ""
   },
   {
+    "id": "song-hotel-california",
+    "slug": "hotel-california",
+    "title": "Hotel California",
+    "artistIds": [
+      "artist-eagles"
+    ],
+    "album": "Hotel California (2013 Remaster)",
+    "year": 1976,
+    "genreTags": [],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-09-11",
+    "status": "published",
+    "spotifyId": "40riOy7x9W7GXjyGp4pjAv",
+    "sourceLinks": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/track/40riOy7x9W7GXjyGp4pjAv",
+        "kind": "spotify"
+      }
+    ],
+    "story": ""
+  },
+  {
     "id": "song-how-to-save-a-life",
     "slug": "how-to-save-a-life",
     "title": "How to Save a Life",
@@ -3626,6 +3746,31 @@
       {
         "label": "Spotify",
         "url": "https://open.spotify.com/track/6dnco8haegnJYtylV26cBq",
+        "kind": "spotify"
+      }
+    ],
+    "story": ""
+  },
+  {
+    "id": "song-it-wasn-t-me",
+    "slug": "it-wasn-t-me",
+    "title": "It Wasn't Me",
+    "artistIds": [
+      "artist-shaggy",
+      "artist-rik-rok"
+    ],
+    "album": "Hot Shot",
+    "year": 2000,
+    "genreTags": [],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-09-11",
+    "status": "published",
+    "spotifyId": "3WkibOpDF7cQ5xntM1epyf",
+    "sourceLinks": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/track/3WkibOpDF7cQ5xntM1epyf",
         "kind": "spotify"
       }
     ],
@@ -4838,6 +4983,30 @@
     "story": ""
   },
   {
+    "id": "song-once-in-a-lifetime",
+    "slug": "once-in-a-lifetime",
+    "title": "Once in a Lifetime",
+    "artistIds": [
+      "artist-talking-heads"
+    ],
+    "album": "Remain in Light (Deluxe Version)",
+    "year": 1980,
+    "genreTags": [],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-09-11",
+    "status": "published",
+    "spotifyId": "38Ngied9rBORlAbLYNCl4k",
+    "sourceLinks": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/track/38Ngied9rBORlAbLYNCl4k",
+        "kind": "spotify"
+      }
+    ],
+    "story": ""
+  },
+  {
     "id": "song-one-more-time",
     "slug": "one-more-time",
     "title": "One More Time",
@@ -5073,6 +5242,32 @@
     "story": ""
   },
   {
+    "id": "song-peaches",
+    "slug": "peaches",
+    "title": "Peaches",
+    "artistIds": [
+      "artist-justin-bieber",
+      "artist-daniel-caesar",
+      "artist-giveon"
+    ],
+    "album": "Justice",
+    "year": 2021,
+    "genreTags": [],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-09-11",
+    "status": "published",
+    "spotifyId": "4iJyoBOLtHqaGxP12qzhQI",
+    "sourceLinks": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/track/4iJyoBOLtHqaGxP12qzhQI",
+        "kind": "spotify"
+      }
+    ],
+    "story": ""
+  },
+  {
     "id": "song-places-to-be",
     "slug": "places-to-be",
     "title": "places to be",
@@ -5117,6 +5312,30 @@
       {
         "label": "Spotify",
         "url": "https://open.spotify.com/track/3mNH9BXFcNElEFbgKqmq1J",
+        "kind": "spotify"
+      }
+    ],
+    "story": ""
+  },
+  {
+    "id": "song-police-and-thieves",
+    "slug": "police-and-thieves",
+    "title": "Police & Thieves",
+    "artistIds": [
+      "artist-junior-murvin"
+    ],
+    "album": "Police And Thieves",
+    "year": 1977,
+    "genreTags": [],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-09-11",
+    "status": "published",
+    "spotifyId": "3cnvTMZRhkbzea0KC4Y4We",
+    "sourceLinks": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/track/3cnvTMZRhkbzea0KC4Y4We",
         "kind": "spotify"
       }
     ],
@@ -5254,6 +5473,30 @@
     "addedAt": "2026-03-25",
     "status": "published",
     "spotifyId": "26PwuMotZqcczKLHi4Htz3",
+    "story": ""
+  },
+  {
+    "id": "song-relax-come-fighting",
+    "slug": "relax-come-fighting",
+    "title": "Relax (Come Fighting)",
+    "artistIds": [
+      "artist-frankie-goes-to-hollywood"
+    ],
+    "album": "Welcome To The Pleasuredome",
+    "year": 1984,
+    "genreTags": [],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-09-11",
+    "status": "published",
+    "spotifyId": "2K22nUTdyr48JDwI5t906t",
+    "sourceLinks": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/track/2K22nUTdyr48JDwI5t906t",
+        "kind": "spotify"
+      }
+    ],
     "story": ""
   },
   {
@@ -6212,6 +6455,32 @@
     "story": ""
   },
   {
+    "id": "song-sweet-dreams-are-made-of-this",
+    "slug": "sweet-dreams-are-made-of-this",
+    "title": "Sweet Dreams (Are Made of This)",
+    "artistIds": [
+      "artist-eurythmics",
+      "artist-annie-lennox",
+      "artist-dave-stewart"
+    ],
+    "album": "Sweet Dreams (Are Made Of This)",
+    "year": 1983,
+    "genreTags": [],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-09-11",
+    "status": "published",
+    "spotifyId": "1TfqLAPs4K3s2rJMoCokcS",
+    "sourceLinks": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/track/1TfqLAPs4K3s2rJMoCokcS",
+        "kind": "spotify"
+      }
+    ],
+    "story": ""
+  },
+  {
     "id": "song-sweet-touch-of-love",
     "slug": "sweet-touch-of-love",
     "title": "Sweet Touch Of Love",
@@ -6557,6 +6826,31 @@
       {
         "label": "Spotify",
         "url": "https://open.spotify.com/track/2bJvI42r8EF3wxjOuDav4r",
+        "kind": "spotify"
+      }
+    ],
+    "story": ""
+  },
+  {
+    "id": "song-tomorrow",
+    "slug": "tomorrow",
+    "title": "Tomorrow",
+    "artistIds": [
+      "artist-aileen-quinn",
+      "artist-orphans"
+    ],
+    "album": "Annie (Original Motion Picture Soundtrack)",
+    "year": 1982,
+    "genreTags": [],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-09-11",
+    "status": "published",
+    "spotifyId": "6vBMTR37tnbCE0lApwor1d",
+    "sourceLinks": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/track/6vBMTR37tnbCE0lApwor1d",
         "kind": "spotify"
       }
     ],
@@ -6963,6 +7257,30 @@
     "story": ""
   },
   {
+    "id": "song-vill-ha-dig",
+    "slug": "vill-ha-dig",
+    "title": "Vill ha dig",
+    "artistIds": [
+      "artist-freestyle"
+    ],
+    "album": "Guldkorn Den Kompletta Samlingen",
+    "year": 1998,
+    "genreTags": [],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-09-11",
+    "status": "published",
+    "spotifyId": "1ecJdAizaDklfgCVtEUQsG",
+    "sourceLinks": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/track/1ecJdAizaDklfgCVtEUQsG",
+        "kind": "spotify"
+      }
+    ],
+    "story": ""
+  },
+  {
     "id": "song-viva-la-vida",
     "slug": "viva-la-vida",
     "title": "Viva la Vida",
@@ -7218,6 +7536,54 @@
     "story": ""
   },
   {
+    "id": "song-west-end-girls",
+    "slug": "west-end-girls",
+    "title": "West End Girls",
+    "artistIds": [
+      "artist-pet-shop-boys"
+    ],
+    "album": "Please: Further Listening 1984 - 1986 (2018 Remaster)",
+    "year": 1986,
+    "genreTags": [],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-09-11",
+    "status": "published",
+    "spotifyId": "2Di0qFNb7ATroCGB3q0Ka7",
+    "sourceLinks": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/track/2Di0qFNb7ATroCGB3q0Ka7",
+        "kind": "spotify"
+      }
+    ],
+    "story": ""
+  },
+  {
+    "id": "song-what-goes-around-comes-around-interlude",
+    "slug": "what-goes-around-comes-around-interlude",
+    "title": "What Goes Around.../...Comes Around (Interlude)",
+    "artistIds": [
+      "artist-justin-timberlake"
+    ],
+    "album": "FutureSex/LoveSounds",
+    "year": 2006,
+    "genreTags": [],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-09-11",
+    "status": "published",
+    "spotifyId": "3pD0f7hSJg2XdQ6udw5Tey",
+    "sourceLinks": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/track/3pD0f7hSJg2XdQ6udw5Tey",
+        "kind": "spotify"
+      }
+    ],
+    "story": ""
+  },
+  {
     "id": "song-what-is-love-7-mix",
     "slug": "what-is-love-7-mix",
     "title": "What Is Love",
@@ -7330,6 +7696,30 @@
       {
         "label": "Spotify",
         "url": "https://open.spotify.com/track/37ChXB1nAYEFkzhNhgLt39",
+        "kind": "spotify"
+      }
+    ],
+    "story": ""
+  },
+  {
+    "id": "song-where-is-my-husband",
+    "slug": "where-is-my-husband",
+    "title": "WHERE IS MY HUSBAND!",
+    "artistIds": [
+      "artist-raye"
+    ],
+    "album": "THIS MUSIC MAY CONTAIN HOPE.",
+    "year": 2026,
+    "genreTags": [],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-09-11",
+    "status": "published",
+    "spotifyId": "7eYzn1CuiJK6VvUhf8zA6k",
+    "sourceLinks": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/track/7eYzn1CuiJK6VvUhf8zA6k",
         "kind": "spotify"
       }
     ],

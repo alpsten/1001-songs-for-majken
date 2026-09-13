@@ -89,6 +89,14 @@
     "spotifyId": "4dpARuHxo51G3z768sgnrY"
   },
   {
+    "id": "artist-aileen-quinn",
+    "slug": "aileen-quinn",
+    "name": "Aileen Quinn",
+    "genreTags": [],
+    "summary": "[No memory added]",
+    "spotifyId": "6iQtJpslakhRaRujekcE2J"
+  },
+  {
     "id": "artist-alexia",
     "slug": "alexia",
     "name": "Alexia",
@@ -671,6 +679,14 @@
     "spotifyId": "4C86wrjOUfXQDlt6A4oJOC"
   },
   {
+    "id": "artist-daniel-caesar",
+    "slug": "daniel-caesar",
+    "name": "Daniel Caesar",
+    "genreTags": [],
+    "summary": "[No memory added]",
+    "spotifyId": "20wkVLutqVOYrc0kxFs7rA"
+  },
+  {
     "id": "artist-darude",
     "slug": "darude",
     "name": "Darude",
@@ -797,6 +813,14 @@
     "genreTags": [],
     "summary": "[No memory added]",
     "spotifyId": "3ngKsDXZAssmljeXCvEgOe"
+  },
+  {
+    "id": "artist-eagles",
+    "slug": "eagles",
+    "name": "Eagles",
+    "genreTags": [],
+    "summary": "[No memory added]",
+    "spotifyId": "0ECwFtbIWEVNwjlrfc6xoL"
   },
   {
     "id": "artist-earth-wind-and-fire",
@@ -990,6 +1014,14 @@
     "summary": "[No memory added]"
   },
   {
+    "id": "artist-frankie-goes-to-hollywood",
+    "slug": "frankie-goes-to-hollywood",
+    "name": "Frankie Goes To Hollywood",
+    "genreTags": [],
+    "summary": "[No memory added]",
+    "spotifyId": "1mZu3rO7qSD09GdDpePHhY"
+  },
+  {
     "id": "artist-fred-again",
     "slug": "fred-again",
     "name": "Fred again..",
@@ -1009,6 +1041,14 @@
       "vispop"
     ],
     "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-freestyle",
+    "slug": "freestyle",
+    "name": "Freestyle",
+    "genreTags": [],
+    "summary": "[No memory added]",
+    "spotifyId": "7fGejcqwbdfn47UP7NcdUt"
   },
   {
     "id": "artist-fugees",
@@ -1049,6 +1089,14 @@
     "genreTags": [],
     "summary": "[No memory added]",
     "spotifyId": "3jc496ljiyrS3ECrD7QiqL"
+  },
+  {
+    "id": "artist-giveon",
+    "slug": "giveon",
+    "name": "GIVĒON",
+    "genreTags": [],
+    "summary": "[No memory added]",
+    "spotifyId": "4fxd5Ee7UefO4CUXgwJ7IP"
   },
   {
     "id": "artist-gnarls-barkley",
@@ -1328,6 +1376,14 @@
     "spotifyId": "59oA5WbbQvomJz2BuRG071"
   },
   {
+    "id": "artist-junior-murvin",
+    "slug": "junior-murvin",
+    "name": "Junior Murvin",
+    "genreTags": [],
+    "summary": "[No memory added]",
+    "spotifyId": "17dXLKGh9AKpooAvGaVt34"
+  },
+  {
     "id": "artist-justin-bieber",
     "slug": "justin-bieber",
     "name": "Justin Bieber",
@@ -1343,7 +1399,8 @@
       "pop",
       "r&b"
     ],
-    "summary": "[No memory added]"
+    "summary": "[No memory added]",
+    "spotifyId": "31TPClRtHm23RisEBtV3X7"
   },
   {
     "id": "artist-kanye-west",
@@ -1980,6 +2037,14 @@
     "spotifyId": "3DQiuEWQzCUET866iZJmQ9"
   },
   {
+    "id": "artist-orphans",
+    "slug": "orphans",
+    "name": "ORPHANS",
+    "genreTags": [],
+    "summary": "[No memory added]",
+    "spotifyId": "4PtFnwkdOvDyG92HVJ0nS5"
+  },
+  {
     "id": "artist-oskar-linnros",
     "slug": "oskar-linnros",
     "name": "Oskar Linnros",
@@ -2037,6 +2102,14 @@
       "soul"
     ],
     "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-pet-shop-boys",
+    "slug": "pet-shop-boys",
+    "name": "Pet Shop Boys",
+    "genreTags": [],
+    "summary": "[No memory added]",
+    "spotifyId": "2ycnb8Er79LoH2AsR5ldjh"
   },
   {
     "id": "artist-pete-rock-and-c-l-smooth",
@@ -2153,6 +2226,14 @@
     "spotifyId": "1eYhYunlNJlDoQhtYBvPsi"
   },
   {
+    "id": "artist-raye",
+    "slug": "raye",
+    "name": "RAYE",
+    "genreTags": [],
+    "summary": "[No memory added]",
+    "spotifyId": "5KKpBU5eC2tJDzf0wmlRp2"
+  },
+  {
     "id": "artist-red-hot-chili-peppers",
     "slug": "red-hot-chili-peppers",
     "name": "Red Hot Chili Peppers",
@@ -2185,6 +2266,14 @@
     "genreTags": [],
     "summary": "[No memory added]",
     "spotifyId": "5pKCCKE2ajJHZ9KAiaK11H"
+  },
+  {
+    "id": "artist-rik-rok",
+    "slug": "rik-rok",
+    "name": "Rik Rok",
+    "genreTags": [],
+    "summary": "[No memory added]",
+    "spotifyId": "67wCYxOq4A1ohAs7jWYaOJ"
   },
   {
     "id": "artist-roberta-flack",
@@ -2241,6 +2330,14 @@
     "spotifyId": "6Pm0evhKSUGTGYDxzpGGKf"
   },
   {
+    "id": "artist-shaggy",
+    "slug": "shaggy",
+    "name": "Shaggy",
+    "genreTags": [],
+    "summary": "[No memory added]",
+    "spotifyId": "5EvFsr3kj42KNv97ZEnqij"
+  },
+  {
     "id": "artist-shakira",
     "slug": "shakira",
     "name": "Shakira",
@@ -2281,6 +2378,14 @@
       "alternative-rock"
     ],
     "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-sly-and-the-family-stone",
+    "slug": "sly-and-the-family-stone",
+    "name": "Sly & The Family Stone",
+    "genreTags": [],
+    "summary": "[No memory added]",
+    "spotifyId": "5m8H6zSadhu1j9Yi04VLqD"
   },
   {
     "id": "artist-smash-mouth",
@@ -2397,6 +2502,14 @@
     "genreTags": [],
     "summary": "[No memory added]",
     "spotifyId": "3dBVyJ7JuOMt4GE9607Qin"
+  },
+  {
+    "id": "artist-talking-heads",
+    "slug": "talking-heads",
+    "name": "Talking Heads",
+    "genreTags": [],
+    "summary": "[No memory added]",
+    "spotifyId": "2x9SpqnPi8rlE9pjHBwmSC"
   },
   {
     "id": "artist-tammi-terrell",
@@ -2723,6 +2836,14 @@
     ],
     "summary": "[No memory added]",
     "spotifyId": "44NX2ffIYHr6D4n7RaZF7A"
+  },
+  {
+    "id": "artist-vanessa-carlton",
+    "slug": "vanessa-carlton",
+    "name": "Vanessa Carlton",
+    "genreTags": [],
+    "summary": "[No memory added]",
+    "spotifyId": "5ILrArfIV0tMURcHJN8Q07"
   },
   {
     "id": "artist-veronica-maggio",
