@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react"
-import { useParams, Link } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import { loadThemes, loadSongs } from "../lib/parseContent"
 import TitlePostit from "../components/TitlePostit"
+import StatusPostit from "../components/StatusPostit"
+import TagCard from "../components/TagCard"
+import BrowseRow from "../components/BrowseRow"
 import type { Theme, Song } from "../types"
 
 const decadeOptions = [
@@ -62,16 +65,17 @@ export default function ThemeDetailPage() {
       <div className="detail-stack">
         {songs.length > 0 && (
           <section className="detail-panel detail-section">
-            <h3 className="detail-section-title">{theme ? "Songs with this mood" : `Songs from the ${decadeLabel}`}</h3>
-            <ul className="list-none detail-pill-list">
+            <StatusPostit seedKey={`theme-songs-heading-${theme?.id ?? decadeLabel}`} align="center">
+              {theme ? "Songs with this mood" : `Songs from the ${decadeLabel}`}
+            </StatusPostit>
+            <div className="browse-row-list">
               {songs.map((s) => (
-                <li key={s.id}>
-                  <Link to={`/songs/${s.slug}`} className="ui-pill ui-pill-compact">
-                    <span>{s.title} ({s.year})</span>
-                  </Link>
-                </li>
+                <BrowseRow key={s.id} to={`/songs/${s.slug}`} seedKey={s.id}>
+                  <span className="archive-link-title">&apos;{s.title}&apos;</span>
+                  <span className="archive-song-artist browse-row-line">{s.year}</span>
+                </BrowseRow>
               ))}
-            </ul>
+            </div>
           </section>
         )}
 
@@ -86,9 +90,9 @@ export default function ThemeDetailPage() {
             <h3 className="detail-section-title">Related moods</h3>
             <div className="detail-pill-list">
               {relatedThemes.map((t) => (
-                <Link key={t.id} to={`/explore/${t.slug}`} className="tag-postit">
+                <TagCard key={t.id} to={`/explore/${t.slug}`} seedKey={`theme-related-${t.id}`}>
                   <span>{t.name}</span>
-                </Link>
+                </TagCard>
               ))}
             </div>
           </section>

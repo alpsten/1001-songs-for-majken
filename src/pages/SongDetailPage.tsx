@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react"
-import { useParams, Link } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import { loadSongs, loadArtists } from "../lib/parseContent"
 import { getSongArtistEntities } from "../lib/songArtists"
 import TitlePostit from "../components/TitlePostit"
+import TagCard from "../components/TagCard"
 import type { Song, Artist } from "../types"
 // Spike: trying @paper-design/shaders-react's PaperTexture on a real photo.
 // Scoped to this one song on purpose — remove once evaluated either way.
@@ -49,22 +50,22 @@ export default function SongDetailPage() {
         <TitlePostit seedKey={song.id}>{song.title}</TitlePostit>
         <div className="detail-meta-row">
           {primary.map((a) => (
-            <Link key={a.id} to={`/artists/${a.slug}`} className="tag-postit">
+            <TagCard key={a.id} to={`/artists/${a.slug}`} seedKey={`song-artist-${song.id}-${a.id}`}>
               <span>{a.name}</span>
-            </Link>
+            </TagCard>
           ))}
           {featured.map((a) => (
-            <Link key={a.id} to={`/artists/${a.slug}`} className="tag-postit">
+            <TagCard key={a.id} to={`/artists/${a.slug}`} seedKey={`song-artist-${song.id}-${a.id}`}>
               <span>feat. {a.name}</span>
-            </Link>
+            </TagCard>
           ))}
-          <span className="tag-postit">
+          <TagCard seedKey={`song-year-${song.id}`}>
             <span>{song.year}</span>
-          </span>
+          </TagCard>
           {spotifyUrl && (
-            <a href={spotifyUrl} target="_blank" rel="noopener noreferrer" className="tag-postit">
+            <TagCard href={spotifyUrl} seedKey={`song-spotify-${song.id}`}>
               <span>Spotify</span>
-            </a>
+            </TagCard>
           )}
         </div>
         {song.whyItMatters && song.whyItMatters !== noMemoryPlaceholder && (

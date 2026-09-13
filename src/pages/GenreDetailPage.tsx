@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react"
-import { Link, useParams } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import { loadSongs } from "../lib/parseContent"
 import { getGenreFamily, getGenreFamilyBySlug } from "../lib/genres"
 import TitlePostit from "../components/TitlePostit"
+import StatusPostit from "../components/StatusPostit"
+import TagCard from "../components/TagCard"
+import BrowseRow from "../components/BrowseRow"
 import type { Song } from "../types"
 
 export default function GenreDetailPage() {
@@ -50,9 +53,9 @@ export default function GenreDetailPage() {
           {subGenres.length > 0 ? (
             <div className="detail-pill-list">
               {subGenres.map((genre) => (
-                <Link key={genre} to={`/songs?genre=${encodeURIComponent(genre)}`} className="tag-postit">
+                <TagCard key={genre} to={`/songs?genre=${encodeURIComponent(genre)}`} seedKey={`genre-subgenre-${family.slug}-${genre}`}>
                   <span>{genre}</span>
-                </Link>
+                </TagCard>
               ))}
             </div>
           ) : (
@@ -61,17 +64,18 @@ export default function GenreDetailPage() {
         </section>
 
         <section className="detail-panel detail-section">
-          <h3 className="detail-section-title">Songs in this genre family</h3>
+          <StatusPostit seedKey={`genre-songs-heading-${family.slug}`} align="center">
+            Songs in this genre family
+          </StatusPostit>
           {songs.length > 0 ? (
-            <ul className="list-none detail-pill-list">
+            <div className="browse-row-list">
               {songs.map((song) => (
-                <li key={song.id}>
-                  <Link to={`/songs/${song.slug}`} className="ui-pill ui-pill-compact">
-                    <span>{song.title} ({song.year})</span>
-                  </Link>
-                </li>
+                <BrowseRow key={song.id} to={`/songs/${song.slug}`} seedKey={song.id}>
+                  <span className="archive-link-title">&apos;{song.title}&apos;</span>
+                  <span className="archive-song-artist browse-row-line">{song.year}</span>
+                </BrowseRow>
               ))}
-            </ul>
+            </div>
           ) : (
             <p className="detail-placeholder">[No songs added]</p>
           )}

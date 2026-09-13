@@ -1,12 +1,11 @@
 import { useEffect, useState } from "react"
 import type { CSSProperties, ReactNode } from "react"
-import { Link } from "react-router-dom"
 import { familyEntries } from "../lib/familyEntries"
 import { loadThemes } from "../lib/parseContent"
 import { getAllGenreFamilies } from "../lib/genres"
 import { hashString, pickFrom } from "../lib/hash"
 import { postitColors } from "../lib/postitColors"
-import { contentTilt, panelTilt } from "../lib/postitTilt"
+import { panelTilt } from "../lib/postitTilt"
 import { getPostitShape } from "../lib/postitShape"
 import { topCenterTapeStyles } from "../lib/fastenerCorners"
 import TitlePostit from "../components/TitlePostit"
@@ -14,6 +13,7 @@ import StatusPostit from "../components/StatusPostit"
 import NumberPostit from "../components/NumberPostit"
 import PostitBase from "../components/PostitBase"
 import Fastener from "../components/Fastener"
+import TagCard from "../components/TagCard"
 import type { Theme } from "../types"
 
 const decadeOptions = [
@@ -83,36 +83,6 @@ function ExploreCategoryCard({ seedKey, title, summary, isOpen, onToggle, childr
       </PostitBase>
       <Fastener seedKey={seedKey + "|category-fastener"} pool={topCenterTapeStyles} />
     </div>
-  )
-}
-
-type TagCardProps = {
-  to: string
-  seedKey: string
-  children: ReactNode
-}
-
-// One hashed post-it per tag — shared by Mood/Genre/Year/Family Entries
-// so all four lists render the exact same way (PostitBase for shape/
-// grain/shadow, a top-center-only Fastener, the full nine-color
-// palette). Replaces each section's own flat `.tag-postit` pill, which
-// only ever cycled 3 fixed colors and read as a different, lesser paper
-// system than the songs/artists cards elsewhere on the site.
-function TagCard({ to, seedKey, children }: TagCardProps) {
-  const shape = getPostitShape(seedKey + "|tag-shape")
-  const color = pickFrom(postitColors, hashString(seedKey + "|tag-color"))
-  const tilt = contentTilt(seedKey + "|tag-tilt")
-  const wrapperStyle: CSSProperties & { "--tilt"?: string } = {
-    "--tilt": `${tilt}deg`,
-  }
-
-  return (
-    <Link to={to} className="explore-tag-link" style={wrapperStyle}>
-      <PostitBase shape={shape} size="auto" colorVar={`var(--color-postit-${color})`} className="explore-tag-postit">
-        {children}
-      </PostitBase>
-      <Fastener seedKey={seedKey + "|tag-fastener"} pool={topCenterTapeStyles} />
-    </Link>
   )
 }
 

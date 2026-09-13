@@ -3,6 +3,9 @@ import { useParams, Link } from "react-router-dom"
 import { loadArtists, loadSongs } from "../lib/parseContent"
 import { formatGenreTag, getGenreFamily } from "../lib/genres"
 import TitlePostit from "../components/TitlePostit"
+import StatusPostit from "../components/StatusPostit"
+import BrowseRow from "../components/BrowseRow"
+import TagCard from "../components/TagCard"
 import type { Artist, Song } from "../types"
 
 export default function ArtistDetailPage() {
@@ -32,28 +35,36 @@ export default function ArtistDetailPage() {
           {artist.country && <span className="ui-pill ui-pill-compact"><span>{artist.country}</span></span>}
           {artist.birthYear && <span className="ui-pill ui-pill-compact"><span>b. {artist.birthYear}</span></span>}
           {artist.formedYear && <span className="ui-pill ui-pill-compact"><span>formed {artist.formedYear}</span></span>}
-          {artist.genreTags?.map((tag) => (
-            <Link key={tag} to={`/explore/genre/${getGenreFamily(tag).slug}`} className="tag-postit">
-              <span>{formatGenreTag(tag)}</span>
-            </Link>
-          ))}
         </div>
+        {artist.genreTags && artist.genreTags.length > 0 && (
+          <div className="detail-pill-list">
+            {artist.genreTags.map((tag) => {
+              const genre = getGenreFamily(tag)
+              return (
+                <TagCard key={tag} to={`/explore/genre/${genre.slug}`} seedKey={`artist-genre-${artist.id}-${tag}`}>
+                  <span>{formatGenreTag(tag)}</span>
+                </TagCard>
+              )
+            })}
+          </div>
+        )}
         {artist.summary && <p className="detail-note not-italic">{artist.summary}</p>}
       </header>
 
       <div className="detail-stack">
         {songs.length > 0 && (
           <section className="detail-panel detail-section">
-            <h3 className="detail-section-title">Songs in the archive</h3>
-            <ul className="list-none detail-pill-list">
+            <StatusPostit seedKey={`artist-songs-heading-${artist.id}`} align="center">
+              Songs in the archive
+            </StatusPostit>
+            <div className="browse-row-list">
               {songs.map((s) => (
-                <li key={s.id}>
-                  <Link to={`/songs/${s.slug}`} className="ui-pill ui-pill-compact">
-                    <span>{s.title} ({s.year})</span>
-                  </Link>
-                </li>
+                <BrowseRow key={s.id} to={`/songs/${s.slug}`} seedKey={s.id}>
+                  <span className="archive-link-title">&apos;{s.title}&apos;</span>
+                  <span className="archive-song-artist browse-row-line">{s.year}</span>
+                </BrowseRow>
               ))}
-            </ul>
+            </div>
           </section>
         )}
 
