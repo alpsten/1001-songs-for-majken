@@ -60,7 +60,7 @@ export default function SongsPage() {
     })
   }, [])
 
-  const selectedArtistQuery = searchParams.get("artist") ?? ""
+  const selectedQuery = searchParams.get("q") ?? ""
   const selectedGenre = searchParams.get("genre") ?? ""
   const selectedDecade = searchParams.get("decade") ?? ""
   const selectedLetter = searchParams.get("letter") ?? ""
@@ -83,17 +83,19 @@ export default function SongsPage() {
     .sort((a, b) => a.localeCompare(b))
 
   const filteredSongsBase = songs.filter((song) => {
-    const normalizedArtistQuery = selectedArtistQuery.trim().toLowerCase()
-    const matchesArtist = !normalizedArtistQuery || song.artistIds.some((artistId) => {
-      const artist = artists[artistId]
-      if (!artist) return false
-      return artist.slug === normalizedArtistQuery || artist.name.toLowerCase().includes(normalizedArtistQuery)
-    })
+    const normalizedQuery = selectedQuery.trim().toLowerCase()
+    const matchesQuery = !normalizedQuery ||
+      song.title.toLowerCase().includes(normalizedQuery) ||
+      song.artistIds.some((artistId) => {
+        const artist = artists[artistId]
+        if (!artist) return false
+        return artist.slug === normalizedQuery || artist.name.toLowerCase().includes(normalizedQuery)
+      })
     const matchesGenre = !selectedGenre || (song.genreTags ?? []).some((genre) =>
       genre === selectedGenre || getGenreFamily(genre).slug === selectedGenre
     )
     const matchesDecade = !selectedDecade || getDecadeSlug(song.year) === selectedDecade
-    return matchesArtist && matchesGenre && matchesDecade
+    return matchesQuery && matchesGenre && matchesDecade
   })
 
   const filteredSongs = filteredSongsBase.filter((song) => !selectedLetter || getSongLetter(song.title) === selectedLetter)
@@ -112,7 +114,7 @@ export default function SongsPage() {
   )
   const visibleLetters = browseLetters.filter((letter) => groupedSongs[letter]?.length)
 
-  function updateFilter(key: "artist" | "genre" | "decade" | "letter", value: string) {
+  function updateFilter(key: "q" | "genre" | "decade" | "letter", value: string) {
     const next = new URLSearchParams(searchParams)
     if (value) {
       next.set(key, value)
@@ -130,7 +132,7 @@ export default function SongsPage() {
     setSearchParams({})
   }
 
-  const isFiltered = Boolean(selectedArtistQuery || selectedGenre || selectedDecade || selectedLetter)
+  const isFiltered = Boolean(selectedQuery || selectedGenre || selectedDecade || selectedLetter)
 
   return (
     <div className="detail-page detail-page-wide">
@@ -165,11 +167,11 @@ export default function SongsPage() {
               <label className="filter-field filter-field-search">
                 <input
                   type="search"
-                  aria-label="Search primary artist"
+                  aria-label="Search songs and artists"
                   className="filter-input"
-                  placeholder="Search for artist..."
-                  value={selectedArtistQuery}
-                  onChange={(event) => updateFilter("artist", event.target.value)}
+                  placeholder="Search for a song or artist..."
+                  value={selectedQuery}
+                  onChange={(event) => updateFilter("q", event.target.value)}
                 />
               </label>
 
@@ -198,8 +200,8 @@ export default function SongsPage() {
                   <PaperSelect
                     ariaLabel="Filter songs by artists with two or more songs"
                     placeholder="Artist with multiple songs..."
-                    value={artistsWithMultipleSongs.some(({ artist }) => artist.name === selectedArtistQuery) ? selectedArtistQuery : ""}
-                    onValueChange={(value) => updateFilter("artist", value)}
+                    value={artistsWithMultipleSongs.some(({ artist }) => artist.name === selectedQuery) ? selectedQuery : ""}
+                    onValueChange={(value) => updateFilter("q", value)}
                     options={artistsWithMultipleSongs.map(({ artist, count }) => ({
                       value: artist.name,
                       label: `${artist.name} (${count})`,
