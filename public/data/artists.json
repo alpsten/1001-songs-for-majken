@@ -450,6 +450,14 @@
     "spotifyId": "3eskO5m0H4yiF64vRySBjr"
   },
   {
+    "id": "artist-busta-rhymes",
+    "slug": "busta-rhymes",
+    "name": "Busta Rhymes",
+    "genreTags": [],
+    "summary": "[No memory added]",
+    "spotifyId": "1YfEcTuGvBQ8xSD1f53UnK"
+  },
+  {
     "id": "artist-carmen-twillie",
     "slug": "carmen-twillie",
     "name": "Carmen Twillie",
@@ -2687,6 +2695,14 @@
     "spotifyId": "5NGO30tJxFlKixkPSgXcFE"
   },
   {
+    "id": "artist-the-pussycat-dolls",
+    "slug": "the-pussycat-dolls",
+    "name": "The Pussycat Dolls",
+    "genreTags": [],
+    "summary": "[No memory added]",
+    "spotifyId": "6wPhSqRtPu1UhRCDX5yaDJ"
+  },
+  {
     "id": "artist-the-replacements",
     "slug": "the-replacements",
     "name": "The Replacements",
@@ -2745,6 +2761,14 @@
       "soul"
     ],
     "summary": "[No memory added]"
+  },
+  {
+    "id": "artist-the-zombies",
+    "slug": "the-zombies",
+    "name": "The Zombies",
+    "genreTags": [],
+    "summary": "[No memory added]",
+    "spotifyId": "2jgPkn6LuUazBoBk6vvjh5"
   },
   {
     "id": "artist-timbuktu",

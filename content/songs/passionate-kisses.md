@@ -4,7 +4,7 @@ slug: passionate-kisses
 title: Passionate Kisses
 artistIds:
   - artist-lucinda-williams
-album: Lucinda Williams (Deluxe Edition)
+album: Lucinda Williams
 year: 2014
 genreTags: []
 themeIds: []

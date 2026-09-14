@@ -4,7 +4,7 @@ slug: west-end-girls
 title: West End Girls
 artistIds:
   - artist-pet-shop-boys
-album: 'Please: Further Listening 1984 - 1986 (2018 Remaster)'
+album: 'Please: Further Listening 1984 - 1986'
 year: 1986
 genreTags: []
 themeIds: []

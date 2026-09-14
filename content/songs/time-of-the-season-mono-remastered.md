@@ -1,10 +1,10 @@
 ---
 id: song-time-of-the-season-mono-remastered
 slug: time-of-the-season-mono-remastered
-title: Time of the Season - Mono Remastered
+title: Time of the Season
 artistIds:
   - artist-the-zombies
-album: Odessey and Oracle (Mono Remastered)
+album: Odessey and Oracle
 year: 1968
 genreTags: []
 themeIds: []

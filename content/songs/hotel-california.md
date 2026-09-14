@@ -4,7 +4,7 @@ slug: hotel-california
 title: Hotel California
 artistIds:
   - artist-eagles
-album: Hotel California (2013 Remaster)
+album: Hotel California
 year: 1976
 genreTags: []
 themeIds: []

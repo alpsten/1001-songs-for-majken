@@ -1750,6 +1750,31 @@
     "story": ""
   },
   {
+    "id": "song-don-t-cha",
+    "slug": "don-t-cha",
+    "title": "Don't Cha",
+    "artistIds": [
+      "artist-the-pussycat-dolls",
+      "artist-busta-rhymes"
+    ],
+    "album": "PCD",
+    "year": 2005,
+    "genreTags": [],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-09-13",
+    "status": "published",
+    "spotifyId": "0BxfFnk0YzONqvmrkO0QrB",
+    "sourceLinks": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/track/0BxfFnk0YzONqvmrkO0QrB",
+        "kind": "spotify"
+      }
+    ],
+    "story": ""
+  },
+  {
     "id": "song-don-t-dream-it-s-over",
     "slug": "don-t-dream-it-s-over",
     "title": "Don't Dream It's Over",
@@ -3016,7 +3041,7 @@
     "artistIds": [
       "artist-eagles"
     ],
-    "album": "Hotel California (2013 Remaster)",
+    "album": "Hotel California",
     "year": 1976,
     "genreTags": [],
     "themeIds": [],
@@ -5200,7 +5225,7 @@
     "artistIds": [
       "artist-lucinda-williams"
     ],
-    "album": "Lucinda Williams (Deluxe Edition)",
+    "album": "Lucinda Williams",
     "year": 2014,
     "genreTags": [],
     "themeIds": [],
@@ -6808,6 +6833,30 @@
     "story": ""
   },
   {
+    "id": "song-time-of-the-season-mono-remastered",
+    "slug": "time-of-the-season-mono-remastered",
+    "title": "Time of the Season",
+    "artistIds": [
+      "artist-the-zombies"
+    ],
+    "album": "Odessey and Oracle",
+    "year": 1968,
+    "genreTags": [],
+    "themeIds": [],
+    "whyItMatters": "[No memory added]",
+    "addedAt": "2026-09-13",
+    "status": "published",
+    "spotifyId": "6lx1n63qJmhzPpirxxksbI",
+    "sourceLinks": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/track/6lx1n63qJmhzPpirxxksbI",
+        "kind": "spotify"
+      }
+    ],
+    "story": ""
+  },
+  {
     "id": "song-tomorrow",
     "slug": "tomorrow",
     "title": "Tomorrow",
@@ -7518,7 +7567,7 @@
     "artistIds": [
       "artist-pet-shop-boys"
     ],
-    "album": "Please: Further Listening 1984 - 1986 (2018 Remaster)",
+    "album": "Please: Further Listening 1984 - 1986",
     "year": 1986,
     "genreTags": [],
     "themeIds": [],
