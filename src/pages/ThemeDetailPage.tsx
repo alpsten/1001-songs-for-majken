@@ -64,7 +64,7 @@ export default function ThemeDetailPage() {
 
       <div className="detail-stack">
         {songs.length > 0 && (
-          <section className="detail-panel detail-section">
+          <section className="detail-section">
             <StatusPostit seedKey={`theme-songs-heading-${theme?.id ?? decadeLabel}`} align="center">
               {theme ? "Songs with this mood" : `Songs from the ${decadeLabel}`}
             </StatusPostit>
@@ -86,7 +86,7 @@ export default function ThemeDetailPage() {
         )}
 
         {theme && relatedThemes.length > 0 && (
-          <section className="detail-panel detail-section">
+          <section className="detail-section">
             <h3 className="detail-section-title">Related moods</h3>
             <div className="detail-pill-list">
               {relatedThemes.map((t) => (

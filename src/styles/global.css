@@ -13,6 +13,10 @@
   --color-card: #ece0c5;
   --color-card-ink: #241a0d;
   --color-card-muted: #6b5a3d;
+  /* Between --color-card-ink and --color-card-muted — for secondary text
+     (BrowseRow's artist/album+year rows) that should read as darker/more
+     legible than the muted tone without matching the title's full ink. */
+  --color-card-muted-strong: #443723;
   --color-card-line: rgba(36, 26, 13, 0.18);
 
   --color-card-accent: #a8492f;
@@ -866,8 +870,14 @@ a { color: var(--color-accent); }
   max-width: min(90vw, 26rem);
   padding: 0.85rem 1.4rem 1rem;
   border: 1px solid var(--color-card-line);
-  background-image: var(--paper-grain);
-  background-blend-mode: overlay;
+  /* Same ruled-line + grain recipe as .postit-base (§4.4) — TitlePostit
+     is its own bespoke implementation, not routed through PostitBase, so
+     it needs its own copy rather than inheriting the shared one. */
+  background-image:
+    repeating-linear-gradient(0deg, transparent 0 calc(1.815rem - 1px), rgba(40, 30, 15, 0.3) calc(1.815rem - 1px) 1.815rem),
+    var(--paper-grain);
+  background-position: 0 0.5rem;
+  background-blend-mode: normal, overlay;
   box-shadow: 0 24px 46px -20px rgba(0, 0, 0, 0.6);
 }
 
@@ -1067,6 +1077,15 @@ a { color: var(--color-accent); }
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+/* .detail-placeholder's default --color-card-muted is tuned for sitting
+   on a .detail-panel's light card background. A .detail-section with no
+   .detail-panel alongside it (GenreDetailPage's empty-subgenres/
+   empty-songs states) sits directly on the dark page background instead
+   — needs the page's own muted ink, or the text is nearly invisible. */
+.detail-section > .detail-placeholder {
+  color: var(--color-muted);
 }
 
 /* The search/filter panel on /songs and /artists — kept at its original
@@ -1410,6 +1429,16 @@ a { color: var(--color-accent); }
 
 .browse-row-postit .archive-link-title {
   font-size: 1.2rem;
+  line-height: 1.1;
+  /* Nudges the title text up relative to its ruled line without
+     affecting layout — a transform doesn't reflow the rows below, so
+     the artist/album+year rows (already landing correctly on their own
+     lines) stay exactly where they are. Direct feedback: title still
+     sat a couple px too close to its line even after the two ruled-line
+     bugs above were fixed; rows 2/3 didn't have the same issue, so this
+     is scoped to the title only rather than shifting the shared
+     repeat/offset again. */
+  transform: translateY(-3.5px);
 }
 
 .browse-row-title-line {
@@ -1444,6 +1473,10 @@ a { color: var(--color-accent); }
    unchanged, so this is a deliberate one-component exception to the
    site-wide two-face rule, not a change to the rule itself. */
 .browse-row-postit .archive-song-artist {
+  /* Darker than the inherited --color-card-muted (too washed-out here —
+     direct feedback), but still short of the title's full --color-card-
+     ink so title stays the visual anchor of the three rows. */
+  color: var(--color-card-muted-strong);
   font-family: var(--font-display);
   font-style: italic;
   font-size: 0.95rem;
@@ -1452,66 +1485,41 @@ a { color: var(--color-accent); }
 }
 
 .browse-row-postit .archive-meta {
-  margin-top: 0.45rem;
+  /* Tuned to 0.37rem (not a rounder value) so this row's gap matches
+     .browse-row-line's exactly — different margins on the artist row
+     vs. this one meant the two inter-row gaps were never actually equal
+     (29.04px vs 30.31px, measured), so no single repeating ruled-line
+     interval could land under both at once no matter how the shared
+     .postit-base gradient was tuned. Equal gaps was the actual fix;
+     retuning the gradient (again) would've just chased the symptom. */
+  margin-top: 0.37rem;
+  color: var(--color-card-muted-strong);
   font-family: var(--font-display);
   font-style: italic;
   font-size: 0.85rem;
 }
 
-/* Ruled-paper texture (§4.4) — layered over the grain, same recipe as
-   .sotd-card-body's ruled lines. (An earlier version paired this with
-   punched holes down the left edge on some notes — removed; plain
-   striped is the only variant now.)
-   The repeat/offset here approximate the note's own text rhythm (title
-   row + the meta row below it) — it's a heuristic, not a pixel-perfect
-   measurement of the actual text (content varies: a two-line title wraps
-   differently than a one-line one), but it's tuned to land close instead
-   of arbitrarily off. Re-tuned once already: `1.5rem`/`0.95rem` was
-   measured against the title-row's own line-height back when every
-   browse-row text was monospace at the smaller §2 sizes; once the
-   artist-credit and meta rows switched to the larger italic serif
-   (above), that spacing no longer matched — lines were landing across
-   the title's cap-height instead of under it. `1.8rem`/`1.1rem` was
-   measured directly off real rendered rows (`getBoundingClientRect` on
-   `.browse-row-title-line`/`.archive-meta`) after that font change,
-   rather than recomputed from font metrics by hand. */
-.browse-row-postit-striped {
-  background-image:
-    repeating-linear-gradient(0deg, transparent 0 1.8rem, rgba(40, 30, 15, 0.3) 1.8rem calc(1.8rem + 1px)),
-    var(--paper-grain);
-  background-position: 0 1.1rem;
-  background-blend-mode: normal, overlay;
-}
-
 /* Crinkle texture (§4.4) — a few large, soft, low-opacity creases layered
-   over the grain, not a live filter (a filter on the note would distort
-   the text inside it). The three crease angles come from CSS custom
-   properties (--crinkle-a/b/c, set per-instance from a hash in
-   BrowseRow.tsx) rather than fixed values — every crinkled note used to
-   share the exact same three angles, so the "crinkle" always leaned the
-   same direction across the whole page. Fallback values here only apply
-   if a caller forgets to set them. Combinable with
-   .browse-row-postit-striped — the two-class rule below exists because
-   background-image isn't additive across two single-class rules of equal
-   specificity; without it, whichever rule is later in the stylesheet
-   would silently win outright and the other texture would vanish. */
+   over the ruled lines + grain (both now permanent, via .postit-base),
+   not a live filter (a filter on the note would distort the text
+   inside it). The three crease angles come from CSS custom properties
+   (--crinkle-a/b/c, set per-instance from a hash in BrowseRow.tsx)
+   rather than fixed values — every crinkled note used to share the
+   exact same three angles, so the "crinkle" always leaned the same
+   direction across the whole page. Fallback values here only apply if a
+   caller forgets to set them. Layers the lines/grain back in explicitly
+   — background-image isn't additive across two rules of equal
+   specificity, so this more-specific class fully replaces .postit-base's
+   background-image rather than adding to it; leaving them out here would
+   silently drop the lines/grain on every crinkled note. */
 .browse-row-postit-crinkled {
   background-image:
     linear-gradient(var(--crinkle-a, 115deg), transparent 30%, rgba(255, 255, 255, 0.1) 42%, transparent 54%),
     linear-gradient(var(--crinkle-b, 200deg), transparent 40%, rgba(0, 0, 0, 0.14) 50%, transparent 62%),
     linear-gradient(var(--crinkle-c, 65deg), transparent 55%, rgba(255, 255, 255, 0.08) 66%, transparent 78%),
+    repeating-linear-gradient(0deg, transparent 0 calc(1.815rem - 1px), rgba(40, 30, 15, 0.3) calc(1.815rem - 1px) 1.815rem),
     var(--paper-grain);
-  background-blend-mode: soft-light, multiply, soft-light, overlay;
-}
-
-.browse-row-postit-crinkled.browse-row-postit-striped {
-  background-image:
-    linear-gradient(var(--crinkle-a, 115deg), transparent 30%, rgba(255, 255, 255, 0.1) 42%, transparent 54%),
-    linear-gradient(var(--crinkle-b, 200deg), transparent 40%, rgba(0, 0, 0, 0.14) 50%, transparent 62%),
-    linear-gradient(var(--crinkle-c, 65deg), transparent 55%, rgba(255, 255, 255, 0.08) 66%, transparent 78%),
-    repeating-linear-gradient(0deg, transparent 0 1.8rem, rgba(40, 30, 15, 0.3) 1.8rem calc(1.8rem + 1px)),
-    var(--paper-grain);
-  background-position: 0 0, 0 0, 0 0, 0 1.1rem, 0 0;
+  background-position: 0 0, 0 0, 0 0, 0 0.5rem, 0 0;
   background-blend-mode: soft-light, multiply, soft-light, normal, overlay;
 }
 
@@ -1701,11 +1709,58 @@ a { color: var(--color-accent); }
   border-color: rgba(20, 14, 6, 0.28) transparent transparent transparent;
 }
 
+/* Ruled lines are the permanent base texture for every post-it now, not
+   a 1-in-3 random variant (that was .browse-row-postit-striped, since
+   folded into this shared base — see BrowseRow.tsx and the removed rule
+   right below .postit-base-crinkled).
+
+   repeat/offset (1.815rem/0.5rem) are measured directly off real
+   rendered rows on /songs, with each card's own --tilt rotation zeroed
+   out first — getBoundingClientRect returns the post-rotation
+   axis-aligned box, so measuring a tilted card gives a top-left corner
+   that doesn't correspond to the note's actual unrotated padding-box
+   top, and every row looks like it's off by a different, essentially
+   random amount per card. With rotation removed, the three rows'
+   positions are exactly deterministic (down to sub-pixel) across every
+   card, which is what made two real bugs visible:
+
+   1. The .archive-song-artist-to-.archive-meta gap didn't match the
+      title-to-artist gap (29.04px vs 30.31px, from .browse-row-line's
+      and .archive-meta's different margin-top) — no repeating interval
+      can line up with two unequal gaps at once. Fixed at the source:
+      the two margins are now tuned to produce equal gaps (see
+      .archive-meta), so one repeat value can land on all three rows.
+
+   2. `transparent 0 Xpx, color Xpx calc(Xpx + 1px)` was read as "repeat
+      every Xpx," but the pattern's actual cycle is calc(Xpx + 1px) — the
+      1px line itself is part of the cycle too. That 1px-per-row error
+      compounds with distance: row 1 landed close enough to look right,
+      row 2 was off by ~1px, row 3 by ~2px, which is exactly the "rows 2
+      and 3 need to move up" symptom this was tuned against. Fixed by
+      writing the transparent zone as calc(1.815rem - 1px) so the color
+      band's own width is already inside the declared 1.815rem, making
+      that the *true* cycle length, not a lower bound on it.
+
+   Confirmed by injecting real marker elements at the computed line
+   y-positions and screenshotting, not just by trusting getBoundingClientRect
+   deltas — the sub-pixel-accurate-looking math above had this exact
+   bug and still reported near-zero error, because the error was in the
+   gradient's own cycle length, not in the offset/repeat values feeding it.
+
+   Still specific to BrowseRow's 3-line rhythm (by far the most common
+   post-it on the site), not pixel-perfect on every other post-it type's
+   different content/font-size. Re-measure the same way (rotation
+   zeroed, real rendered rows, verify with an injected marker rather
+   than trusting the arithmetic alone) if BrowseRow's row structure
+   changes again. */
 .postit-base {
   position: relative;
   box-shadow: 3px 5px 12px rgba(0, 0, 0, 0.4);
-  background-image: var(--paper-grain);
-  background-blend-mode: overlay;
+  background-image:
+    repeating-linear-gradient(0deg, transparent 0 calc(1.815rem - 1px), rgba(40, 30, 15, 0.3) calc(1.815rem - 1px) 1.815rem),
+    var(--paper-grain);
+  background-position: 0 0.5rem;
+  background-blend-mode: normal, overlay;
 }
 
 .desk-icon {

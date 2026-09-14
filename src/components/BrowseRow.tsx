@@ -23,15 +23,15 @@ type BrowseRowProps = {
 export default function BrowseRow({ to, seedKey, children }: BrowseRowProps) {
   const shape = { ...getPostitShape(seedKey), base: "rect-wide" as const }
   const color = pickFrom(postitColors, hashString(seedKey + "|postit-color"))
-  const striped = hashString(seedKey + "|striped") % 3 === 0
   // Crinkled is deliberately common (2 in 5) rather than a rare accent —
   // feedback was to lean into it more once the per-note random-angle fix
   // (lib/crinkle.ts) made it actually look varied instead of repetitive.
   const crinkled = hashString(seedKey + "|crinkle") % 5 < 2
 
+  // Ruled lines are always on now (via .postit-base, see global.css) —
+  // no more random "striped" chance to pick.
   const postitClassName = [
     "browse-row-postit",
-    striped && "browse-row-postit-striped",
     crinkled && "browse-row-postit-crinkled",
   ].filter(Boolean).join(" ")
 

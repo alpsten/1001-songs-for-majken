@@ -53,7 +53,7 @@ export default function ArtistDetailPage() {
 
       <div className="detail-stack">
         {songs.length > 0 && (
-          <section className="detail-panel detail-section">
+          <section className="detail-section">
             <StatusPostit seedKey={`artist-songs-heading-${artist.id}`} align="center">
               Songs in the archive
             </StatusPostit>

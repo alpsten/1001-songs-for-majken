@@ -48,7 +48,7 @@ export default function GenreDetailPage() {
       </header>
 
       <div className="detail-stack">
-        <section className="detail-panel detail-section">
+        <section className="detail-section">
           <h3 className="detail-section-title">Subgenres</h3>
           {subGenres.length > 0 ? (
             <div className="detail-pill-list">
@@ -63,7 +63,7 @@ export default function GenreDetailPage() {
           )}
         </section>
 
-        <section className="detail-panel detail-section">
+        <section className="detail-section">
           <StatusPostit seedKey={`genre-songs-heading-${family.slug}`} align="center">
             Songs in this genre family
           </StatusPostit>
