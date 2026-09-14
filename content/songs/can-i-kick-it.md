@@ -4,9 +4,7 @@ slug: can-i-kick-it
 title: Can I Kick It?
 artistIds:
   - artist-a-tribe-called-quest
-album: >-
-  People's Instinctive Travels and the Paths of Rhythm (25th Anniversary
-  Edition)
+album: People's Instinctive Travels and the Paths of Rhythm
 year: 1990
 genreTags: []
 themeIds: []

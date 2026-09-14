@@ -4,17 +4,17 @@ slug: stayin-alive-from-saturday-night-fever-soundtrack
 title: Stayin' Alive
 artistIds:
   - artist-bee-gees
-album: Greatest
-year: 1979
+album: 'Saturday Night Fever: Soundtrack'
+year: 1977
 genreTags: []
 themeIds: []
 whyItMatters: 'From the Saturday Night Fever (1977) soundtrack.'
 addedAt: '2026-09-01'
 status: published
-spotifyId: 3mRM4NM8iO7UBqrSigCQFH
+spotifyId: 2xSXw1EqGSAKc1e4TPaQvV
 sourceLinks:
   - label: Spotify
-    url: 'https://open.spotify.com/track/3mRM4NM8iO7UBqrSigCQFH'
+    url: 'https://open.spotify.com/track/2xSXw1EqGSAKc1e4TPaQvV'
     kind: spotify
 ---
 
